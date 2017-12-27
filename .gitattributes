@@ -1,0 +1,7 @@
+# override linguist settings to ignore old/
+# even though the old stuff isn't really vendor code
+old/* linguist-vendored
+
+# ignore datasheets
+datasheets/* linguist-documentation
+docs/* linguist-documentation
