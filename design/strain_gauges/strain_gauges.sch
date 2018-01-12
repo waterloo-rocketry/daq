@@ -661,13 +661,13 @@ PRESSURE_2
 $Comp
 L Conn_01x08 J3
 U 1 1 5A2F4056
-P 9600 3450
-F 0 "J3" H 9600 3850 50  0000 C CNN
-F 1 "Conn_01x08" H 9600 2950 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_08x3.50mm_Vertical" H 9600 3450 50  0001 C CNN
-F 3 "" H 9600 3450 50  0001 C CNN
-	1    9600 3450
-	1    0    0    -1  
+P 9600 3550
+F 0 "J3" H 9600 3950 50  0000 C CNN
+F 1 "Conn_01x08" H 9600 3050 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_08x3.50mm_Vertical" H 9600 3550 50  0001 C CNN
+F 3 "" H 9600 3550 50  0001 C CNN
+	1    9600 3550
+	1    0    0    1   
 $EndComp
 Text GLabel 8750 3150 0    60   Input ~ 0
 STRAIN_OUT_1
@@ -1218,46 +1218,46 @@ Wire Wire Line
 $Comp
 L Conn_01x04_swapped J4
 U 1 1 5A4F01CB
-P 1200 3800
-F 0 "J4" H 1200 4000 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 1200 3500 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 3800 50  0001 C CNN
-F 3 "" H 1200 3800 50  0001 C CNN
-	1    1200 3800
-	-1   0    0    1   
+P 1200 3700
+F 0 "J4" H 1200 3900 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 1200 3400 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 3700 50  0001 C CNN
+F 3 "" H 1200 3700 50  0001 C CNN
+	1    1200 3700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04_swapped J5
 U 1 1 5A4F026E
-P 1200 5350
-F 0 "J5" H 1200 5550 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 1200 5050 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 5350 50  0001 C CNN
-F 3 "" H 1200 5350 50  0001 C CNN
-	1    1200 5350
-	-1   0    0    1   
+P 1200 5250
+F 0 "J5" H 1200 5450 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 1200 4950 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 5250 50  0001 C CNN
+F 3 "" H 1200 5250 50  0001 C CNN
+	1    1200 5250
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04_swapped J6
 U 1 1 5A4F0465
-P 4550 3800
-F 0 "J6" H 4550 4000 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 4550 3500 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 3800 50  0001 C CNN
-F 3 "" H 4550 3800 50  0001 C CNN
-	1    4550 3800
-	-1   0    0    1   
+P 4550 3700
+F 0 "J6" H 4550 3900 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 4550 3400 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04_swapped J7
 U 1 1 5A4F04F5
-P 4550 5350
-F 0 "J7" H 4550 5550 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 4550 5050 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 5350 50  0001 C CNN
-F 3 "" H 4550 5350 50  0001 C CNN
-	1    4550 5350
-	-1   0    0    1   
+P 4550 5250
+F 0 "J7" H 4550 5450 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 4550 4950 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 5250 50  0001 C CNN
+F 3 "" H 4550 5250 50  0001 C CNN
+	1    4550 5250
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8550 5150 8550 3750

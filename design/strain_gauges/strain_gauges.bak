@@ -927,9 +927,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 3950 2750 3950
 Wire Wire Line
-	2950 3500 2950 3550
-Wire Wire Line
-	2950 3550 2950 3950
+	2950 3500 2950 3950
 Wire Wire Line
 	1550 3700 1400 3700
 Wire Wire Line
@@ -951,13 +949,7 @@ Wire Wire Line
 Wire Wire Line
 	1850 3450 1850 3850
 Wire Wire Line
-	1400 950  1700 950 
-Wire Wire Line
-	1700 950  2200 950 
-Wire Wire Line
-	2200 950  3150 950 
-Wire Wire Line
-	3150 950  3950 950 
+	1400 950  3950 950 
 Wire Wire Line
 	1700 1050 1400 1050
 Wire Wire Line
@@ -970,13 +962,9 @@ Wire Wire Line
 	2850 1550 2200 1550
 Connection ~ 2200 1550
 Wire Wire Line
-	3150 1750 3150 2150
+	3150 1750 3150 2300
 Wire Wire Line
-	3150 2150 3150 2300
-Wire Wire Line
-	2700 2150 3150 2150
-Wire Wire Line
-	3150 2150 3500 2150
+	2700 2150 3500 2150
 Connection ~ 3150 2150
 Connection ~ 2200 950 
 Wire Wire Line
@@ -985,15 +973,11 @@ Connection ~ 1700 950
 Wire Wire Line
 	5000 1200 5000 1350
 Wire Wire Line
-	5000 1350 5150 1350
-Wire Wire Line
-	5150 1350 5300 1350
+	5000 1350 5300 1350
 Wire Wire Line
 	6500 1350 6500 1200
 Wire Wire Line
-	6200 1350 6350 1350
-Wire Wire Line
-	6350 1350 6500 1350
+	6200 1350 6500 1350
 Wire Wire Line
 	5750 1800 5750 2100
 Wire Wire Line
@@ -1032,9 +1016,7 @@ Wire Wire Line
 Wire Wire Line
 	2950 5500 2750 5500
 Wire Wire Line
-	2950 5050 2950 5100
-Wire Wire Line
-	2950 5100 2950 5500
+	2950 5050 2950 5500
 Wire Wire Line
 	1550 5250 1400 5250
 Wire Wire Line
@@ -1081,9 +1063,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 3950 6100 3950
 Wire Wire Line
-	6300 3500 6300 3550
-Wire Wire Line
-	6300 3550 6300 3950
+	6300 3500 6300 3950
 Wire Wire Line
 	4900 3700 4750 3700
 Wire Wire Line
@@ -1130,9 +1110,7 @@ Wire Wire Line
 Wire Wire Line
 	6300 5500 6100 5500
 Wire Wire Line
-	6300 5050 6300 5100
-Wire Wire Line
-	6300 5100 6300 5500
+	6300 5050 6300 5500
 Wire Wire Line
 	4900 5250 4750 5250
 Wire Wire Line
@@ -1182,9 +1160,7 @@ Wire Wire Line
 Wire Wire Line
 	9000 2300 8850 2300
 Wire Wire Line
-	2200 1500 2200 1550
-Wire Wire Line
-	2200 1550 2200 1700
+	2200 1500 2200 1700
 Connection ~ 3150 950 
 Wire Wire Line
 	3950 1550 3950 1700
@@ -1223,9 +1199,7 @@ Wire Wire Line
 Wire Wire Line
 	3150 950  3150 1350
 Wire Wire Line
-	2200 2800 2650 2800
-Wire Wire Line
-	2650 2800 3150 2800
+	2200 2800 3150 2800
 Wire Wire Line
 	2650 2900 2650 2800
 Connection ~ 2650 2800
@@ -1244,46 +1218,46 @@ Wire Wire Line
 $Comp
 L Conn_01x04_swapped J4
 U 1 1 5A4F01CB
-P 1200 3800
-F 0 "J4" H 1200 4000 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 1200 3500 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 3800 50  0001 C CNN
-F 3 "" H 1200 3800 50  0001 C CNN
-	1    1200 3800
-	-1   0    0    1   
+P 1200 3700
+F 0 "J4" H 1200 3900 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 1200 3400 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 3700 50  0001 C CNN
+F 3 "" H 1200 3700 50  0001 C CNN
+	1    1200 3700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04_swapped J5
 U 1 1 5A4F026E
-P 1200 5350
-F 0 "J5" H 1200 5550 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 1200 5050 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 5350 50  0001 C CNN
-F 3 "" H 1200 5350 50  0001 C CNN
-	1    1200 5350
-	-1   0    0    1   
+P 1200 5250
+F 0 "J5" H 1200 5450 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 1200 4950 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 1200 5250 50  0001 C CNN
+F 3 "" H 1200 5250 50  0001 C CNN
+	1    1200 5250
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04_swapped J6
 U 1 1 5A4F0465
-P 4550 3800
-F 0 "J6" H 4550 4000 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 4550 3500 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 3800 50  0001 C CNN
-F 3 "" H 4550 3800 50  0001 C CNN
-	1    4550 3800
-	-1   0    0    1   
+P 4550 3700
+F 0 "J6" H 4550 3900 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 4550 3400 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 3700 50  0001 C CNN
+F 3 "" H 4550 3700 50  0001 C CNN
+	1    4550 3700
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x04_swapped J7
 U 1 1 5A4F04F5
-P 4550 5350
-F 0 "J7" H 4550 5550 50  0000 C CNN
-F 1 "Conn_01x04_swapped" H 4550 5050 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 5350 50  0001 C CNN
-F 3 "" H 4550 5350 50  0001 C CNN
-	1    4550 5350
-	-1   0    0    1   
+P 4550 5250
+F 0 "J7" H 4550 5450 50  0000 C CNN
+F 1 "Conn_01x04_swapped" H 4550 4950 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_04x3.50mm_Vertical" H 4550 5250 50  0001 C CNN
+F 3 "" H 4550 5250 50  0001 C CNN
+	1    4550 5250
+	-1   0    0    -1  
 $EndComp
 Wire Wire Line
 	8550 5150 8550 3750
@@ -1299,7 +1273,7 @@ U 1 1 5A567EE1
 P 3050 1550
 F 0 "Q1" H 3250 1600 50  0000 L CNN
 F 1 "2N3096" H 3250 1500 50  0000 L CNN
-F 2 "" H 3250 1650 50  0001 C CNN
+F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 3250 1650 50  0001 C CNN
 F 3 "" H 3050 1550 50  0001 C CNN
 	1    3050 1550
 	1    0    0    1   
