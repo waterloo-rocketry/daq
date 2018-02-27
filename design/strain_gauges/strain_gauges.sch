@@ -1280,4 +1280,6 @@ F 3 "" H 3050 1550 50  0001 C CNN
 $EndComp
 Text Notes 3250 1700 0    39   ~ 0
 1.5 W, 200 mA
+Text Notes 1100 4700 0    60   ~ 0
+todo: fix biasing at input and output offset
 $EndSCHEMATC

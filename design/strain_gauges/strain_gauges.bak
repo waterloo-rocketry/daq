@@ -661,13 +661,13 @@ PRESSURE_2
 $Comp
 L Conn_01x08 J3
 U 1 1 5A2F4056
-P 9600 3450
-F 0 "J3" H 9600 3850 50  0000 C CNN
-F 1 "Conn_01x08" H 9600 2950 50  0000 C CNN
-F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_08x3.50mm_Vertical" H 9600 3450 50  0001 C CNN
-F 3 "" H 9600 3450 50  0001 C CNN
-	1    9600 3450
-	1    0    0    -1  
+P 9600 3550
+F 0 "J3" H 9600 3950 50  0000 C CNN
+F 1 "Conn_01x08" H 9600 3050 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_08x3.50mm_Vertical" H 9600 3550 50  0001 C CNN
+F 3 "" H 9600 3550 50  0001 C CNN
+	1    9600 3550
+	1    0    0    1   
 $EndComp
 Text GLabel 8750 3150 0    60   Input ~ 0
 STRAIN_OUT_1

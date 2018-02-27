@@ -1,0 +1,9 @@
+Strain Gauge Board BOM
+
+Part Name, Digikey Number
+LT-1460, LT1460GIZ-10#PBF-ND
+TL780-15, 296-14326-5-ND
+INA126, INA126PA-ND
+2 Pin Conn, 609-4725-ND
+3 Pin Conn, 277-1722-ND
+4 Pin Conn, 277-1860-ND
