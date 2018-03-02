@@ -6,4 +6,8 @@ K connector
 F ~
 $ENDCMP
 #
+$CMP LT1006
+D Precision single supply op amp
+$ENDCMP
+#
 #End Doc Library
