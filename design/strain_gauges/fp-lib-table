@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name DAQ_footprints)(type KiCad)(uri /Users/alexm/dev/daq/lib/footprints.pretty)(options "")(descr ""))
+)

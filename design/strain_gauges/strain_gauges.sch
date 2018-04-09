@@ -1,39 +1,106 @@
 EESchema Schematic File Version 2
-LIBS:power
-LIBS:device
-LIBS:transistors
-LIBS:conn
-LIBS:linear
-LIBS:regul
-LIBS:74xx
-LIBS:cmos4000
-LIBS:adc-dac
-LIBS:memory
-LIBS:xilinx
-LIBS:microcontrollers
-LIBS:dsp
-LIBS:microchip
-LIBS:analog_switches
-LIBS:motorola
-LIBS:texas
-LIBS:intel
-LIBS:audio
-LIBS:interface
-LIBS:digital-audio
-LIBS:philips
-LIBS:display
-LIBS:cypress
-LIBS:siliconi
-LIBS:opto
-LIBS:atmel
-LIBS:contrib
-LIBS:valves
 LIBS:daq_components
+LIBS:74xgxx
+LIBS:74xx
+LIBS:ac-dc
+LIBS:actel
+LIBS:adc-dac
+LIBS:allegro
+LIBS:Altera
+LIBS:analog_devices
+LIBS:analog_switches
+LIBS:atmel
+LIBS:audio
+LIBS:battery_management
+LIBS:bbd
+LIBS:bosch
+LIBS:brooktre
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:contrib
+LIBS:cypress
+LIBS:dc-dc
+LIBS:digital-audio
+LIBS:diode
+LIBS:display
+LIBS:dsp
+LIBS:elec-unifil
+LIBS:ESD_Protection
+LIBS:ftdi
+LIBS:gennum
+LIBS:graphic_symbols
+LIBS:hc11
+LIBS:infineon
+LIBS:intel
+LIBS:interface
+LIBS:intersil
+LIBS:ir
+LIBS:Lattice
+LIBS:leds
+LIBS:LEM
+LIBS:linear
+LIBS:logic_programmable
+LIBS:maxim
+LIBS:mechanical
+LIBS:memory
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
+LIBS:microchip
+LIBS:microcontrollers
+LIBS:modules
+LIBS:motor_drivers
+LIBS:motorola
+LIBS:motors
+LIBS:msp430
+LIBS:nordicsemi
+LIBS:nxp_armmcu
+LIBS:nxp
+LIBS:onsemi
+LIBS:opto
+LIBS:Oscillators
+LIBS:philips
+LIBS:Power_Management
+LIBS:power
+LIBS:powerint
+LIBS:pspice
+LIBS:references
+LIBS:regul
+LIBS:relays
+LIBS:rfcom
+LIBS:RFSolutions
+LIBS:sensors
+LIBS:silabs
+LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
+LIBS:supertex
+LIBS:switches
+LIBS:texas
+LIBS:transf
+LIBS:transistors
+LIBS:triac_thyristor
+LIBS:ttl_ieee
+LIBS:valves
+LIBS:video
+LIBS:wiznet
+LIBS:Worldsemi
+LIBS:Xicor
+LIBS:xilinx
+LIBS:zetex
+LIBS:Zilog
+LIBS:device
+LIBS:strain_gauges-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 2
+Sheet 1 1
 Title ""
 Date ""
 Rev ""
@@ -219,12 +286,12 @@ $EndComp
 $Comp
 L +16V #PWR09
 U 1 1 598D7BA8
-P 1700 750
-F 0 "#PWR09" H 1700 600 50  0001 C CNN
-F 1 "+16V" H 1700 890 50  0000 C CNN
-F 2 "" H 1700 750 50  0000 C CNN
-F 3 "" H 1700 750 50  0000 C CNN
-	1    1700 750 
+P 2650 750
+F 0 "#PWR09" H 2650 600 50  0001 C CNN
+F 1 "+16V" H 2650 890 50  0000 C CNN
+F 2 "" H 2650 750 50  0000 C CNN
+F 3 "" H 2650 750 50  0000 C CNN
+	1    2650 750 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -974,8 +1041,6 @@ Wire Wire Line
 Wire Wire Line
 	1850 3350 1850 3750
 Wire Wire Line
-	1400 850  3950 850 
-Wire Wire Line
 	1700 950  1400 950 
 Wire Wire Line
 	1700 1050 1700 950 
@@ -992,9 +1057,6 @@ Wire Wire Line
 	2700 2050 3500 2050
 Connection ~ 3150 2050
 Connection ~ 2200 850 
-Wire Wire Line
-	1700 850  1700 750 
-Connection ~ 1700 850 
 Wire Wire Line
 	5000 1100 5000 1250
 Wire Wire Line
@@ -1296,4 +1358,22 @@ $EndComp
 Wire Wire Line
 	3550 6850 3550 7000
 Connection ~ 3550 6950
+Wire Wire Line
+	2000 850  3950 850 
+Wire Wire Line
+	2650 750  2650 850 
+Connection ~ 2650 850 
+$Comp
+L Fuse F1
+U 1 1 5ACBB5BC
+P 1850 850
+F 0 "F1" V 1930 850 50  0000 C CNN
+F 1 "Fuse" V 1775 850 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.24x1.80mm_HandSolder" V 1780 850 50  0001 C CNN
+F 3 "" H 1850 850 50  0001 C CNN
+	1    1850 850 
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	1700 850  1400 850 
 $EndSCHEMATC
