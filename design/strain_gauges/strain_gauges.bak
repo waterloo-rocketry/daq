@@ -1,106 +1,39 @@
 EESchema Schematic File Version 2
-LIBS:daq_components
-LIBS:74xgxx
-LIBS:74xx
-LIBS:ac-dc
-LIBS:actel
-LIBS:adc-dac
-LIBS:allegro
-LIBS:Altera
-LIBS:analog_devices
-LIBS:analog_switches
-LIBS:atmel
-LIBS:audio
-LIBS:battery_management
-LIBS:bbd
-LIBS:bosch
-LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:contrib
-LIBS:cypress
-LIBS:dc-dc
-LIBS:digital-audio
-LIBS:diode
-LIBS:display
-LIBS:dsp
-LIBS:elec-unifil
-LIBS:ESD_Protection
-LIBS:ftdi
-LIBS:gennum
-LIBS:graphic_symbols
-LIBS:hc11
-LIBS:infineon
-LIBS:intel
-LIBS:interface
-LIBS:intersil
-LIBS:ir
-LIBS:Lattice
-LIBS:leds
-LIBS:LEM
-LIBS:linear
-LIBS:logic_programmable
-LIBS:maxim
-LIBS:mechanical
-LIBS:memory
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
-LIBS:microchip
-LIBS:microcontrollers
-LIBS:modules
-LIBS:motor_drivers
-LIBS:motorola
-LIBS:motors
-LIBS:msp430
-LIBS:nordicsemi
-LIBS:nxp_armmcu
-LIBS:nxp
-LIBS:onsemi
-LIBS:opto
-LIBS:Oscillators
-LIBS:philips
-LIBS:Power_Management
 LIBS:power
-LIBS:powerint
-LIBS:pspice
-LIBS:references
-LIBS:regul
-LIBS:relays
-LIBS:rfcom
-LIBS:RFSolutions
-LIBS:sensors
-LIBS:silabs
-LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
-LIBS:supertex
-LIBS:switches
-LIBS:texas
-LIBS:transf
-LIBS:transistors
-LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
-LIBS:video
-LIBS:wiznet
-LIBS:Worldsemi
-LIBS:Xicor
-LIBS:xilinx
-LIBS:zetex
-LIBS:Zilog
 LIBS:device
-LIBS:strain_gauges-cache
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:daq_components
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 2 2
 Title ""
 Date ""
 Rev ""
@@ -615,7 +548,7 @@ F 3 "" H 9750 3550 50  0001 C CNN
 $EndComp
 Text Notes 10100 3450 0    60   ~ 0
 to DAQ
-Text Notes 9600 2900 0    60   ~ 0
+Text Notes 9500 4150 0    60   ~ 0
 voltage monitoring (optional)
 $Comp
 L LT1460-10 U1
@@ -960,7 +893,7 @@ L R R10
 U 1 1 5A99EA16
 P 1150 6650
 F 0 "R10" V 1230 6650 50  0000 C CNN
-F 1 "150K" V 1150 6650 50  0000 C CNN
+F 1 "270K" V 1150 6650 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1150 6650 50  0001 C CNN
 F 3 "" H 1150 6650 50  0001 C CNN
 	1    1150 6650
@@ -971,7 +904,7 @@ L R R11
 U 1 1 5A99EA9C
 P 1150 7250
 F 0 "R11" V 1230 7250 50  0000 C CNN
-F 1 "10K" V 1150 7250 50  0000 C CNN
+F 1 "20K" V 1150 7250 50  0000 C CNN
 F 2 "Resistors_SMD:R_0805_HandSoldering" H 1150 7250 50  0001 C CNN
 F 3 "" H 1150 7250 50  0001 C CNN
 	1    1150 7250
