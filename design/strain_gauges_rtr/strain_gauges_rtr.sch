@@ -428,17 +428,17 @@ Text Label 9200 1600 0    60   ~ 0
 PRESSURE_1
 Text Label 9200 2450 0    60   ~ 0
 PRESSURE_2
-Text Label 8950 3300 2    60   ~ 0
-STRAIN_OUT_1
-Text Label 8950 3400 2    60   ~ 0
-STRAIN_OUT_2
-Text Label 8950 3500 2    60   ~ 0
-STRAIN_OUT_3
 Text Label 8950 3600 2    60   ~ 0
+STRAIN_OUT_1
+Text Label 8950 3500 2    60   ~ 0
+STRAIN_OUT_2
+Text Label 8950 3400 2    60   ~ 0
+STRAIN_OUT_3
+Text Label 8950 3300 2    60   ~ 0
 STRAIN_OUT_4
-Text Label 8950 3700 2    60   ~ 0
-PRESSURE_1
 Text Label 8950 3800 2    60   ~ 0
+PRESSURE_1
+Text Label 8950 3700 2    60   ~ 0
 PRESSURE_2
 $Sheet
 S 1300 4000 1950 1250
@@ -470,9 +470,9 @@ F2 "AMP_OUT" I R 6350 5950 60
 $EndSheet
 Text Label 3500 4300 0    60   ~ 0
 STRAIN_OUT_1
-Text Label 6700 4300 0    60   ~ 0
-STRAIN_OUT_2
 Text Label 3500 5950 0    60   ~ 0
+STRAIN_OUT_2
+Text Label 6700 4300 0    60   ~ 0
 STRAIN_OUT_3
 Text Label 6700 5950 0    60   ~ 0
 STRAIN_OUT_4
