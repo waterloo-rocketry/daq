@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name RLCS_footprints)(type KiCad)(uri /Users/alexm/dev/rlcs/schematics/power_board_schematics/rlcs_power_footprints.pretty)(options "")(descr ""))
+)

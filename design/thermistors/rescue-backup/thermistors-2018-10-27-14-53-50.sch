@@ -1,6 +1,36 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:daq_components
 LIBS:thermistors-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L thermistors-rescue:Conn_01x02 J1
+L Conn_01x02 J1
 U 1 1 5A942654
 P 2150 1750
 F 0 "J1" H 2150 1850 50  0000 C CNN
@@ -28,7 +58,7 @@ $EndComp
 Text Notes 2100 1450 0    60   ~ 0
 Power
 $Comp
-L daq_components:R-78E U1
+L R-78E U1
 U 1 1 5A942928
 P 3700 1750
 F 0 "U1" H 3450 1450 60  0000 C CNN
@@ -41,7 +71,7 @@ $EndComp
 Text Label 2850 1750 0    60   ~ 0
 16V
 $Comp
-L power:GND #PWR2
+L GND #PWR2
 U 1 1 5A942A76
 P 2500 1950
 F 0 "#PWR2" H 2500 1700 50  0001 C CNN
@@ -52,7 +82,7 @@ F 3 "" H 2500 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR4
+L GND #PWR4
 U 1 1 5A942AC6
 P 3700 2200
 F 0 "#PWR4" H 3700 1950 50  0001 C CNN
@@ -63,7 +93,7 @@ F 3 "" H 3700 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR1
+L +5V #PWR1
 U 1 1 5A942AFC
 P 4500 1650
 F 0 "#PWR1" H 4500 1500 50  0001 C CNN
@@ -74,7 +104,7 @@ F 3 "" H 4500 1650 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C2
+L C C2
 U 1 1 5A942B36
 P 4300 2000
 F 0 "C2" H 4325 2100 50  0000 L CNN
@@ -85,7 +115,7 @@ F 3 "" H 4300 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR5
+L GND #PWR5
 U 1 1 5A942B63
 P 4300 2200
 F 0 "#PWR5" H 4300 1950 50  0001 C CNN
@@ -96,7 +126,7 @@ F 3 "" H 4300 2200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C1
+L C C1
 U 1 1 5A942BE3
 P 3100 2000
 F 0 "C1" H 3125 2100 50  0000 L CNN
@@ -107,7 +137,7 @@ F 3 "" H 3100 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR3
+L GND #PWR3
 U 1 1 5A942C25
 P 3100 2200
 F 0 "#PWR3" H 3100 1950 50  0001 C CNN
@@ -190,7 +220,7 @@ therm_3
 Text Label 6900 4550 0    60   ~ 0
 therm_6
 $Comp
-L thermistors-rescue:Conn_01x08 J2
+L Conn_01x08 J2
 U 1 1 5A946516
 P 9550 3250
 F 0 "J2" H 9550 3650 50  0000 C CNN
@@ -219,7 +249,7 @@ therm_8
 Text Notes 5700 1800 0    60   ~ 0
 DAQ Thermistor Board.\nSupports up to 8 thermistors in a low side divider\nconfiguration. Powered off a 5V switching converter.\n\nTODO: add conversion formula.
 $Comp
-L power:PWR_FLAG #FLG1
+L PWR_FLAG #FLG1
 U 1 1 5A9485D7
 P 2800 1950
 F 0 "#FLG1" H 2800 2025 50  0001 C CNN
@@ -275,19 +305,13 @@ Connection ~ 4300 1750
 Wire Wire Line
 	4300 1850 4300 1750
 Wire Wire Line
-	4500 1750 4300 1750
+	4500 1750 4250 1750
 Wire Wire Line
 	4500 1650 4500 1750
 Wire Wire Line
-	2350 1850 2500 1850
+	2350 1850 2800 1850
 Wire Wire Line
 	2500 1950 2500 1850
 Wire Wire Line
-	2350 1750 3100 1750
-Wire Wire Line
-	2500 1850 2800 1850
-Wire Wire Line
-	3100 1750 3200 1750
-Wire Wire Line
-	4300 1750 4250 1750
+	2350 1750 3200 1750
 $EndSCHEMATC
