@@ -1,6 +1,36 @@
-EESchema Schematic File Version 4
+EESchema Schematic File Version 2
+LIBS:power
+LIBS:device
+LIBS:transistors
+LIBS:conn
+LIBS:linear
+LIBS:regul
+LIBS:74xx
+LIBS:cmos4000
+LIBS:adc-dac
+LIBS:memory
+LIBS:xilinx
+LIBS:microcontrollers
+LIBS:dsp
+LIBS:microchip
+LIBS:analog_switches
+LIBS:motorola
+LIBS:texas
+LIBS:intel
+LIBS:audio
+LIBS:interface
+LIBS:digital-audio
+LIBS:philips
+LIBS:display
+LIBS:cypress
+LIBS:siliconi
+LIBS:opto
+LIBS:atmel
+LIBS:contrib
+LIBS:valves
+LIBS:daq_components
 LIBS:strain_gauges_rtr-cache
-EELAYER 26 0
+EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +45,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L device:R R1
+L R R1
 U 1 1 5ACADCA3
 P 2300 1550
 F 0 "R1" V 2380 1550 50  0000 C CNN
@@ -26,7 +56,7 @@ F 3 "" H 2300 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C4
+L C C4
 U 1 1 5ACADCAA
 P 3250 2850
 F 0 "C4" H 3275 2950 50  0000 L CNN
@@ -37,7 +67,7 @@ F 3 "" H 3250 2850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR01
+L GND #PWR01
 U 1 1 5ACADCB1
 P 2750 3200
 F 0 "#PWR01" H 2750 2950 50  0001 C CNN
@@ -48,7 +78,7 @@ F 3 "" H 2750 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C1
+L C C1
 U 1 1 5ACADCB7
 P 4050 1600
 F 0 "C1" H 4075 1700 50  0000 L CNN
@@ -59,7 +89,7 @@ F 3 "" H 4050 1600 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR02
+L GND #PWR02
 U 1 1 5ACADCBE
 P 4050 1750
 F 0 "#PWR02" H 4050 1500 50  0001 C CNN
@@ -70,7 +100,7 @@ F 3 "" H 4050 1750 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+10V #PWR03
+L +10V #PWR03
 U 1 1 5ACADCC4
 P 3600 2300
 F 0 "#PWR03" H 3600 2150 50  0001 C CNN
@@ -81,7 +111,7 @@ F 3 "" H 3600 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L strain_gauges_rtr-rescue:Conn_01x02 P1
+L Conn_01x02 P1
 U 1 1 5ACADCCA
 P 1300 1350
 F 0 "P1" H 1300 1500 50  0000 C CNN
@@ -92,7 +122,7 @@ F 3 "" H 1300 1350 50  0000 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR04
+L GND #PWR04
 U 1 1 5ACADCD1
 P 1800 1450
 F 0 "#PWR04" H 1800 1200 50  0001 C CNN
@@ -103,7 +133,7 @@ F 3 "" H 1800 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L daq_components:+16V #PWR05
+L +16V #PWR05
 U 1 1 5ACADCD7
 P 2750 1050
 F 0 "#PWR05" H 2750 900 50  0001 C CNN
@@ -114,7 +144,7 @@ F 3 "" H 2750 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L daq_components:LT1460-10 U2
+L LT1460-10 U2
 U 1 1 5ACADCDD
 P 2300 2400
 F 0 "U2" H 2550 2050 60  0000 C CNN
@@ -125,7 +155,7 @@ F 3 "" H 2300 2400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:Q_PNP_EBC Q1
+L Q_PNP_EBC Q1
 U 1 1 5ACADCE4
 P 3150 1850
 F 0 "Q1" H 3350 1900 50  0000 L CNN
@@ -138,7 +168,7 @@ $EndComp
 Text Notes 3350 2000 0    39   ~ 0
 1.5 W, 200 mA
 $Comp
-L daq_components:+16V #PWR06
+L +16V #PWR06
 U 1 1 5ACAE219
 P 5450 1100
 F 0 "#PWR06" H 5450 950 50  0001 C CNN
@@ -149,7 +179,7 @@ F 3 "" H 5450 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR07
+L GND #PWR07
 U 1 1 5ACAE21F
 P 6200 2000
 F 0 "#PWR07" H 6200 1750 50  0001 C CNN
@@ -160,7 +190,7 @@ F 3 "" H 6200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C2
+L C C2
 U 1 1 5ACAE225
 P 5600 1600
 F 0 "C2" H 5700 1750 50  0000 C CNN
@@ -171,7 +201,7 @@ F 3 "" H 5600 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:C C3
+L C C3
 U 1 1 5ACAE22C
 P 6800 1600
 F 0 "C3" H 6900 1750 50  0000 C CNN
@@ -182,7 +212,7 @@ F 3 "" H 6800 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR08
+L GND #PWR08
 U 1 1 5ACAE233
 P 6800 2000
 F 0 "#PWR08" H 6800 1750 50  0001 C CNN
@@ -193,7 +223,7 @@ F 3 "" H 6800 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR09
+L GND #PWR09
 U 1 1 5ACAE239
 P 5600 2000
 F 0 "#PWR09" H 5600 1750 50  0001 C CNN
@@ -204,7 +234,7 @@ F 3 "" H 5600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L daq_components:TL780-15 U1
+L TL780-15 U1
 U 1 1 5ACAE23F
 P 6100 1000
 F 0 "U1" H 6550 550 60  0000 C CNN
@@ -215,7 +245,7 @@ F 3 "" H 6100 1000 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR010
+L +15V #PWR010
 U 1 1 5ACAE246
 P 6950 1100
 F 0 "#PWR010" H 6950 950 50  0001 C CNN
@@ -226,7 +256,7 @@ F 3 "" H 6950 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L strain_gauges_rtr-rescue:Conn_01x03 J1
+L Conn_01x03 J1
 U 1 1 5ACAED9B
 P 8850 1500
 F 0 "J1" H 8850 1700 50  0000 C CNN
@@ -237,7 +267,7 @@ F 3 "" H 8850 1500 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR011
+L GND #PWR011
 U 1 1 5ACAEDA2
 P 9700 1250
 F 0 "#PWR011" H 9700 1000 50  0001 C CNN
@@ -248,7 +278,7 @@ F 3 "" H 9700 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L strain_gauges_rtr-rescue:Conn_01x03 J2
+L Conn_01x03 J2
 U 1 1 5ACAEDA8
 P 8850 2350
 F 0 "J2" H 8850 2550 50  0000 C CNN
@@ -259,7 +289,7 @@ F 3 "" H 8850 2350 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR012
+L GND #PWR012
 U 1 1 5ACAEDAF
 P 9700 2100
 F 0 "#PWR012" H 9700 1850 50  0001 C CNN
@@ -270,7 +300,7 @@ F 3 "" H 9700 2100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L strain_gauges_rtr-rescue:Conn_01x08 J3
+L Conn_01x08 J3
 U 1 1 5ACAEDB5
 P 9800 3700
 F 0 "J3" H 9800 4100 50  0000 C CNN
@@ -285,7 +315,7 @@ to DAQ
 Text Notes 9550 4300 0    60   ~ 0
 voltage monitoring (optional)
 $Comp
-L power:+15V #PWR013
+L +15V #PWR013
 U 1 1 5ACAEDBE
 P 9350 2050
 F 0 "#PWR013" H 9350 1900 50  0001 C CNN
@@ -296,7 +326,7 @@ F 3 "" H 9350 2050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+10V #PWR014
+L +10V #PWR014
 U 1 1 5ACAEDC4
 P 9050 4950
 F 0 "#PWR014" H 9050 4800 50  0001 C CNN
@@ -307,7 +337,7 @@ F 3 "" H 9050 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R3
+L R R3
 U 1 1 5ACAEDCA
 P 9050 5100
 F 0 "R3" V 9130 5100 50  0000 C CNN
@@ -318,7 +348,7 @@ F 3 "" H 9050 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R5
+L R R5
 U 1 1 5ACAEDD1
 P 9050 5450
 F 0 "R5" V 9130 5450 50  0000 C CNN
@@ -329,7 +359,7 @@ F 3 "" H 9050 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR015
+L GND #PWR015
 U 1 1 5ACAEDD8
 P 9050 5700
 F 0 "#PWR015" H 9050 5450 50  0001 C CNN
@@ -340,7 +370,7 @@ F 3 "" H 9050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R2
+L R R2
 U 1 1 5ACAEDDE
 P 8550 5100
 F 0 "R2" V 8630 5100 50  0000 C CNN
@@ -351,7 +381,7 @@ F 3 "" H 8550 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L device:R R4
+L R R4
 U 1 1 5ACAEDE5
 P 8550 5450
 F 0 "R4" V 8630 5450 50  0000 C CNN
@@ -362,7 +392,7 @@ F 3 "" H 8550 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR016
+L GND #PWR016
 U 1 1 5ACAEDEC
 P 8550 5700
 F 0 "#PWR016" H 8550 5450 50  0001 C CNN
@@ -373,7 +403,7 @@ F 3 "" H 8550 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR017
+L +15V #PWR017
 U 1 1 5ACAEDF2
 P 8550 4950
 F 0 "#PWR017" H 8550 4800 50  0001 C CNN
@@ -384,7 +414,7 @@ F 3 "" H 8550 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+15V #PWR018
+L +15V #PWR018
 U 1 1 5ACAEDF8
 P 9350 1200
 F 0 "#PWR018" H 9350 1050 50  0001 C CNN
@@ -447,7 +477,7 @@ STRAIN_OUT_3
 Text Label 6700 5950 0    60   ~ 0
 STRAIN_OUT_4
 Wire Wire Line
-	2100 1250 2300 1250
+	2100 1250 4050 1250
 Wire Wire Line
 	1800 1350 1500 1350
 Wire Wire Line
@@ -458,13 +488,13 @@ Wire Wire Line
 	2950 1850 2300 1850
 Connection ~ 2300 1850
 Wire Wire Line
-	3250 2050 3250 2450
+	3250 2050 3250 2700
 Wire Wire Line
-	2800 2450 3250 2450
+	2800 2450 3600 2450
 Connection ~ 3250 2450
 Connection ~ 2300 1250
 Wire Wire Line
-	2300 1700 2300 1850
+	2300 1700 2300 2000
 Connection ~ 3250 1250
 Wire Wire Line
 	4050 1250 4050 1450
@@ -473,7 +503,7 @@ Wire Wire Line
 Wire Wire Line
 	3250 1250 3250 1650
 Wire Wire Line
-	2300 3100 2750 3100
+	2300 3100 3250 3100
 Wire Wire Line
 	2750 3200 2750 3100
 Connection ~ 2750 3100
@@ -482,11 +512,11 @@ Wire Wire Line
 Wire Wire Line
 	5450 1100 5450 1250
 Wire Wire Line
-	5450 1250 5600 1250
+	5450 1250 5750 1250
 Wire Wire Line
 	6950 1250 6950 1100
 Wire Wire Line
-	6650 1250 6800 1250
+	6650 1250 6950 1250
 Wire Wire Line
 	6200 1700 6200 2000
 Wire Wire Line
@@ -569,7 +599,7 @@ Wire Wire Line
 	2750 1050 2750 1250
 Connection ~ 2750 1250
 $Comp
-L device:Fuse F1
+L Fuse F1
 U 1 1 5ACB8796
 P 1950 1250
 F 0 "F1" V 2030 1250 50  0000 C CNN
@@ -581,22 +611,4 @@ F 3 "" H 1950 1250 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1800 1250 1500 1250
-Wire Wire Line
-	2300 1850 2300 2000
-Wire Wire Line
-	3250 2450 3250 2700
-Wire Wire Line
-	3250 2450 3600 2450
-Wire Wire Line
-	2300 1250 2750 1250
-Wire Wire Line
-	3250 1250 4050 1250
-Wire Wire Line
-	2750 3100 3250 3100
-Wire Wire Line
-	5600 1250 5750 1250
-Wire Wire Line
-	6800 1250 6950 1250
-Wire Wire Line
-	2750 1250 3250 1250
 $EndSCHEMATC
