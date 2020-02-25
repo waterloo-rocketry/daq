@@ -1,11 +1,41 @@
-EESchema-LIBRARY Version 2.4
+EESchema-LIBRARY Version 2.3
 #encoding utf-8
 #
-# +16V-daq_components
+# +10V
 #
-DEF +16V-daq_components #PWR 0 0 Y Y 1 F P
+DEF +10V #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+16V-daq_components" 0 140 50 H V C CNN
+F1 "+10V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H V C CNN
+F3 "" 0 0 50 H V C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +10V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# +15V
+#
+DEF +15V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+15V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +15V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# +16V
+#
+DEF +16V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+16V" 0 140 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -16,11 +46,11 @@ X +16V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# C-device
+# C
 #
-DEF C-device C 0 10 N Y 1 F N
+DEF C C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "C-device" 25 -100 50 H V L CNN
+F1 "C" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -148,11 +178,11 @@ X Pin_8 8 -200 -400 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Fuse-device
+# Fuse
 #
-DEF Fuse-device F 0 0 N Y 1 F N
+DEF Fuse F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "Fuse-device" -75 0 50 V V C CNN
+F1 "Fuse" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -166,11 +196,24 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# INA826-daq_components
+# GND
 #
-DEF INA826-daq_components U 0 40 Y Y 1 F N
+DEF GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# INA826
+#
+DEF INA826 U 0 40 Y Y 1 F N
 F0 "U" -200 300 60 H V C CNN
-F1 "INA826-daq_components" 0 -300 60 H V C CNN
+F1 "INA826" 0 -300 60 H V C CNN
 F2 "" 150 -300 60 H I C CNN
 F3 "" 150 -300 60 H I C CNN
 DRAW
@@ -186,11 +229,11 @@ X +VS 8 450 150 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# LT1460-10-daq_components
+# LT1460-10
 #
-DEF LT1460-10-daq_components U 0 40 Y Y 1 F N
+DEF LT1460-10 U 0 40 Y Y 1 F N
 F0 "U" 250 -350 60 H V C CNN
-F1 "LT1460-10-daq_components" 300 250 60 H V C CNN
+F1 "LT1460-10" 300 250 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -201,11 +244,11 @@ X GND 3 0 -500 200 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Q_PNP_EBC-device
+# Q_PNP_EBC
 #
-DEF Q_PNP_EBC-device Q 0 0 Y N 1 F N
+DEF Q_PNP_EBC Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Q_PNP_EBC-device" 200 -50 50 H V L CNN
+F1 "Q_PNP_EBC" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -220,14 +263,15 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R-device
+# R
 #
-DEF R-device R 0 0 N Y 1 F N
+DEF R R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R-device" 0 0 50 V V C CNN
+F1 "R" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
+ R_*
  R_*
 $ENDFPLIST
 DRAW
@@ -237,11 +281,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# TL780-15-daq_components
+# TL780-15
 #
-DEF TL780-15-daq_components U 0 40 Y Y 1 F N
+DEF TL780-15 U 0 40 Y Y 1 F N
 F0 "U" 450 -450 60 H V C CNN
-F1 "TL780-15-daq_components" 100 -100 60 H V C CNN
+F1 "TL780-15" 100 -100 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW

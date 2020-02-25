@@ -1,11 +1,11 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
-# +16V-daq_components
+# i2c_pancake-rescue_+16V-daq_components
 #
-DEF +16V-daq_components #PWR 0 0 Y Y 1 F P
+DEF i2c_pancake-rescue_+16V-daq_components #PWR 0 0 Y Y 1 F P
 F0 "#PWR" 0 -150 50 H I C CNN
-F1 "+16V-daq_components" 0 140 50 H V C CNN
+F1 "i2c_pancake-rescue_+16V-daq_components" 0 140 50 H V C CNN
 F2 "" 0 0 50 H V C CNN
 F3 "" 0 0 50 H V C CNN
 DRAW
@@ -16,11 +16,11 @@ X +16V 1 0 0 0 U 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
-# C-device
+# i2c_pancake-rescue_C-device
 #
-DEF C-device C 0 10 N Y 1 F N
+DEF i2c_pancake-rescue_C-device C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "C-device" 25 -100 50 H V L CNN
+F1 "i2c_pancake-rescue_C-device" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -34,11 +34,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x02
+# i2c_pancake-rescue_Conn_01x02-strain_gauges_rtr-rescue
 #
-DEF Conn_01x02 J 0 40 Y N 1 F N
+DEF i2c_pancake-rescue_Conn_01x02-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
 F0 "J" 0 100 50 H V C CNN
-F1 "Conn_01x02" 0 -200 50 H V C CNN
+F1 "i2c_pancake-rescue_Conn_01x02-strain_gauges_rtr-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -58,11 +58,11 @@ X Pin_2 2 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x03
+# i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue
 #
-DEF Conn_01x03 J 0 40 Y N 1 F N
+DEF i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Conn_01x03" 0 -200 50 H V C CNN
+F1 "i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -84,11 +84,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x04
+# i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue
 #
-DEF Conn_01x04 J 0 40 Y N 1 F N
+DEF i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "Conn_01x04" 0 -300 50 H V C CNN
+F1 "i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -112,47 +112,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# Conn_01x08
+# i2c_pancake-rescue_Fuse-device
 #
-DEF Conn_01x08 J 0 40 Y N 1 F N
-F0 "J" 0 400 50 H V C CNN
-F1 "Conn_01x08" 0 -500 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -395 0 -405 1 1 6 N
-S -50 -295 0 -305 1 1 6 N
-S -50 -195 0 -205 1 1 6 N
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 105 0 95 1 1 6 N
-S -50 205 0 195 1 1 6 N
-S -50 305 0 295 1 1 6 N
-S -50 350 50 -450 1 1 10 f
-X Pin_1 1 -200 300 150 R 50 50 1 1 P
-X Pin_2 2 -200 200 150 R 50 50 1 1 P
-X Pin_3 3 -200 100 150 R 50 50 1 1 P
-X Pin_4 4 -200 0 150 R 50 50 1 1 P
-X Pin_5 5 -200 -100 150 R 50 50 1 1 P
-X Pin_6 6 -200 -200 150 R 50 50 1 1 P
-X Pin_7 7 -200 -300 150 R 50 50 1 1 P
-X Pin_8 8 -200 -400 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
-# Fuse-device
-#
-DEF Fuse-device F 0 0 N Y 1 F N
+DEF i2c_pancake-rescue_Fuse-device F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "Fuse-device" -75 0 50 V V C CNN
+F1 "i2c_pancake-rescue_Fuse-device" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -166,11 +130,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# INA826-daq_components
+# i2c_pancake-rescue_INA826-daq_components
 #
-DEF INA826-daq_components U 0 40 Y Y 1 F N
+DEF i2c_pancake-rescue_INA826-daq_components U 0 40 Y Y 1 F N
 F0 "U" -200 300 60 H V C CNN
-F1 "INA826-daq_components" 0 -300 60 H V C CNN
+F1 "i2c_pancake-rescue_INA826-daq_components" 0 -300 60 H V C CNN
 F2 "" 150 -300 60 H I C CNN
 F3 "" 150 -300 60 H I C CNN
 DRAW
@@ -186,11 +150,11 @@ X +VS 8 450 150 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# LT1460-10-daq_components
+# i2c_pancake-rescue_LT1460-10-daq_components
 #
-DEF LT1460-10-daq_components U 0 40 Y Y 1 F N
+DEF i2c_pancake-rescue_LT1460-10-daq_components U 0 40 Y Y 1 F N
 F0 "U" 250 -350 60 H V C CNN
-F1 "LT1460-10-daq_components" 300 250 60 H V C CNN
+F1 "i2c_pancake-rescue_LT1460-10-daq_components" 300 250 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -201,11 +165,11 @@ X GND 3 0 -500 200 U 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# Q_PNP_EBC-device
+# i2c_pancake-rescue_Q_PNP_EBC-device
 #
-DEF Q_PNP_EBC-device Q 0 0 Y N 1 F N
+DEF i2c_pancake-rescue_Q_PNP_EBC-device Q 0 0 Y N 1 F N
 F0 "Q" 200 50 50 H V L CNN
-F1 "Q_PNP_EBC-device" 200 -50 50 H V L CNN
+F1 "i2c_pancake-rescue_Q_PNP_EBC-device" 200 -50 50 H V L CNN
 F2 "" 200 100 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 DRAW
@@ -220,11 +184,11 @@ X C 3 100 200 100 D 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# R-device
+# i2c_pancake-rescue_R-device
 #
-DEF R-device R 0 0 N Y 1 F N
+DEF i2c_pancake-rescue_R-device R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "R-device" 0 0 50 V V C CNN
+F1 "i2c_pancake-rescue_R-device" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -237,11 +201,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# TL780-15-daq_components
+# i2c_pancake-rescue_TL780-15-daq_components
 #
-DEF TL780-15-daq_components U 0 40 Y Y 1 F N
+DEF i2c_pancake-rescue_TL780-15-daq_components U 0 40 Y Y 1 F N
 F0 "U" 450 -450 60 H V C CNN
-F1 "TL780-15-daq_components" 100 -100 60 H V C CNN
+F1 "i2c_pancake-rescue_TL780-15-daq_components" 100 -100 60 H V C CNN
 F2 "" 0 0 60 H I C CNN
 F3 "" 0 0 60 H I C CNN
 DRAW
@@ -249,6 +213,49 @@ P 5 0 1 0 -150 -150 350 -150 350 -500 -150 -500 -150 -150 f
 X VIN 1 -350 -250 200 R 50 50 1 1 W
 X GND 2 100 -700 200 U 50 50 1 1 W
 X VOUT 3 550 -250 200 L 50 50 1 1 W
+ENDDRAW
+ENDDEF
+#
+# power_+10V
+#
+DEF power_+10V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+10V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +10V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_+15V
+#
+DEF power_+15V #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "power_+15V" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +15V 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# power_GND
+#
+DEF power_GND #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -250 50 H I C CNN
+F1 "power_GND" 0 -150 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
+X GND 1 0 0 0 D 50 50 1 1 W N
 ENDDRAW
 ENDDEF
 #
