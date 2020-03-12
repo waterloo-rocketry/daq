@@ -1,6 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:strain_gauges_rtr-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -15,7 +14,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L daq_components:INA826 U3
+L strain_gauges_rtr-rescue:INA826-daq_components U3
 U 1 1 5ACAFA52
 P 5900 4100
 AR Path="/5ACAF8FB/5ACAFA52" Ref="U3"  Part="1" 
@@ -83,7 +82,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3350 4950 3350
 $Comp
-L device:R R6
+L strain_gauges_rtr-rescue:R-device R6
 U 1 1 5ACAFBC2
 P 5000 4100
 AR Path="/5ACAF8FB/5ACAFBC2" Ref="R6"  Part="1" 
@@ -141,7 +140,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 3950 6350 3950
 $Comp
-L device:C C5
+L strain_gauges_rtr-rescue:C-device C5
 U 1 1 5ACAFF7B
 P 6600 3700
 AR Path="/5ACAF8FB/5ACAFF7B" Ref="C5"  Part="1" 
@@ -208,7 +207,7 @@ To DAQ
 Text Notes 3500 4200 0    60   ~ 0
 G = 1 + 49.4K/RG
 $Comp
-L device:R R7
+L strain_gauges_rtr-rescue:R-device R7
 U 1 1 5ACB2059
 P 6500 4150
 AR Path="/5ACAF8FB/5ACB2059" Ref="R7"  Part="1" 

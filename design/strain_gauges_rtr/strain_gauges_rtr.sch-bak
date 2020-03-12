@@ -1,10 +1,10 @@
 EESchema Schematic File Version 4
-LIBS:i2c_pancake-cache
+LIBS:strain_gauges_rtr-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title ""
 Date ""
 Rev ""
@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L i2c_pancake-rescue:R-device R1
+L device:R R1
 U 1 1 5ACADCA3
 P 2300 1550
 F 0 "R1" V 2380 1550 50  0000 C CNN
@@ -26,7 +26,7 @@ F 3 "" H 2300 1550 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:C-device C4
+L device:C C4
 U 1 1 5ACADCAA
 P 3250 2850
 F 0 "C4" H 3275 2950 50  0000 L CNN
@@ -48,7 +48,7 @@ F 3 "" H 2750 3200 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:C-device C1
+L device:C C1
 U 1 1 5ACADCB7
 P 4050 1600
 F 0 "C1" H 4075 1700 50  0000 L CNN
@@ -81,7 +81,7 @@ F 3 "" H 3600 2300 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x02-strain_gauges_rtr-rescue P1
+L strain_gauges_rtr-rescue:Conn_01x02 P1
 U 1 1 5ACADCCA
 P 1300 1350
 F 0 "P1" H 1300 1500 50  0000 C CNN
@@ -103,7 +103,7 @@ F 3 "" H 1800 1450 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:+16V-daq_components #PWR05
+L daq_components:+16V #PWR05
 U 1 1 5ACADCD7
 P 2750 1050
 F 0 "#PWR05" H 2750 900 50  0001 C CNN
@@ -114,7 +114,7 @@ F 3 "" H 2750 1050 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:LT1460-10-daq_components U2
+L daq_components:LT1460-10 U2
 U 1 1 5ACADCDD
 P 2300 2400
 F 0 "U2" H 2550 2050 60  0000 C CNN
@@ -125,7 +125,7 @@ F 3 "" H 2300 2400 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Q_PNP_EBC-device Q1
+L device:Q_PNP_EBC Q1
 U 1 1 5ACADCE4
 P 3150 1850
 F 0 "Q1" H 3350 1900 50  0000 L CNN
@@ -138,7 +138,7 @@ $EndComp
 Text Notes 3350 2000 0    39   ~ 0
 1.5 W, 200 mA
 $Comp
-L i2c_pancake-rescue:+16V-daq_components #PWR06
+L daq_components:+16V #PWR06
 U 1 1 5ACAE219
 P 5450 1100
 F 0 "#PWR06" H 5450 950 50  0001 C CNN
@@ -160,7 +160,7 @@ F 3 "" H 6200 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:C-device C2
+L device:C C2
 U 1 1 5ACAE225
 P 5600 1600
 F 0 "C2" H 5700 1750 50  0000 C CNN
@@ -171,7 +171,7 @@ F 3 "" H 5600 1600 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:C-device C3
+L device:C C3
 U 1 1 5ACAE22C
 P 6800 1600
 F 0 "C3" H 6900 1750 50  0000 C CNN
@@ -204,7 +204,7 @@ F 3 "" H 5600 2000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:TL780-15-daq_components U1
+L daq_components:TL780-15 U1
 U 1 1 5ACAE23F
 P 6100 1000
 F 0 "U1" H 6550 550 60  0000 C CNN
@@ -226,7 +226,7 @@ F 3 "" H 6950 1100 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue J1
+L strain_gauges_rtr-rescue:Conn_01x03 J1
 U 1 1 5ACAED9B
 P 8850 1500
 F 0 "J1" H 8850 1700 50  0000 C CNN
@@ -248,7 +248,7 @@ F 3 "" H 9700 1250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue J2
+L strain_gauges_rtr-rescue:Conn_01x03 J2
 U 1 1 5ACAEDA8
 P 8850 2350
 F 0 "J2" H 8850 2550 50  0000 C CNN
@@ -269,6 +269,19 @@ F 3 "" H 9700 2100 50  0001 C CNN
 	1    9700 2100
 	1    0    0    -1  
 $EndComp
+$Comp
+L strain_gauges_rtr-rescue:Conn_01x08 J3
+U 1 1 5ACAEDB5
+P 9800 3700
+F 0 "J3" H 9800 4100 50  0000 C CNN
+F 1 "Conn_01x08" H 9800 3200 50  0000 C CNN
+F 2 "Connectors_Phoenix:PhoenixContact_MCV-G_08x3.50mm_Vertical" H 9800 3700 50  0001 C CNN
+F 3 "" H 9800 3700 50  0001 C CNN
+	1    9800 3700
+	1    0    0    1   
+$EndComp
+Text Notes 10150 3600 0    60   ~ 0
+to DAQ
 Text Notes 9550 4300 0    60   ~ 0
 voltage monitoring (optional)
 $Comp
@@ -294,7 +307,7 @@ F 3 "" H 9050 4950 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:R-device R3
+L device:R R3
 U 1 1 5ACAEDCA
 P 9050 5100
 F 0 "R3" V 9130 5100 50  0000 C CNN
@@ -305,7 +318,7 @@ F 3 "" H 9050 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:R-device R5
+L device:R R5
 U 1 1 5ACAEDD1
 P 9050 5450
 F 0 "R5" V 9130 5450 50  0000 C CNN
@@ -327,7 +340,7 @@ F 3 "" H 9050 5700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:R-device R2
+L device:R R2
 U 1 1 5ACAEDDE
 P 8550 5100
 F 0 "R2" V 8630 5100 50  0000 C CNN
@@ -338,7 +351,7 @@ F 3 "" H 8550 5100 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:R-device R4
+L device:R R4
 U 1 1 5ACAEDE5
 P 8550 5450
 F 0 "R4" V 8630 5450 50  0000 C CNN
@@ -391,6 +404,8 @@ Text Label 8950 3500 2    60   ~ 0
 STRAIN_OUT_2
 Text Label 8950 3400 2    60   ~ 0
 STRAIN_OUT_3
+Text Label 8950 3300 2    60   ~ 0
+STRAIN_OUT_4
 Text Label 8950 3800 2    60   ~ 0
 PRESSURE_1
 Text Label 8950 3700 2    60   ~ 0
@@ -410,18 +425,27 @@ F1 "instr_amp.sch" 60
 F2 "AMP_OUT" I R 3250 5950 60 
 $EndSheet
 $Sheet
-S 4300 5650 1950 1250
+S 4400 4000 1950 1250
 U 5ACB07B8
 F0 "sheet5ACB07B5" 60
 F1 "instr_amp.sch" 60
-F2 "AMP_OUT" I R 6250 5950 60 
+F2 "AMP_OUT" I R 6350 4300 60 
+$EndSheet
+$Sheet
+S 4400 5650 1950 1250
+U 5ACB084A
+F0 "sheet5ACB0847" 60
+F1 "instr_amp.sch" 60
+F2 "AMP_OUT" I R 6350 5950 60 
 $EndSheet
 Text Label 3500 4300 0    60   ~ 0
 STRAIN_OUT_1
 Text Label 3500 5950 0    60   ~ 0
 STRAIN_OUT_2
-Text Label 6600 5950 0    60   ~ 0
+Text Label 6700 4300 0    60   ~ 0
 STRAIN_OUT_3
+Text Label 6700 5950 0    60   ~ 0
+STRAIN_OUT_4
 Wire Wire Line
 	2100 1250 2300 1250
 Wire Wire Line
@@ -475,6 +499,8 @@ Connection ~ 5600 1250
 Wire Wire Line
 	6800 1250 6800 1450
 Connection ~ 6800 1250
+Wire Wire Line
+	8950 3300 9600 3300
 Wire Wire Line
 	8950 3400 9600 3400
 Wire Wire Line
@@ -532,16 +558,18 @@ Wire Wire Line
 Wire Wire Line
 	3250 4300 3500 4300
 Wire Wire Line
-	6250 5950 6600 5950
+	6350 4300 6700 4300
 Wire Wire Line
 	3500 5950 3250 5950
+Wire Wire Line
+	6700 5950 6350 5950
 Wire Wire Line
 	3600 2450 3600 2300
 Wire Wire Line
 	2750 1050 2750 1250
 Connection ~ 2750 1250
 $Comp
-L i2c_pancake-rescue:Fuse-device F1
+L device:Fuse F1
 U 1 1 5ACB8796
 P 1950 1250
 F 0 "F1" V 2030 1250 50  0000 C CNN
