@@ -170,30 +170,6 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_Conn_01x02-strain_gauges_rtr-rescue
-#
-DEF i2c_pancake-rescue_Conn_01x02-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
-F0 "J" 0 100 50 H V C CNN
-F1 "i2c_pancake-rescue_Conn_01x02-strain_gauges_rtr-rescue" 0 -200 50 H V C CNN
-F2 "" 0 0 50 H I C CNN
-F3 "" 0 0 50 H I C CNN
-$FPLIST
- Connector*:*_??x*mm*
- Connector*:*1x??x*mm*
- Pin?Header?Straight?1X*
- Pin?Header?Angled?1X*
- Socket?Strip?Straight?1X*
- Socket?Strip?Angled?1X*
-$ENDFPLIST
-DRAW
-S -50 -95 0 -105 1 1 6 N
-S -50 5 0 -5 1 1 6 N
-S -50 50 50 -150 1 1 10 f
-X Pin_1 1 -200 0 150 R 50 50 1 1 P
-X Pin_2 2 -200 -100 150 R 50 50 1 1 P
-ENDDRAW
-ENDDEF
-#
 # i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue
 #
 DEF i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
@@ -405,21 +381,21 @@ F3 "" 0 450 60 H I C CNN
 DRAW
 S -400 400 400 -1100 0 1 0 N
 X RA2 1 -500 250 100 R 50 50 1 1 I
-X RB4 10 500 -950 100 L 50 50 1 1 I
-X RB5 11 500 -800 100 L 50 50 1 1 I
+X RB4 10 500 -200 100 L 50 50 1 1 I
+X RB5 11 500 -350 100 L 50 50 1 1 I
 X ICSPCLK 12 500 -650 100 L 50 50 1 1 I
 X ICSPDAT 13 500 -500 100 L 50 50 1 1 I
-X VDD 14 500 -350 100 L 50 50 1 1 I
-X RA6 15 500 -200 100 L 50 50 1 1 I
-X RA7 16 500 -50 100 L 50 50 1 1 I
+X VDD 14 500 -800 100 L 50 50 1 1 I
+X RA6 15 -500 -500 100 R 50 50 1 1 I
+X RA5 16 -500 -350 100 R 50 50 1 1 I
 X RA0 17 500 100 100 L 50 50 1 1 I
 X RA1 18 500 250 100 L 50 50 1 1 I
-X RA3 2 -500 100 100 R 50 50 1 1 I
-X RA4 3 -500 -50 100 R 50 50 1 1 I
-X ~MCLR 4 -500 -200 100 R 50 50 1 1 I
-X VSS 5 -500 -350 100 R 50 50 1 1 I
-X RB0 6 -500 -500 100 R 50 50 1 1 I
-X RB1 7 -500 -650 100 R 50 50 1 1 I
+X RA3 2 -500 -50 100 R 50 50 1 1 I
+X RA4 3 -500 -200 100 R 50 50 1 1 I
+X ~MCLR 4 -500 100 100 R 50 50 1 1 I
+X VSS 5 500 -950 100 L 50 50 1 1 I
+X RB0 6 -500 -650 100 R 50 50 1 1 I
+X RB1 7 500 -50 100 L 50 50 1 1 I
 X RB2 8 -500 -800 100 R 50 50 1 1 I
 X RB3 9 -500 -950 100 R 50 50 1 1 I
 ENDDRAW
