@@ -1,6 +1,6 @@
 EESchema Schematic File Version 4
 LIBS:i2c_pancake-cache
-EELAYER 26 0
+EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
@@ -14,96 +14,6 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-$Comp
-L i2c_pancake-rescue:R-device R1
-U 1 1 5ACADCA3
-P 1800 1450
-F 0 "R1" V 1880 1450 50  0000 C CNN
-F 1 "220" V 1800 1450 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 1730 1450 50  0001 C CNN
-F 3 "" H 1800 1450 50  0000 C CNN
-	1    1800 1450
-	1    0    0    -1  
-$EndComp
-$Comp
-L i2c_pancake-rescue:C-device C4
-U 1 1 5ACADCAA
-P 2750 2750
-F 0 "C4" H 2775 2850 50  0000 L CNN
-F 1 "2uF" H 2775 2650 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D5.0mm_P2.50mm" H 2788 2600 50  0001 C CNN
-F 3 "" H 2750 2750 50  0000 C CNN
-	1    2750 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR01
-U 1 1 5ACADCB1
-P 2250 3100
-F 0 "#PWR01" H 2250 2850 50  0001 C CNN
-F 1 "GND" H 2250 2950 50  0000 C CNN
-F 2 "" H 2250 3100 50  0000 C CNN
-F 3 "" H 2250 3100 50  0000 C CNN
-	1    2250 3100
-	1    0    0    -1  
-$EndComp
-$Comp
-L i2c_pancake-rescue:C-device C1
-U 1 1 5ACADCB7
-P 3550 1500
-F 0 "C1" H 3575 1600 50  0000 L CNN
-F 1 "47uF" H 3575 1400 50  0000 L CNN
-F 2 "Capacitors_ThroughHole:CP_Radial_Tantal_D6.0mm_P2.50mm" H 3588 1350 50  0001 C CNN
-F 3 "" H 3550 1500 50  0000 C CNN
-	1    3550 1500
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR02
-U 1 1 5ACADCBE
-P 3550 1650
-F 0 "#PWR02" H 3550 1400 50  0001 C CNN
-F 1 "GND" H 3550 1500 50  0000 C CNN
-F 2 "" H 3550 1650 50  0000 C CNN
-F 3 "" H 3550 1650 50  0000 C CNN
-	1    3550 1650
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+10V #PWR03
-U 1 1 5ACADCC4
-P 3100 2200
-F 0 "#PWR03" H 3100 2050 50  0001 C CNN
-F 1 "+10V" H 3100 2340 50  0000 C CNN
-F 2 "" H 3100 2200 50  0000 C CNN
-F 3 "" H 3100 2200 50  0000 C CNN
-	1    3100 2200
-	1    0    0    -1  
-$EndComp
-$Comp
-L i2c_pancake-rescue:LT1460-10-daq_components U2
-U 1 1 5ACADCDD
-P 1800 2300
-F 0 "U2" H 2050 1950 60  0000 C CNN
-F 1 "LT1460-10" H 2100 2550 60  0000 C CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 1800 2300 60  0001 C CNN
-F 3 "" H 1800 2300 60  0001 C CNN
-	1    1800 2300
-	1    0    0    -1  
-$EndComp
-$Comp
-L i2c_pancake-rescue:Q_PNP_EBC-device Q1
-U 1 1 5ACADCE4
-P 2650 1750
-F 0 "Q1" H 2850 1800 50  0000 L CNN
-F 1 "2N3096" H 2850 1700 50  0000 L CNN
-F 2 "TO_SOT_Packages_THT:TO-92_Inline_Narrow_Oval" H 2850 1850 50  0001 C CNN
-F 3 "" H 2650 1750 50  0001 C CNN
-	1    2650 1750
-	1    0    0    1   
-$EndComp
-Text Notes 2850 1900 0    39   ~ 0
-1.5 W, 200 mA
 $Comp
 L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue J1
 U 1 1 5ACAED9B
@@ -215,35 +125,6 @@ STRAIN_OUT_1
 Text Label 3500 5850 0    60   ~ 0
 STRAIN_OUT_2
 Wire Wire Line
-	1600 1150 1800 1150
-Wire Wire Line
-	1800 1150 1800 1300
-Wire Wire Line
-	2450 1750 1800 1750
-Connection ~ 1800 1750
-Wire Wire Line
-	2750 1950 2750 2350
-Wire Wire Line
-	2300 2350 2750 2350
-Connection ~ 2750 2350
-Connection ~ 1800 1150
-Wire Wire Line
-	1800 1600 1800 1750
-Connection ~ 2750 1150
-Wire Wire Line
-	3550 1150 3550 1350
-Wire Wire Line
-	1800 2800 1800 3000
-Wire Wire Line
-	2750 1150 2750 1550
-Wire Wire Line
-	1800 3000 2250 3000
-Wire Wire Line
-	2250 3100 2250 3000
-Connection ~ 2250 3000
-Wire Wire Line
-	2750 3000 2750 2900
-Wire Wire Line
 	9600 1100 9600 1300
 Wire Wire Line
 	9600 1300 9300 1300
@@ -275,29 +156,17 @@ Wire Wire Line
 	3250 4300 3500 4300
 Wire Wire Line
 	3500 5850 3250 5850
-Wire Wire Line
-	3100 2350 3100 2200
 $Comp
 L i2c_pancake-rescue:Fuse-device F1
 U 1 1 5ACB8796
-P 1450 1150
-F 0 "F1" V 1530 1150 50  0000 C CNN
-F 1 "Fuse" V 1375 1150 50  0000 C CNN
-F 2 "Fuse:Fuse_1206_3216Metric_Pad1.24x1.80mm_HandSolder" V 1380 1150 50  0001 C CNN
-F 3 "" H 1450 1150 50  0001 C CNN
-	1    1450 1150
+P 1150 1200
+F 0 "F1" V 1230 1200 50  0000 C CNN
+F 1 "Fuse" V 1075 1200 50  0000 C CNN
+F 2 "Fuse:Fuse_1206_3216Metric_Pad1.24x1.80mm_HandSolder" V 1080 1200 50  0001 C CNN
+F 3 "" H 1150 1200 50  0001 C CNN
+	1    1150 1200
 	0    1    1    0   
 $EndComp
-Wire Wire Line
-	1800 1750 1800 1900
-Wire Wire Line
-	2750 2350 2750 2600
-Wire Wire Line
-	2750 2350 3100 2350
-Wire Wire Line
-	2750 1150 3550 1150
-Wire Wire Line
-	2250 3000 2750 3000
 $Comp
 L Switch:SW_DIP_x04 SW1
 U 1 1 5E6A7DF5
@@ -750,8 +619,6 @@ F 3 "" H 9600 1950 50  0001 C CNN
 	1    9600 1950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	1800 1150 2750 1150
 $Sheet
 S 4350 5550 1950 1250
 U 5E82A218
@@ -785,10 +652,10 @@ Wire Wire Line
 Wire Wire Line
 	6500 1050 6500 1750
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 5EA9B7AB
 P 6900 2450
-F 0 "#PWR?" H 6900 2200 50  0001 C CNN
+F 0 "#PWR017" H 6900 2200 50  0001 C CNN
 F 1 "GND" H 6905 2277 50  0000 C CNN
 F 2 "" H 6900 2450 50  0001 C CNN
 F 3 "" H 6900 2450 50  0001 C CNN
@@ -819,18 +686,119 @@ Wire Wire Line
 	4450 3450 5350 3450
 Connection ~ 4450 3450
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR01
 U 1 1 5EAED0B5
-P 1150 1000
-F 0 "#PWR?" H 1150 850 50  0001 C CNN
-F 1 "+12V" H 1165 1173 50  0000 C CNN
-F 2 "" H 1150 1000 50  0001 C CNN
-F 3 "" H 1150 1000 50  0001 C CNN
-	1    1150 1000
+P 750 1050
+F 0 "#PWR01" H 750 900 50  0001 C CNN
+F 1 "+12V" H 765 1223 50  0000 C CNN
+F 2 "" H 750 1050 50  0001 C CNN
+F 3 "" H 750 1050 50  0001 C CNN
+	1    750  1050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1150 1000 1150 1150
+	750  1050 750  1200
+$Comp
+L tlv750m10:TL750M05CKVURG3 U2
+U 1 1 5EAA14FA
+P 2150 1200
+F 0 "U2" H 3150 1587 60  0000 C CNN
+F 1 "TL750M10CKVU" H 3150 1481 60  0000 C CNN
+F 2 "KVU3" H 3150 1440 60  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/tl750m.pdf?ts=1588185394744" H 3150 1481 60  0001 C CNN
+	1    2150 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 5EAA7F83
+P 1950 1950
+F 0 "#PWR03" H 1950 1700 50  0001 C CNN
+F 1 "GND" H 1955 1777 50  0000 C CNN
+F 2 "" H 1950 1950 50  0001 C CNN
+F 3 "" H 1950 1950 50  0001 C CNN
+	1    1950 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR02
+U 1 1 5EAA88AD
+P 1500 1950
+F 0 "#PWR02" H 1500 1700 50  0001 C CNN
+F 1 "GND" H 1505 1777 50  0000 C CNN
+F 2 "" H 1500 1950 50  0001 C CNN
+F 3 "" H 1500 1950 50  0001 C CNN
+	1    1500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR04
+U 1 1 5EAA8E28
+P 4500 1950
+F 0 "#PWR04" H 4500 1700 50  0001 C CNN
+F 1 "GND" H 4505 1777 50  0000 C CNN
+F 2 "" H 4500 1950 50  0001 C CNN
+F 3 "" H 4500 1950 50  0001 C CNN
+	1    4500 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C1
+U 1 1 5EAAE718
+P 1500 1700
+F 0 "C1" H 1615 1746 50  0000 L CNN
+F 1 "0.1 uF" H 1615 1655 50  0000 L CNN
+F 2 "" H 1500 1700 50  0001 C CNN
+F 3 "~" H 1500 1700 50  0001 C CNN
+	1    1500 1700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C3
+U 1 1 5EAAF20A
+P 4500 1700
+F 0 "C3" H 4615 1746 50  0000 L CNN
+F 1 "10 uF" H 4615 1655 50  0000 L CNN
+F 2 "" H 4500 1700 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
 Wire Wire Line
-	1150 1150 1300 1150
+	750  1200 1000 1200
+Wire Wire Line
+	1300 1200 1500 1200
+Wire Wire Line
+	1500 1550 1500 1200
+Connection ~ 1500 1200
+Wire Wire Line
+	1500 1200 2150 1200
+Wire Wire Line
+	1500 1850 1500 1950
+Wire Wire Line
+	1950 1400 1950 1950
+Wire Wire Line
+	1950 1400 2150 1400
+Wire Wire Line
+	4500 1850 4500 1950
+Wire Wire Line
+	4150 1200 4500 1200
+Wire Wire Line
+	4500 1200 4500 1550
+$Comp
+L power:+10V #PWR016
+U 1 1 5EAD0FFF
+P 4850 1000
+F 0 "#PWR016" H 4850 850 50  0001 C CNN
+F 1 "+10V" H 4865 1173 50  0000 C CNN
+F 2 "" H 4850 1000 50  0001 C CNN
+F 3 "" H 4850 1000 50  0001 C CNN
+	1    4850 1000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4500 1200 4850 1200
+Wire Wire Line
+	4850 1200 4850 1000
+Connection ~ 4500 1200
 $EndSCHEMATC

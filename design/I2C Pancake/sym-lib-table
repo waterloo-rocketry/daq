@@ -4,4 +4,5 @@
   (lib (name daq_components)(type Legacy)(uri /Users/alexm/dev/daq/lib/daq_components.lib)(options "")(descr ""))
   (lib (name i2c_pancake-rescue)(type Legacy)(uri ${KIPRJMOD}/i2c_pancake-rescue.lib)(options "")(descr ""))
   (lib (name rlcsv3_modular-rescue)(type Legacy)(uri ${KIPRJMOD}/rlcsv3_modular-rescue.lib)(options "")(descr ""))
+  (lib (name tlv750m10)(type Legacy)(uri ${KIPRJMOD}/tlv750m10.lib)(options "")(descr ""))
 )
