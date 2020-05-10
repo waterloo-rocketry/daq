@@ -1,1 +1,64 @@
-2936
+0
+custom
+PIC16F1826-ISO
+http://www.ti.com/lit/ds/symlink/uln2803a.pdf
+
+0
+18
+18
+footprints
+2.54mm_pitch_1.3mm_hole_1x3_socket
+Through hole straight socket strip, 1x03, 2.54mm pitch, single row
+Through hole socket strip THT 1x03 2.54mm single row
+0
+3
+3
+footprints
+C_0805_HandSoldering
+Capacitor SMD 0805, hand soldering
+capacitor 0805
+0
+2
+2
+footprints
+DIP_SWITCH_4X2
+http://media.digikey.com/pdf/Data%20Sheets/Lite-On%20PDFs/6N137%20Series.pdf
+
+0
+8
+8
+footprints
+PinHeader_5x2.54_SMD_90deg_952-3198-1-ND
+
+
+0
+5
+5
+footprints
+R_0805_HandSoldering
+Resistor SMD 0805, hand soldering
+resistor 0805
+0
+2
+2
+footprints
+SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering
+8-Lead Plastic Small Outline (SN) - Narrow, 3.90 mm Body [SOIC] (see Microchip Packaging Specification 00000049BS.pdf)
+SOIC 1.27
+0
+8
+8
+footprints
+TL750M10CKVU
+
+
+0
+3
+3
+footprints
+rocketry_logo_small_noletters
+
+
+0
+0
+0

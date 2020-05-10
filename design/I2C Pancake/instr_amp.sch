@@ -25,7 +25,7 @@ AR Path="/5ACB084A/5ACAFA52" Ref="U6"  Part="1"
 AR Path="/5E82A218/5ACAFA52" Ref="U1"  Part="1" 
 F 0 "U1" H 5700 4400 60  0000 C CNN
 F 1 "INA826" H 5900 3800 60  0000 C CNN
-F 2 "strain_gauge_Footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering" H 6050 3800 60  0001 C CNN
+F 2 "footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering" H 6050 3800 60  0001 C CNN
 F 3 "" H 6050 3800 60  0001 C CNN
 	1    5900 4100
 	1    0    0    -1  
@@ -97,7 +97,7 @@ AR Path="/5ACB084A/5ACAFBC2" Ref="R12"  Part="1"
 AR Path="/5E82A218/5ACAFBC2" Ref="R2"  Part="1" 
 F 0 "R2" V 5080 4100 50  0000 C CNN
 F 1 "R" V 5000 4100 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 4930 4100 50  0001 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 4930 4100 50  0001 C CNN
 F 3 "" H 5000 4100 50  0001 C CNN
 	1    5000 4100
 	-1   0    0    1   
@@ -157,7 +157,7 @@ AR Path="/5ACB084A/5ACAFF7B" Ref="C8"  Part="1"
 AR Path="/5E82A218/5ACAFF7B" Ref="C2"  Part="1" 
 F 0 "C2" V 6650 3750 50  0000 L CNN
 F 1 "0.1uF" V 6550 3750 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0805_HandSoldering" H 6638 3550 50  0001 C CNN
+F 2 "footprints:C_0805_HandSoldering" H 6638 3550 50  0001 C CNN
 F 3 "" H 6600 3700 50  0001 C CNN
 	1    6600 3700
 	0    1    1    0   
@@ -227,7 +227,7 @@ AR Path="/5ACB084A/5ACB2059" Ref="R13"  Part="1"
 AR Path="/5E82A218/5ACB2059" Ref="R4"  Part="1" 
 F 0 "R4" V 6450 4300 50  0000 C CNN
 F 1 "0" V 6500 4150 50  0000 C CNN
-F 2 "Resistors_SMD:R_0805_HandSoldering" V 6430 4150 50  0001 C CNN
+F 2 "footprints:R_0805_HandSoldering" V 6430 4150 50  0001 C CNN
 F 3 "" H 6500 4150 50  0001 C CNN
 	1    6500 4150
 	0    1    1    0   
