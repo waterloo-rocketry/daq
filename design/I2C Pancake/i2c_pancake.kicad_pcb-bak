@@ -563,7 +563,7 @@
   )
 
   (module TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal (layer F.Cu) (tedit 5B294EE5) (tstamp 5ED49761)
-    (at 121.754 129.053)
+    (at 122.154 128.953)
     (descr "Terminal Block Phoenix MKDS-1,5-3, 3 pins, pitch 5mm, size 15x9.8mm^2, drill diamater 1.3mm, pad diameter 2.6mm, see http://www.farnell.com/datasheets/100425.pdf, script-generated using https://github.com/pointhi/kicad-footprint-generator/scripts/TerminalBlock_Phoenix")
     (tags "THT Terminal Block Phoenix MKDS-1,5-3 pitch 5mm size 15x9.8mm^2 drill 1.3mm pad 2.6mm")
     (path /5ACAED9B)
@@ -1096,8 +1096,8 @@
       (xy -2.425369 3.884831) (xy -2.333861 3.865468) (xy -2.259215 3.8608) (xy -2.17258 3.86833)) (layer F.SilkS) (width 0.01))
   )
 
-  (module Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal (layer F.Cu) (tedit 5C281476) (tstamp 5ED49F33)
-    (at 148.254 97.553 180)
+  (module Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal (layer F.Cu) (tedit 5C281476) (tstamp 5EE6B43E)
+    (at 148.554 97.553 180)
     (descr "JST XH series connector, S5B-XH-A-1 (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
     (tags "connector JST XH horizontal")
     (path /5E6D4C90)
@@ -1175,7 +1175,7 @@
   )
 
   (module Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal (layer F.Cu) (tedit 5C281476) (tstamp 5EE6AFE3)
-    (at 138.254 126.053)
+    (at 138.554 125.953)
     (descr "JST XH series connector, S5B-XH-A-1 (http://www.jst-mfg.com/product/pdf/eng/eXH.pdf), generated with kicad-footprint-generator")
     (tags "connector JST XH horizontal")
     (path /5E6D41B6)
