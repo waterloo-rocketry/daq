@@ -41,7 +41,7 @@ AR Path="/5ACB084A/5ACAFAD2" Ref="J7"  Part="1"
 AR Path="/5E82A218/5ACAFAD2" Ref="J6"  Part="1" 
 F 0 "J6" H 4750 3350 50  0000 C CNN
 F 1 "Conn_01x04" H 4750 2850 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_4-G-3.5_1x04_P3.50mm_Vertical" H 4750 3150 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 4750 3150 50  0001 C CNN
 F 3 "" H 4750 3150 50  0001 C CNN
 	1    4750 3150
 	-1   0    0    -1  

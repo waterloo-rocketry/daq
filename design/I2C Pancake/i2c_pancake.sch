@@ -20,7 +20,7 @@ U 1 1 5ACAED9B
 P 9100 1400
 F 0 "J1" H 9100 1600 50  0000 C CNN
 F 1 "Conn_01x03" V 9200 1400 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 9100 1400 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 9100 1400 50  0001 C CNN
 F 3 "" H 9100 1400 50  0001 C CNN
 	1    9100 1400
 	-1   0    0    1   
@@ -42,7 +42,7 @@ U 1 1 5ACAEDA8
 P 9100 2250
 F 0 "J2" H 9100 2450 50  0000 C CNN
 F 1 "Conn_01x03" V 9200 2250 50  0000 C CNN
-F 2 "Connector_Phoenix_MC:PhoenixContact_MCV_1,5_3-G-3.5_1x03_P3.50mm_Vertical" H 9100 2250 50  0001 C CNN
+F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal" H 9100 2250 50  0001 C CNN
 F 3 "" H 9100 2250 50  0001 C CNN
 	1    9100 2250
 	-1   0    0    1   
@@ -381,7 +381,7 @@ U 1 1 5E6D41B6
 P 5900 1550
 F 0 "J3" H 5550 1750 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 5550 1650 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S5B-EH_1x05_P2.50mm_Horizontal" H 5900 1550 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal" H 5900 1550 50  0001 C CNN
 F 3 "~" H 5900 1550 50  0001 C CNN
 	1    5900 1550
 	1    0    0    -1  
@@ -392,7 +392,7 @@ U 1 1 5E6D4C90
 P 5900 2050
 F 0 "J7" H 5550 2150 50  0000 C CNN
 F 1 "Conn_01x05_Male" H 5550 2050 50  0000 C CNN
-F 2 "Connector_JST:JST_EH_S5B-EH_1x05_P2.50mm_Horizontal" H 5900 2050 50  0001 C CNN
+F 2 "Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal" H 5900 2050 50  0001 C CNN
 F 3 "~" H 5900 2050 50  0001 C CNN
 	1    5900 2050
 	1    0    0    -1  
@@ -640,7 +640,7 @@ U 1 1 5E6C4A64
 P 7400 4150
 F 0 "D1" V 7439 4033 50  0000 R CNN
 F 1 "LED" V 7348 4033 50  0000 R CNN
-F 2 "Diode_SMD:D_MicroMELF_Hadsoldering" H 7400 4150 50  0001 C CNN
+F 2 "LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder" H 7400 4150 50  0001 C CNN
 F 3 "~" H 7400 4150 50  0001 C CNN
 	1    7400 4150
 	0    -1   -1   0   
