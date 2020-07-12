@@ -1,28 +1,4 @@
-Cmp-Mod V01 Created by PcbNew   date = 05-Jul-2020 13:02:45
-
-BeginCmp
-TimeStamp = 5ED46352
-Path = /5EAAF20A
-Reference = C3;
-ValeurCmp = 10 uF;
-IdModule  = footprints:C_0805_HandSoldering;
-EndCmp
-
-BeginCmp
-TimeStamp = 5ED463AF
-Path = /5ACB8796
-Reference = F1;
-ValeurCmp = Fuse;
-IdModule  = Fuse:Fuse_1206_3216Metric_Pad1.42x1.75mm_HandSolder;
-EndCmp
-
-BeginCmp
-TimeStamp = 5ED45F98
-Path = /5EAA14FA
-Reference = U2;
-ValeurCmp = KVU3;
-IdModule  = footprints:TL750M10CKVU;
-EndCmp
+Cmp-Mod V01 Created by PcbNew   date = 14-Jun-2020 17:17:27
 
 BeginCmp
 TimeStamp = 5ED44DC1
@@ -73,7 +49,7 @@ IdModule  = custom:rocketry_logo_small;
 EndCmp
 
 BeginCmp
-TimeStamp = 5EE6B43E
+TimeStamp = 5ED49F33
 Path = /5E6D4C90
 Reference = J7;
 ValeurCmp = Conn_01x05_Male;
@@ -81,7 +57,7 @@ IdModule  = Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal;
 EndCmp
 
 BeginCmp
-TimeStamp = 5EE6AFE3
+TimeStamp = 5ED4647E
 Path = /5E6D41B6
 Reference = J3;
 ValeurCmp = Conn_01x05_Male;
@@ -94,6 +70,14 @@ Path = /5E6C4A64
 Reference = D1;
 ValeurCmp = LED;
 IdModule  = LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED45F98
+Path = /5EAA14FA
+Reference = U2;
+ValeurCmp = KVU3;
+IdModule  = footprints:TL750M10CKVU;
 EndCmp
 
 BeginCmp
@@ -121,6 +105,14 @@ IdModule  = MountingHole:MountingHole_3.2mm_M3_Pad;
 EndCmp
 
 BeginCmp
+TimeStamp = 5ED463AF
+Path = /5ACB8796
+Reference = F1;
+ValeurCmp = Fuse;
+IdModule  = custom:littlefuse_01000020Z;
+EndCmp
+
+BeginCmp
 TimeStamp = 5ED46776
 Path = /5E74C816
 Reference = U6;
@@ -137,7 +129,7 @@ IdModule  = footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = 5EE6ABFD
+TimeStamp = 5ED4673E
 Path = /5ACAF8FB/5ACAFA52
 Reference = U3;
 ValeurCmp = INA826;
@@ -289,7 +281,7 @@ IdModule  = footprints:C_0805_HandSoldering;
 EndCmp
 
 BeginCmp
-TimeStamp = 5EE6AB75
+TimeStamp = 5ED46374
 Path = /5ACB06D8/5ACAFF7B
 Reference = C6;
 ValeurCmp = 0.1uF;
@@ -302,6 +294,14 @@ Path = /5ACAF8FB/5ACAFF7B
 Reference = C5;
 ValeurCmp = 0.1uF;
 IdModule  = footprints:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46352
+Path = /5EAAF20A
+Reference = C3;
+ValeurCmp = 10 uF;
+IdModule  = Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm;
 EndCmp
 
 BeginCmp
