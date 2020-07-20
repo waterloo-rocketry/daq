@@ -172,11 +172,11 @@ X ~ 8 300 200 200 L 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_C-device
+# i2c_pancake-rescue_C-device-i2c_pancake-rescue
 #
-DEF i2c_pancake-rescue_C-device C 0 10 N Y 1 F N
+DEF i2c_pancake-rescue_C-device-i2c_pancake-rescue C 0 10 N Y 1 F N
 F0 "C" 25 100 50 H V L CNN
-F1 "i2c_pancake-rescue_C-device" 25 -100 50 H V L CNN
+F1 "i2c_pancake-rescue_C-device-i2c_pancake-rescue" 25 -100 50 H V L CNN
 F2 "" 38 -150 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -190,11 +190,11 @@ X ~ 2 0 -150 110 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue
+# i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue-i2c_pancake-rescue
 #
-DEF i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
+DEF i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue-i2c_pancake-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue" 0 -200 50 H V C CNN
+F1 "i2c_pancake-rescue_Conn_01x03-strain_gauges_rtr-rescue-i2c_pancake-rescue" 0 -200 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -216,11 +216,11 @@ X Pin_3 3 -200 -100 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue
+# i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue
 #
-DEF i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue J 0 40 Y N 1 F N
+DEF i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue J 0 40 Y N 1 F N
 F0 "J" 0 200 50 H V C CNN
-F1 "i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue" 0 -300 50 H V C CNN
+F1 "i2c_pancake-rescue_Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue" 0 -300 50 H V C CNN
 F2 "" 0 0 50 H I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -244,11 +244,11 @@ X Pin_4 4 -200 -200 150 R 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_Fuse-device
+# i2c_pancake-rescue_Fuse-device-i2c_pancake-rescue
 #
-DEF i2c_pancake-rescue_Fuse-device F 0 0 N Y 1 F N
+DEF i2c_pancake-rescue_Fuse-device-i2c_pancake-rescue F 0 0 N Y 1 F N
 F0 "F" 80 0 50 V V C CNN
-F1 "i2c_pancake-rescue_Fuse-device" -75 0 50 V V C CNN
+F1 "i2c_pancake-rescue_Fuse-device-i2c_pancake-rescue" -75 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -262,11 +262,11 @@ X ~ 2 0 -150 50 U 50 50 1 1 P
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_INA826-daq_components
+# i2c_pancake-rescue_INA826-daq_components-i2c_pancake-rescue
 #
-DEF i2c_pancake-rescue_INA826-daq_components U 0 40 Y Y 1 F N
+DEF i2c_pancake-rescue_INA826-daq_components-i2c_pancake-rescue U 0 40 Y Y 1 F N
 F0 "U" -200 300 60 H V C CNN
-F1 "i2c_pancake-rescue_INA826-daq_components" 0 -300 60 H V C CNN
+F1 "i2c_pancake-rescue_INA826-daq_components-i2c_pancake-rescue" 0 -300 60 H V C CNN
 F2 "" 150 -300 60 H I C CNN
 F3 "" 150 -300 60 H I C CNN
 DRAW
@@ -282,11 +282,41 @@ X +VS 8 450 150 200 L 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #
-# i2c_pancake-rescue_R-device
+# i2c_pancake-rescue_PIC16F1826-ISO-rlcsv3_modular-rescue
 #
-DEF i2c_pancake-rescue_R-device R 0 0 N Y 1 F N
+DEF i2c_pancake-rescue_PIC16F1826-ISO-rlcsv3_modular-rescue U 0 40 Y Y 1 F N
+F0 "U" 0 450 60 H V C CNN
+F1 "i2c_pancake-rescue_PIC16F1826-ISO-rlcsv3_modular-rescue" 0 550 60 H V C CNN
+F2 "" 0 450 60 H I C CNN
+F3 "" 0 450 60 H I C CNN
+DRAW
+S -400 400 400 -1100 0 1 0 N
+X RA2 1 -500 250 100 R 50 50 1 1 I
+X RB4 10 500 -200 100 L 50 50 1 1 I
+X RB5 11 500 -350 100 L 50 50 1 1 I
+X ICSPCLK 12 500 -650 100 L 50 50 1 1 I
+X ICSPDAT 13 500 -500 100 L 50 50 1 1 I
+X VDD 14 500 -800 100 L 50 50 1 1 I
+X RA6 15 -500 -500 100 R 50 50 1 1 I
+X RA5 16 -500 -350 100 R 50 50 1 1 I
+X RA0 17 500 100 100 L 50 50 1 1 I
+X RA1 18 500 250 100 L 50 50 1 1 I
+X RA3 2 -500 -50 100 R 50 50 1 1 I
+X RA4 3 -500 -200 100 R 50 50 1 1 I
+X ~MCLR 4 -500 100 100 R 50 50 1 1 I
+X VSS 5 500 -950 100 L 50 50 1 1 I
+X RB0 6 -500 -650 100 R 50 50 1 1 I
+X RB1 7 500 -50 100 L 50 50 1 1 I
+X RB2 8 -500 -800 100 R 50 50 1 1 I
+X RB3 9 -500 -950 100 R 50 50 1 1 I
+ENDDRAW
+ENDDEF
+#
+# i2c_pancake-rescue_R-device-i2c_pancake-rescue
+#
+DEF i2c_pancake-rescue_R-device-i2c_pancake-rescue R 0 0 N Y 1 F N
 F0 "R" 80 0 50 V V C CNN
-F1 "i2c_pancake-rescue_R-device" 0 0 50 V V C CNN
+F1 "i2c_pancake-rescue_R-device-i2c_pancake-rescue" 0 0 50 V V C CNN
 F2 "" -70 0 50 V I C CNN
 F3 "" 0 0 50 H I C CNN
 $FPLIST
@@ -354,36 +384,6 @@ F3 "" 0 0 50 H I C CNN
 DRAW
 P 6 0 1 0 0 0 0 -50 50 -50 0 -100 -50 -50 0 -50 N
 X GND 1 0 0 0 D 50 50 1 1 W N
-ENDDRAW
-ENDDEF
-#
-# rlcsv3_modular-rescue_PIC16F1826-ISO
-#
-DEF rlcsv3_modular-rescue_PIC16F1826-ISO U 0 40 Y Y 1 F N
-F0 "U" 0 450 60 H V C CNN
-F1 "rlcsv3_modular-rescue_PIC16F1826-ISO" 0 550 60 H V C CNN
-F2 "" 0 450 60 H I C CNN
-F3 "" 0 450 60 H I C CNN
-DRAW
-S -400 400 400 -1100 0 1 0 N
-X RA2 1 -500 250 100 R 50 50 1 1 I
-X RB4 10 500 -200 100 L 50 50 1 1 I
-X RB5 11 500 -350 100 L 50 50 1 1 I
-X ICSPCLK 12 500 -650 100 L 50 50 1 1 I
-X ICSPDAT 13 500 -500 100 L 50 50 1 1 I
-X VDD 14 500 -800 100 L 50 50 1 1 I
-X RA6 15 -500 -500 100 R 50 50 1 1 I
-X RA5 16 -500 -350 100 R 50 50 1 1 I
-X RA0 17 500 100 100 L 50 50 1 1 I
-X RA1 18 500 250 100 L 50 50 1 1 I
-X RA3 2 -500 -50 100 R 50 50 1 1 I
-X RA4 3 -500 -200 100 R 50 50 1 1 I
-X ~MCLR 4 -500 100 100 R 50 50 1 1 I
-X VSS 5 500 -950 100 L 50 50 1 1 I
-X RB0 6 -500 -650 100 R 50 50 1 1 I
-X RB1 7 500 -50 100 L 50 50 1 1 I
-X RB2 8 -500 -800 100 R 50 50 1 1 I
-X RB3 9 -500 -950 100 R 50 50 1 1 I
 ENDDRAW
 ENDDEF
 #

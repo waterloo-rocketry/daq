@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L i2c_pancake-rescue:INA826-daq_components U3
+L i2c_pancake-rescue:INA826-daq_components-i2c_pancake-rescue U3
 U 1 1 5ACAFA52
 P 5900 4100
 AR Path="/5ACAF8FB/5ACAFA52" Ref="U3"  Part="1" 
@@ -31,7 +31,7 @@ F 3 "" H 6050 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x04-strain_gauges_rtr-rescue J4
+L i2c_pancake-rescue:Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue J4
 U 1 1 5ACAFAD2
 P 4750 3150
 AR Path="/5ACAF8FB/5ACAFAD2" Ref="J4"  Part="1" 
@@ -87,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3350 4950 3350
 $Comp
-L i2c_pancake-rescue:R-device R6
+L i2c_pancake-rescue:R-device-i2c_pancake-rescue R6
 U 1 1 5ACAFBC2
 P 5000 4100
 AR Path="/5ACAF8FB/5ACAFBC2" Ref="R6"  Part="1" 
@@ -147,7 +147,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 3950 6350 3950
 $Comp
-L i2c_pancake-rescue:C-device C5
+L i2c_pancake-rescue:C-device-i2c_pancake-rescue C5
 U 1 1 5ACAFF7B
 P 6600 3700
 AR Path="/5ACAF8FB/5ACAFF7B" Ref="C5"  Part="1" 
@@ -155,6 +155,7 @@ AR Path="/5ACB06D8/5ACAFF7B" Ref="C6"  Part="1"
 AR Path="/5ACB07B8/5ACAFF7B" Ref="C7"  Part="1" 
 AR Path="/5ACB084A/5ACAFF7B" Ref="C8"  Part="1" 
 AR Path="/5E82A218/5ACAFF7B" Ref="C2"  Part="1" 
+AR Path="/5ACAFF7B" Ref="C2"  Part="1" 
 F 0 "C2" V 6650 3750 50  0000 L CNN
 F 1 "0.1uF" V 6550 3750 50  0000 L CNN
 F 2 "footprints:C_0805_HandSoldering" H 6638 3550 50  0001 C CNN
@@ -217,7 +218,7 @@ To DAQ
 Text Notes 3500 4200 0    60   ~ 0
 G = 1 + 49.4K/RG
 $Comp
-L i2c_pancake-rescue:R-device R7
+L i2c_pancake-rescue:R-device-i2c_pancake-rescue R7
 U 1 1 5ACB2059
 P 6500 4150
 AR Path="/5ACAF8FB/5ACB2059" Ref="R7"  Part="1" 

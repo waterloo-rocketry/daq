@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue J1
+L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue-i2c_pancake-rescue J1
 U 1 1 5ACAED9B
 P 9100 1400
 F 0 "J1" H 9100 1600 50  0000 C CNN
@@ -37,7 +37,7 @@ F 3 "" H 9950 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue J2
+L i2c_pancake-rescue:Conn_01x03-strain_gauges_rtr-rescue-i2c_pancake-rescue J2
 U 1 1 5ACAEDA8
 P 9100 2250
 F 0 "J2" H 9100 2450 50  0000 C CNN
@@ -70,7 +70,7 @@ F 3 "" H 4500 3850 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:R-device R3
+L i2c_pancake-rescue:R-device-i2c_pancake-rescue R3
 U 1 1 5ACAEDCA
 P 4500 4000
 F 0 "R3" V 4580 4000 50  0000 C CNN
@@ -81,7 +81,7 @@ F 3 "" H 4500 4000 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:R-device R5
+L i2c_pancake-rescue:R-device-i2c_pancake-rescue R5
 U 1 1 5ACAEDD1
 P 4500 4350
 F 0 "R5" V 4580 4350 50  0000 C CNN
@@ -157,7 +157,7 @@ Wire Wire Line
 Wire Wire Line
 	3500 5850 3250 5850
 $Comp
-L i2c_pancake-rescue:Fuse-device F1
+L i2c_pancake-rescue:Fuse-device-i2c_pancake-rescue F1
 U 1 1 5ACB8796
 P 1150 1200
 F 0 "F1" V 1230 1200 50  0000 C CNN
@@ -457,7 +457,7 @@ Text Label 7450 1850 0    50   ~ 0
 SDA
 Connection ~ 4500 4200
 $Comp
-L rlcsv3_modular-rescue:PIC16F1826-ISO U6
+L i2c_pancake-rescue:PIC16F1826-ISO-rlcsv3_modular-rescue U6
 U 1 1 5E74C816
 P 5850 3550
 F 0 "U6" H 5850 4000 60  0000 C CNN
