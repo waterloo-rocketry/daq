@@ -753,17 +753,6 @@ F 3 "~" H 1500 1700 50  0001 C CNN
 	1    1500 1700
 	1    0    0    -1  
 $EndComp
-$Comp
-L Device:C C3
-U 1 1 5EAAF20A
-P 4500 1700
-F 0 "C3" H 4615 1746 50  0000 L CNN
-F 1 "10 uF" H 4615 1655 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4500 1700 50  0001 C CNN
-F 3 "~" H 4500 1700 50  0001 C CNN
-	1    4500 1700
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	750  1200 1000 1200
 Wire Wire Line
@@ -803,4 +792,15 @@ Wire Wire Line
 Connection ~ 4500 1200
 Text Notes 1000 2600 0    50   ~ 0
 Fuse:\nLittlefuse 0805L010\nExpected Current: 40 mA\nTrip Current: 300 mA
+$Comp
+L Device:C C3
+U 1 1 5EAAF20A
+P 4500 1700
+F 0 "C3" H 4615 1746 50  0000 L CNN
+F 1 "10 uF" H 4615 1655 50  0000 L CNN
+F 2 "footprints:C_0805_HandSoldering" H 4500 1700 50  0001 C CNN
+F 3 "~" H 4500 1700 50  0001 C CNN
+	1    4500 1700
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
