@@ -1,4 +1,4 @@
-update=20-Jul-2020 11:33:05
+update=22-Aug-2020 21:10:57
 version=1
 last_client=kicad
 [cvpcb]
@@ -235,6 +235,17 @@ Enabled=0
 [pcbnew/Netclasses/Default]
 Name=Default
 Clearance=0.254
+TrackWidth=0.2032
+ViaDiameter=0.762
+ViaDrill=0.4191
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2032
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/1]
+Name=I2c
+Clearance=0.508
 TrackWidth=0.2032
 ViaDiameter=0.762
 ViaDrill=0.4191

@@ -743,7 +743,7 @@ F 3 "" H 4500 1950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C1
+L Device:C C1
 U 1 1 5EAAE718
 P 1500 1700
 F 0 "C1" H 1615 1746 50  0000 L CNN
@@ -754,7 +754,7 @@ F 3 "~" H 1500 1700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:CP1 C3
+L Device:C C3
 U 1 1 5EAAF20A
 P 4500 1700
 F 0 "C3" H 4615 1746 50  0000 L CNN
