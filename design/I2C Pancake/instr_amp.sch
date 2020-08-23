@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 4 4
+Sheet 3 4
 Title ""
 Date ""
 Rev ""
@@ -23,7 +23,7 @@ AR Path="/5ACB06D8/5ACAFA52" Ref="U4"  Part="1"
 AR Path="/5ACB07B8/5ACAFA52" Ref="U5"  Part="1" 
 AR Path="/5ACB084A/5ACAFA52" Ref="U6"  Part="1" 
 AR Path="/5E82A218/5ACAFA52" Ref="U1"  Part="1" 
-F 0 "U1" H 5700 4400 60  0000 C CNN
+F 0 "U4" H 5700 4400 60  0000 C CNN
 F 1 "INA826" H 5900 3800 60  0000 C CNN
 F 2 "footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering" H 6050 3800 60  0001 C CNN
 F 3 "" H 6050 3800 60  0001 C CNN
@@ -39,7 +39,7 @@ AR Path="/5ACB06D8/5ACAFAD2" Ref="J5"  Part="1"
 AR Path="/5ACB07B8/5ACAFAD2" Ref="J6"  Part="1" 
 AR Path="/5ACB084A/5ACAFAD2" Ref="J7"  Part="1" 
 AR Path="/5E82A218/5ACAFAD2" Ref="J6"  Part="1" 
-F 0 "J6" H 4750 3350 50  0000 C CNN
+F 0 "J5" H 4750 3350 50  0000 C CNN
 F 1 "Conn_01x04" H 4750 2850 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 4750 3150 50  0001 C CNN
 F 3 "" H 4750 3150 50  0001 C CNN
@@ -95,7 +95,7 @@ AR Path="/5ACB06D8/5ACAFBC2" Ref="R8"  Part="1"
 AR Path="/5ACB07B8/5ACAFBC2" Ref="R10"  Part="1" 
 AR Path="/5ACB084A/5ACAFBC2" Ref="R12"  Part="1" 
 AR Path="/5E82A218/5ACAFBC2" Ref="R2"  Part="1" 
-F 0 "R2" V 5080 4100 50  0000 C CNN
+F 0 "R8" V 5080 4100 50  0000 C CNN
 F 1 "R" V 5000 4100 50  0000 C CNN
 F 2 "footprints:R_0805_HandSoldering" V 4930 4100 50  0001 C CNN
 F 3 "" H 5000 4100 50  0001 C CNN
@@ -156,7 +156,7 @@ AR Path="/5ACB07B8/5ACAFF7B" Ref="C7"  Part="1"
 AR Path="/5ACB084A/5ACAFF7B" Ref="C8"  Part="1" 
 AR Path="/5E82A218/5ACAFF7B" Ref="C2"  Part="1" 
 AR Path="/5ACAFF7B" Ref="C2"  Part="1" 
-F 0 "C2" V 6650 3750 50  0000 L CNN
+F 0 "C6" V 6650 3750 50  0000 L CNN
 F 1 "0.1uF" V 6550 3750 50  0000 L CNN
 F 2 "footprints:C_0805_HandSoldering" H 6638 3550 50  0001 C CNN
 F 3 "" H 6600 3700 50  0001 C CNN
@@ -226,7 +226,7 @@ AR Path="/5ACB06D8/5ACB2059" Ref="R9"  Part="1"
 AR Path="/5ACB07B8/5ACB2059" Ref="R11"  Part="1" 
 AR Path="/5ACB084A/5ACB2059" Ref="R13"  Part="1" 
 AR Path="/5E82A218/5ACB2059" Ref="R4"  Part="1" 
-F 0 "R4" V 6450 4300 50  0000 C CNN
+F 0 "R9" V 6450 4300 50  0000 C CNN
 F 1 "0" V 6500 4150 50  0000 C CNN
 F 2 "footprints:R_0805_HandSoldering" V 6430 4150 50  0001 C CNN
 F 3 "" H 6500 4150 50  0001 C CNN

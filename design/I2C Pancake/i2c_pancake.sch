@@ -162,7 +162,7 @@ U 1 1 5ACB8796
 P 1150 1200
 F 0 "F1" V 1230 1200 50  0000 C CNN
 F 1 "Fuse" V 1075 1200 50  0000 C CNN
-F 2 "custom:littlefuse_01000020Z" V 1080 1200 50  0001 C CNN
+F 2 "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" V 1080 1200 50  0001 C CNN
 F 3 "" H 1150 1200 50  0001 C CNN
 	1    1150 1200
 	0    1    1    0   
@@ -759,7 +759,7 @@ U 1 1 5EAAF20A
 P 4500 1700
 F 0 "C3" H 4615 1746 50  0000 L CNN
 F 1 "10 uF" H 4615 1655 50  0000 L CNN
-F 2 "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm" H 4500 1700 50  0001 C CNN
+F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.15x1.40mm_HandSolder" H 4500 1700 50  0001 C CNN
 F 3 "~" H 4500 1700 50  0001 C CNN
 	1    4500 1700
 	1    0    0    -1  
@@ -801,4 +801,6 @@ Wire Wire Line
 Wire Wire Line
 	4850 1200 4850 1000
 Connection ~ 4500 1200
+Text Notes 1000 2600 0    50   ~ 0
+Fuse:\nLittlefuse 0805L010\nExpected Current: 40 mA\nTrip Current: 300 mA
 $EndSCHEMATC
