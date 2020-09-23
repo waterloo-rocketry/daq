@@ -1,4 +1,4 @@
-update=22-Aug-2020 21:10:57
+update=21-Sep-2020 19:39:34
 version=1
 last_client=kicad
 [cvpcb]
@@ -247,6 +247,17 @@ dPairViaGap=0.25
 Name=I2c
 Clearance=0.508
 TrackWidth=0.2032
+ViaDiameter=0.762
+ViaDrill=0.4191
+uViaDiameter=0.3
+uViaDrill=0.1
+dPairWidth=0.2032
+dPairGap=0.25
+dPairViaGap=0.25
+[pcbnew/Netclasses/2]
+Name=Power
+Clearance=0.254
+TrackWidth=0.3048
 ViaDiameter=0.762
 ViaDrill=0.4191
 uViaDiameter=0.3
