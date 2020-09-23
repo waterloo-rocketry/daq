@@ -88,7 +88,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory "C:/Users/zacha/Desktop/Zachary/Rocketry/daq/"))
+      (outputdirectory "gerbers/"))
   )
 
   (net 0 "")
@@ -2993,7 +2993,7 @@
   (segment (start 155.334 117.733) (end 155.334 115.6138) (width 0.2032) (layer B.Cu) (net 37))
   (segment (start 155.334 115.6138) (end 155.334 115.4034) (width 0.2032) (layer B.Cu) (net 37))
 
-  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 1) (net_name GND) (layer In1.Cu) (tstamp 5F6B4F86) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
@@ -3433,7 +3433,7 @@
       )
     )
   )
-  (zone (net 2) (net_name +10V) (layer In2.Cu) (tstamp 0) (hatch edge 0.508)
+  (zone (net 2) (net_name +10V) (layer In2.Cu) (tstamp 5F6B4F83) (hatch edge 0.508)
     (connect_pads (clearance 0.508))
     (min_thickness 0.254)
     (fill yes (arc_segments 32) (thermal_gap 0.508) (thermal_bridge_width 0.508))
