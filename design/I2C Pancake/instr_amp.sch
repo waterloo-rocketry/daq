@@ -20,9 +20,9 @@ U 1 1 5ACAFA52
 P 5900 4100
 AR Path="/5ACAF8FB/5ACAFA52" Ref="U3"  Part="1" 
 AR Path="/5ACB06D8/5ACAFA52" Ref="U4"  Part="1" 
-AR Path="/5ACB07B8/5ACAFA52" Ref="U5"  Part="1" 
-AR Path="/5ACB084A/5ACAFA52" Ref="U6"  Part="1" 
-AR Path="/5E82A218/5ACAFA52" Ref="U1"  Part="1" 
+AR Path="/5ACB07B8/5ACAFA52" Ref="U?"  Part="1" 
+AR Path="/5ACB084A/5ACAFA52" Ref="U?"  Part="1" 
+AR Path="/5E82A218/5ACAFA52" Ref="U5"  Part="1" 
 F 0 "U3" H 5700 4400 60  0000 C CNN
 F 1 "INA826" H 5900 3800 60  0000 C CNN
 F 2 "footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering" H 6050 3800 60  0001 C CNN
@@ -31,15 +31,15 @@ F 3 "" H 6050 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue J4
+L i2c_pancake-rescue:Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue J6
 U 1 1 5ACAFAD2
 P 4750 3150
-AR Path="/5ACAF8FB/5ACAFAD2" Ref="J4"  Part="1" 
-AR Path="/5ACB06D8/5ACAFAD2" Ref="J5"  Part="1" 
-AR Path="/5ACB07B8/5ACAFAD2" Ref="J6"  Part="1" 
-AR Path="/5ACB084A/5ACAFAD2" Ref="J7"  Part="1" 
-AR Path="/5E82A218/5ACAFAD2" Ref="J6"  Part="1" 
-F 0 "J4" H 4750 3350 50  0000 C CNN
+AR Path="/5ACAF8FB/5ACAFAD2" Ref="J6"  Part="1" 
+AR Path="/5ACB06D8/5ACAFAD2" Ref="J7"  Part="1" 
+AR Path="/5ACB07B8/5ACAFAD2" Ref="J?"  Part="1" 
+AR Path="/5ACB084A/5ACAFAD2" Ref="J?"  Part="1" 
+AR Path="/5E82A218/5ACAFAD2" Ref="J8"  Part="1" 
+F 0 "J6" H 4750 3350 50  0000 C CNN
 F 1 "Conn_01x04" H 4750 2850 50  0000 C CNN
 F 2 "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal" H 4750 3150 50  0001 C CNN
 F 3 "" H 4750 3150 50  0001 C CNN
@@ -47,15 +47,15 @@ F 3 "" H 4750 3150 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+10V #PWR019
+L power:+10V #PWR027
 U 1 1 5ACAFB32
 P 5100 2900
-AR Path="/5ACAF8FB/5ACAFB32" Ref="#PWR019"  Part="1" 
-AR Path="/5ACB06D8/5ACAFB32" Ref="#PWR024"  Part="1" 
-AR Path="/5ACB07B8/5ACAFB32" Ref="#PWR029"  Part="1" 
-AR Path="/5ACB084A/5ACAFB32" Ref="#PWR034"  Part="1" 
-AR Path="/5E82A218/5ACAFB32" Ref="#PWR07"  Part="1" 
-F 0 "#PWR07" H 5100 2750 50  0001 C CNN
+AR Path="/5ACAF8FB/5ACAFB32" Ref="#PWR027"  Part="1" 
+AR Path="/5ACB06D8/5ACAFB32" Ref="#PWR033"  Part="1" 
+AR Path="/5ACB07B8/5ACAFB32" Ref="#PWR?"  Part="1" 
+AR Path="/5ACB084A/5ACAFB32" Ref="#PWR?"  Part="1" 
+AR Path="/5E82A218/5ACAFB32" Ref="#PWR039"  Part="1" 
+F 0 "#PWR027" H 5100 2750 50  0001 C CNN
 F 1 "+10V" H 5100 3040 50  0000 C CNN
 F 2 "" H 5100 2900 50  0000 C CNN
 F 3 "" H 5100 2900 50  0000 C CNN
@@ -63,15 +63,15 @@ F 3 "" H 5100 2900 50  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR020
+L power:GND #PWR028
 U 1 1 5ACAFB50
 P 5100 3500
-AR Path="/5ACAF8FB/5ACAFB50" Ref="#PWR020"  Part="1" 
-AR Path="/5ACB06D8/5ACAFB50" Ref="#PWR025"  Part="1" 
-AR Path="/5ACB07B8/5ACAFB50" Ref="#PWR030"  Part="1" 
-AR Path="/5ACB084A/5ACAFB50" Ref="#PWR035"  Part="1" 
-AR Path="/5E82A218/5ACAFB50" Ref="#PWR08"  Part="1" 
-F 0 "#PWR08" H 5100 3250 50  0001 C CNN
+AR Path="/5ACAF8FB/5ACAFB50" Ref="#PWR028"  Part="1" 
+AR Path="/5ACB06D8/5ACAFB50" Ref="#PWR034"  Part="1" 
+AR Path="/5ACB07B8/5ACAFB50" Ref="#PWR?"  Part="1" 
+AR Path="/5ACB084A/5ACAFB50" Ref="#PWR?"  Part="1" 
+AR Path="/5E82A218/5ACAFB50" Ref="#PWR040"  Part="1" 
+F 0 "#PWR028" H 5100 3250 50  0001 C CNN
 F 1 "GND" H 5100 3350 50  0000 C CNN
 F 2 "" H 5100 3500 50  0001 C CNN
 F 3 "" H 5100 3500 50  0001 C CNN
@@ -87,15 +87,15 @@ Wire Wire Line
 Wire Wire Line
 	5100 3350 4950 3350
 $Comp
-L i2c_pancake-rescue:R-device-i2c_pancake-rescue R6
+L i2c_pancake-rescue:R-device-i2c_pancake-rescue R9
 U 1 1 5ACAFBC2
 P 5000 4100
-AR Path="/5ACAF8FB/5ACAFBC2" Ref="R6"  Part="1" 
-AR Path="/5ACB06D8/5ACAFBC2" Ref="R8"  Part="1" 
-AR Path="/5ACB07B8/5ACAFBC2" Ref="R10"  Part="1" 
-AR Path="/5ACB084A/5ACAFBC2" Ref="R12"  Part="1" 
-AR Path="/5E82A218/5ACAFBC2" Ref="R2"  Part="1" 
-F 0 "R6" V 5080 4100 50  0000 C CNN
+AR Path="/5ACAF8FB/5ACAFBC2" Ref="R9"  Part="1" 
+AR Path="/5ACB06D8/5ACAFBC2" Ref="R11"  Part="1" 
+AR Path="/5ACB07B8/5ACAFBC2" Ref="R?"  Part="1" 
+AR Path="/5ACB084A/5ACAFBC2" Ref="R?"  Part="1" 
+AR Path="/5E82A218/5ACAFBC2" Ref="R13"  Part="1" 
+F 0 "R9" V 5080 4100 50  0000 C CNN
 F 1 "R" V 5000 4100 50  0000 C CNN
 F 2 "footprints:R_0805_HandSoldering" V 4930 4100 50  0001 C CNN
 F 3 "" H 5000 4100 50  0001 C CNN
@@ -127,15 +127,15 @@ Wire Wire Line
 Wire Wire Line
 	5350 3150 4950 3150
 $Comp
-L power:+10V #PWR021
+L power:+10V #PWR029
 U 1 1 5ACAFF30
 P 6450 3550
-AR Path="/5ACAF8FB/5ACAFF30" Ref="#PWR021"  Part="1" 
-AR Path="/5ACB06D8/5ACAFF30" Ref="#PWR026"  Part="1" 
-AR Path="/5ACB07B8/5ACAFF30" Ref="#PWR031"  Part="1" 
-AR Path="/5ACB084A/5ACAFF30" Ref="#PWR036"  Part="1" 
-AR Path="/5E82A218/5ACAFF30" Ref="#PWR09"  Part="1" 
-F 0 "#PWR09" H 6450 3400 50  0001 C CNN
+AR Path="/5ACAF8FB/5ACAFF30" Ref="#PWR029"  Part="1" 
+AR Path="/5ACB06D8/5ACAFF30" Ref="#PWR035"  Part="1" 
+AR Path="/5ACB07B8/5ACAFF30" Ref="#PWR?"  Part="1" 
+AR Path="/5ACB084A/5ACAFF30" Ref="#PWR?"  Part="1" 
+AR Path="/5E82A218/5ACAFF30" Ref="#PWR041"  Part="1" 
+F 0 "#PWR029" H 6450 3400 50  0001 C CNN
 F 1 "+10V" H 6450 3690 50  0000 C CNN
 F 2 "" H 6450 3550 50  0000 C CNN
 F 3 "" H 6450 3550 50  0000 C CNN
@@ -147,16 +147,16 @@ Wire Wire Line
 Wire Wire Line
 	6450 3950 6350 3950
 $Comp
-L i2c_pancake-rescue:C-device-i2c_pancake-rescue C5
+L i2c_pancake-rescue:C-device-i2c_pancake-rescue C4
 U 1 1 5ACAFF7B
 P 6600 3700
-AR Path="/5ACAF8FB/5ACAFF7B" Ref="C5"  Part="1" 
-AR Path="/5ACB06D8/5ACAFF7B" Ref="C6"  Part="1" 
-AR Path="/5ACB07B8/5ACAFF7B" Ref="C7"  Part="1" 
-AR Path="/5ACB084A/5ACAFF7B" Ref="C8"  Part="1" 
-AR Path="/5E82A218/5ACAFF7B" Ref="C2"  Part="1" 
-AR Path="/5ACAFF7B" Ref="C2"  Part="1" 
-F 0 "C5" V 6650 3750 50  0000 L CNN
+AR Path="/5ACAF8FB/5ACAFF7B" Ref="C4"  Part="1" 
+AR Path="/5ACB06D8/5ACAFF7B" Ref="C5"  Part="1" 
+AR Path="/5ACB07B8/5ACAFF7B" Ref="C?"  Part="1" 
+AR Path="/5ACB084A/5ACAFF7B" Ref="C?"  Part="1" 
+AR Path="/5E82A218/5ACAFF7B" Ref="C6"  Part="1" 
+AR Path="/5ACAFF7B" Ref="C?"  Part="1" 
+F 0 "C4" V 6650 3750 50  0000 L CNN
 F 1 "0.1uF" V 6550 3750 50  0000 L CNN
 F 2 "footprints:C_0805_HandSoldering" H 6638 3550 50  0001 C CNN
 F 3 "" H 6600 3700 50  0001 C CNN
@@ -165,15 +165,15 @@ F 3 "" H 6600 3700 50  0001 C CNN
 $EndComp
 Connection ~ 6450 3700
 $Comp
-L power:GND #PWR022
+L power:GND #PWR031
 U 1 1 5ACB002E
 P 6850 3750
-AR Path="/5ACAF8FB/5ACB002E" Ref="#PWR022"  Part="1" 
-AR Path="/5ACB06D8/5ACB002E" Ref="#PWR027"  Part="1" 
-AR Path="/5ACB07B8/5ACB002E" Ref="#PWR032"  Part="1" 
-AR Path="/5ACB084A/5ACB002E" Ref="#PWR037"  Part="1" 
-AR Path="/5E82A218/5ACB002E" Ref="#PWR013"  Part="1" 
-F 0 "#PWR013" H 6850 3500 50  0001 C CNN
+AR Path="/5ACAF8FB/5ACB002E" Ref="#PWR031"  Part="1" 
+AR Path="/5ACB06D8/5ACB002E" Ref="#PWR037"  Part="1" 
+AR Path="/5ACB07B8/5ACB002E" Ref="#PWR?"  Part="1" 
+AR Path="/5ACB084A/5ACB002E" Ref="#PWR?"  Part="1" 
+AR Path="/5E82A218/5ACB002E" Ref="#PWR043"  Part="1" 
+F 0 "#PWR031" H 6850 3500 50  0001 C CNN
 F 1 "GND" H 6850 3600 50  0000 C CNN
 F 2 "" H 6850 3750 50  0001 C CNN
 F 3 "" H 6850 3750 50  0001 C CNN
@@ -185,15 +185,15 @@ Wire Wire Line
 Wire Wire Line
 	6850 3700 6750 3700
 $Comp
-L power:GND #PWR023
+L power:GND #PWR030
 U 1 1 5ACB0087
 P 6800 4350
-AR Path="/5ACAF8FB/5ACB0087" Ref="#PWR023"  Part="1" 
-AR Path="/5ACB06D8/5ACB0087" Ref="#PWR028"  Part="1" 
-AR Path="/5ACB07B8/5ACB0087" Ref="#PWR033"  Part="1" 
-AR Path="/5ACB084A/5ACB0087" Ref="#PWR038"  Part="1" 
-AR Path="/5E82A218/5ACB0087" Ref="#PWR010"  Part="1" 
-F 0 "#PWR010" H 6800 4100 50  0001 C CNN
+AR Path="/5ACAF8FB/5ACB0087" Ref="#PWR030"  Part="1" 
+AR Path="/5ACB06D8/5ACB0087" Ref="#PWR036"  Part="1" 
+AR Path="/5ACB07B8/5ACB0087" Ref="#PWR?"  Part="1" 
+AR Path="/5ACB084A/5ACB0087" Ref="#PWR?"  Part="1" 
+AR Path="/5E82A218/5ACB0087" Ref="#PWR042"  Part="1" 
+F 0 "#PWR030" H 6800 4100 50  0001 C CNN
 F 1 "GND" H 6800 4200 50  0000 C CNN
 F 2 "" H 6800 4350 50  0001 C CNN
 F 3 "" H 6800 4350 50  0001 C CNN
@@ -207,26 +207,24 @@ Wire Wire Line
 Wire Wire Line
 	6350 4250 6800 4250
 Connection ~ 6800 4250
-Text HLabel 7000 4050 2    60   Input ~ 0
+Text HLabel 8400 4050 2    60   Input ~ 0
 AMP_OUT
-Wire Wire Line
-	6350 4050 7000 4050
 Text Notes 3500 3250 0    60   ~ 0
 Power to sensor &\nsignal from sensor
-Text Notes 7700 4100 0    60   ~ 0
+Text Notes 9100 4100 0    60   ~ 0
 To DAQ
 Text Notes 3500 4200 0    60   ~ 0
 G = 1 + 49.4K/RG
 $Comp
-L i2c_pancake-rescue:R-device-i2c_pancake-rescue R7
+L i2c_pancake-rescue:R-device-i2c_pancake-rescue R10
 U 1 1 5ACB2059
 P 6500 4150
-AR Path="/5ACAF8FB/5ACB2059" Ref="R7"  Part="1" 
-AR Path="/5ACB06D8/5ACB2059" Ref="R9"  Part="1" 
-AR Path="/5ACB07B8/5ACB2059" Ref="R11"  Part="1" 
-AR Path="/5ACB084A/5ACB2059" Ref="R13"  Part="1" 
-AR Path="/5E82A218/5ACB2059" Ref="R4"  Part="1" 
-F 0 "R7" V 6450 4300 50  0000 C CNN
+AR Path="/5ACAF8FB/5ACB2059" Ref="R10"  Part="1" 
+AR Path="/5ACB06D8/5ACB2059" Ref="R12"  Part="1" 
+AR Path="/5ACB07B8/5ACB2059" Ref="R?"  Part="1" 
+AR Path="/5ACB084A/5ACB2059" Ref="R?"  Part="1" 
+AR Path="/5E82A218/5ACB2059" Ref="R14"  Part="1" 
+F 0 "R10" V 6450 4300 50  0000 C CNN
 F 1 "0" V 6500 4150 50  0000 C CNN
 F 2 "footprints:R_0805_HandSoldering" V 6430 4150 50  0001 C CNN
 F 3 "" H 6500 4150 50  0001 C CNN
@@ -237,4 +235,64 @@ Wire Wire Line
 	6450 3700 6450 3950
 Wire Wire Line
 	6800 4250 6800 4150
+$Comp
+L PLVA650A_215:PLVA650A,215 D2
+U 1 1 5F7133A6
+P 7550 4600
+AR Path="/5ACAF8FB/5F7133A6" Ref="D2"  Part="1" 
+AR Path="/5ACB06D8/5F7133A6" Ref="D3"  Part="1" 
+AR Path="/5E82A218/5F7133A6" Ref="D4"  Part="1" 
+F 0 "D2" V 7596 4495 50  0000 R CNN
+F 1 "PLVA650A,215" V 7505 4495 50  0000 R CNN
+F 2 "footprints:SOT95P230X110-3N" H 7550 4600 50  0001 L BNN
+F 3 "Good" H 7550 4600 50  0001 L BNN
+F 4 "PLVA650A,215" H 7550 4600 50  0001 L BNN "Field4"
+F 5 "$0.13 USD" H 7550 4600 50  0001 L BNN "Field5"
+F 6 "SOT95P230X110-3N" H 7550 4600 50  0001 L BNN "Field6"
+F 7 "NXP" H 7550 4600 50  0001 L BNN "Field7"
+	1    7550 4600
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR032
+U 1 1 5F714D6C
+P 7550 5050
+AR Path="/5ACAF8FB/5F714D6C" Ref="#PWR032"  Part="1" 
+AR Path="/5ACB06D8/5F714D6C" Ref="#PWR038"  Part="1" 
+AR Path="/5E82A218/5F714D6C" Ref="#PWR044"  Part="1" 
+F 0 "#PWR032" H 7550 4800 50  0001 C CNN
+F 1 "GND" H 7555 4877 50  0000 C CNN
+F 2 "" H 7550 5050 50  0001 C CNN
+F 3 "" H 7550 5050 50  0001 C CNN
+	1    7550 5050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7550 4300 7550 4050
+Connection ~ 7550 4050
+Wire Wire Line
+	7550 4050 7950 4050
+Wire Wire Line
+	7550 5050 7550 4900
+Wire Wire Line
+	6350 4050 7550 4050
+$Comp
+L Connector:TestPoint TP1
+U 1 1 5F718F0E
+P 7950 3950
+AR Path="/5ACAF8FB/5F718F0E" Ref="TP1"  Part="1" 
+AR Path="/5ACB06D8/5F718F0E" Ref="TP2"  Part="1" 
+AR Path="/5E82A218/5F718F0E" Ref="TP3"  Part="1" 
+F 0 "TP1" H 8008 4068 50  0000 L CNN
+F 1 "TestPoint" H 8008 3977 50  0000 L CNN
+F 2 "custom:TestPoint" H 8150 3950 50  0001 C CNN
+F 3 "~" H 8150 3950 50  0001 C CNN
+	1    7950 3950
+	1    0    0    -1  
+$EndComp
+Connection ~ 7950 4050
+Wire Wire Line
+	7950 4050 8400 4050
+Wire Wire Line
+	7950 3950 7950 4050
 $EndSCHEMATC
