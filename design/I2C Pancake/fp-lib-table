@@ -1,4 +1,2 @@
 (fp_lib_table
-  (lib (name DAQ_footprints)(type KiCad)(uri /Users/alexm/dev/daq/lib/footprints.pretty)(options "")(descr ""))
-  (lib (name RLCS_footprints)(type KiCad)(uri /Users/alexm/dev/rlcs/schematics/power_board_schematics/rlcs_power_footprints.pretty)(options "")(descr ""))
 )
