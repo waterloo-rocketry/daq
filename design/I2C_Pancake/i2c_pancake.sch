@@ -316,17 +316,6 @@ SCL
 Text Label 4350 3450 2    50   ~ 0
 ~MCLR
 $Comp
-L power:+5V #PWR09
-U 1 1 5E756A61
-P 4450 3000
-F 0 "#PWR09" H 4450 2850 50  0001 C CNN
-F 1 "+5V" H 4465 3173 50  0000 C CNN
-F 2 "" H 4450 3000 50  0001 C CNN
-F 3 "" H 4450 3000 50  0001 C CNN
-	1    4450 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:GND #PWR013
 U 1 1 5E757347
 P 6550 4750
@@ -562,17 +551,6 @@ F 3 "" H 3650 1450 60  0000 C CNN
 	1    3650 1450
 	1    0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR08
-U 1 1 5F79C1A1
-P 3600 1150
-F 0 "#PWR08" H 3600 1000 50  0001 C CNN
-F 1 "+5V" H 3615 1323 50  0000 C CNN
-F 2 "" H 3600 1150 50  0001 C CNN
-F 3 "" H 3600 1150 50  0001 C CNN
-	1    3600 1150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	3600 1150 3600 1450
 Wire Wire Line
@@ -717,10 +695,6 @@ F 3 "" H 6900 4150 50  0001 C CNN
 $EndComp
 Text Notes 2400 3150 0    50   ~ 0
 Capacitors should have a maximum\ntolerance of +/- 5%, and be rated \nfor at least 25 V.
-Text Notes 6500 5300 0    50   ~ 0
-Capacitor should have a maximum\ntolerance of +/- 5% and have a voltage\nrating of at least 10 V.
-Text Notes 5200 4950 0    50   ~ 0
-Maximum analog input\nsample rate = 150 us
 Wire Wire Line
 	8350 1800 8150 1800
 Connection ~ 8350 1800
@@ -911,7 +885,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 2000 10300 2200
 Text Notes 8800 2300 0    50   ~ 0
-RC filter to remove noise. \nTime constant = RC = 150 us\nCutoff frequency = 6.67 kHz\nMaximum PIC sample rate = 6 kHz
+RC filter to remove noise. \nTime constant = RC = 150 us\nCutoff frequency = 1 kHz\nMaximum PIC sample rate = 6 kHz
 Wire Wire Line
 	9300 1500 9800 1500
 Wire Wire Line
@@ -1012,7 +986,7 @@ Wire Wire Line
 Wire Wire Line
 	10300 3800 10300 4000
 Text Notes 8800 4100 0    50   ~ 0
-RC filter to remove noise. \nTime constant = RC = 150 us\nCutoff frequency = 6.67 kHz\nMaximum PIC sample rate = 6 kHz
+RC filter to remove noise. \nTime constant = RC = 150 us\nCutoff frequency = 1 kHz\nMaximum PIC sample rate = 6 kHz
 Wire Wire Line
 	9300 3300 9800 3300
 Wire Wire Line
@@ -1026,4 +1000,28 @@ Text Label 9600 1500 0    50   ~ 0
 P1_IN
 Text Label 9600 3300 0    50   ~ 0
 P2_IN
+Text Notes 6500 5300 0    50   ~ 0
+Capacitor should have a maximum\ntolerance of +/- 5% and have a voltage\nrating of at least 10 V.
+$Comp
+L power:VDD #PWR?
+U 1 1 5F881B1C
+P 3600 1150
+F 0 "#PWR?" H 3600 1000 50  0001 C CNN
+F 1 "VDD" H 3617 1323 50  0000 C CNN
+F 2 "" H 3600 1150 50  0001 C CNN
+F 3 "" H 3600 1150 50  0001 C CNN
+	1    3600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR?
+U 1 1 5F882343
+P 4450 3000
+F 0 "#PWR?" H 4450 2850 50  0001 C CNN
+F 1 "VDD" H 4467 3173 50  0000 C CNN
+F 2 "" H 4450 3000 50  0001 C CNN
+F 3 "" H 4450 3000 50  0001 C CNN
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
