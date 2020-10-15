@@ -274,17 +274,6 @@ Wire Wire Line
 	7500 3200 7950 3200
 Wire Wire Line
 	7950 3200 7950 3000
-$Comp
-L power:+5V #PWR020
-U 1 1 5E6D37D8
-P 7950 3000
-F 0 "#PWR020" H 7950 2850 50  0001 C CNN
-F 1 "+5V" H 7965 3173 50  0000 C CNN
-F 2 "" H 7950 3000 50  0001 C CNN
-F 3 "" H 7950 3000 50  0001 C CNN
-	1    7950 3000
-	1    0    0    -1  
-$EndComp
 Connection ~ 4500 4200
 $Comp
 L pic16f1826-iso:PIC16F1826-ISO U5
@@ -1003,10 +992,10 @@ P2_IN
 Text Notes 6500 5300 0    50   ~ 0
 Capacitor should have a maximum\ntolerance of +/- 5% and have a voltage\nrating of at least 10 V.
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR08
 U 1 1 5F881B1C
 P 3600 1150
-F 0 "#PWR?" H 3600 1000 50  0001 C CNN
+F 0 "#PWR08" H 3600 1000 50  0001 C CNN
 F 1 "VDD" H 3617 1323 50  0000 C CNN
 F 2 "" H 3600 1150 50  0001 C CNN
 F 3 "" H 3600 1150 50  0001 C CNN
@@ -1014,14 +1003,39 @@ F 3 "" H 3600 1150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:VDD #PWR?
+L power:VDD #PWR09
 U 1 1 5F882343
 P 4450 3000
-F 0 "#PWR?" H 4450 2850 50  0001 C CNN
+F 0 "#PWR09" H 4450 2850 50  0001 C CNN
 F 1 "VDD" H 4467 3173 50  0000 C CNN
 F 2 "" H 4450 3000 50  0001 C CNN
 F 3 "" H 4450 3000 50  0001 C CNN
 	1    4450 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:VDD #PWR020
+U 1 1 5F888A2E
+P 7950 3000
+F 0 "#PWR020" H 7950 2850 50  0001 C CNN
+F 1 "VDD" H 7967 3173 50  0000 C CNN
+F 2 "" H 7950 3000 50  0001 C CNN
+F 3 "" H 7950 3000 50  0001 C CNN
+	1    7950 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 1100 2900 1100
+Connection ~ 2900 1100
+$Comp
+L Connector:TestPoint TP6
+U 1 1 5F88DA44
+P 3100 1100
+F 0 "TP6" H 3158 1218 50  0000 L CNN
+F 1 "TestPoint" H 3158 1127 50  0000 L CNN
+F 2 "custom:TestPoint" H 3300 1100 50  0001 C CNN
+F 3 "~" H 3300 1100 50  0001 C CNN
+	1    3100 1100
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
