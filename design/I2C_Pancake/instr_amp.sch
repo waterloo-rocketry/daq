@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L i2c_pancake-rescue:INA826-daq_components-i2c_pancake-rescue U1
+L ina826:INA826 U1
 U 1 1 5ACAFA52
 P 5900 4100
 AR Path="/5ACAF8FB/5ACAFA52" Ref="U1"  Part="1" 
@@ -31,7 +31,7 @@ F 3 "" H 6050 3800 60  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L i2c_pancake-rescue:Conn_01x04-strain_gauges_rtr-rescue-i2c_pancake-rescue J6
+L Connector_Generic:Conn_01x04 J6
 U 1 1 5ACAFAD2
 P 4750 3150
 AR Path="/5ACAF8FB/5ACAFAD2" Ref="J6"  Part="1" 
@@ -87,7 +87,7 @@ Wire Wire Line
 Wire Wire Line
 	5100 3350 4950 3350
 $Comp
-L i2c_pancake-rescue:R-device-i2c_pancake-rescue R11
+L Device:R R11
 U 1 1 5ACAFBC2
 P 5000 4100
 AR Path="/5ACAF8FB/5ACAFBC2" Ref="R11"  Part="1" 
@@ -147,7 +147,7 @@ Wire Wire Line
 Wire Wire Line
 	6450 3950 6350 3950
 $Comp
-L i2c_pancake-rescue:C-device-i2c_pancake-rescue C6
+L Device:C C6
 U 1 1 5ACAFF7B
 P 6600 3700
 AR Path="/5ACAF8FB/5ACAFF7B" Ref="C6"  Part="1" 
@@ -216,7 +216,7 @@ To DAQ
 Text Notes 3500 4200 0    60   ~ 0
 G = 1 + 49.4K/RG
 $Comp
-L i2c_pancake-rescue:R-device-i2c_pancake-rescue R12
+L Device:R R12
 U 1 1 5ACB2059
 P 6500 4150
 AR Path="/5ACAF8FB/5ACB2059" Ref="R12"  Part="1" 
