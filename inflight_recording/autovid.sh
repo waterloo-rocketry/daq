@@ -7,4 +7,6 @@ if [ -f "$VIDEO_FILE" ]; then
 fi
 
 # Set timeout to zero to enable continous recording.
-raspivid -t 0 -o $VIDEO_FILE
+# Flush output buffer to ensure that the entire 
+# recording is saved to disk.
+raspivid -t 0 -fl -o $VIDEO_FILE
