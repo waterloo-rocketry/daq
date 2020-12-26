@@ -1,0 +1,5 @@
+(sym_lib_table
+  (lib (name ina826)(type Legacy)(uri ${KIPRJMOD}/ina826.lib)(options "")(descr ""))
+  (lib (name pic16f1826-iso)(type Legacy)(uri ${KIPRJMOD}/pic16f1826-iso.lib)(options "")(descr ""))
+  (lib (name BDJ0FC0WEFJ-E2)(type Legacy)(uri ${KIPRJMOD}/BDJ0FC0WEFJ-E2.lib)(options "")(descr ""))
+)

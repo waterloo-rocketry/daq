@@ -1,0 +1,331 @@
+Cmp-Mod V01 Created by PcbNew   date = 14-Jun-2020 17:17:27
+
+BeginCmp
+TimeStamp = 5ED44DC1
+Path = /5E82A218/5ACAFAD2
+Reference = J6;
+ValeurCmp = Conn_01x04;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46520
+Path = /5ACB06D8/5ACAFAD2
+Reference = J5;
+ValeurCmp = Conn_01x04;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED464CF
+Path = /5ACAF8FB/5ACAFAD2
+Reference = J4;
+ValeurCmp = Conn_01x04;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4_1x04_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED49761
+Path = /5ACAED9B
+Reference = J1;
+ValeurCmp = Conn_01x03;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED49E93
+Path = /5ACAEDA8
+Reference = J2;
+ValeurCmp = Conn_01x03;
+IdModule  = TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-3_1x03_P5.00mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AEA292C
+Path = 
+Reference = G***;
+ValeurCmp = LOGO;
+IdModule  = custom:rocketry_logo_small;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED49F33
+Path = /5E6D4C90
+Reference = J7;
+ValeurCmp = Conn_01x05_Male;
+IdModule  = Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4647E
+Path = /5E6D41B6
+Reference = J3;
+ValeurCmp = Conn_01x05_Male;
+IdModule  = Connector_JST:JST_XH_S5B-XH-A-1_1x05_P2.50mm_Horizontal;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4639E
+Path = /5E6C4A64
+Reference = D1;
+ValeurCmp = LED;
+IdModule  = LED_SMD:LED_1206_3216Metric_Pad1.42x1.75mm_HandSolder;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED45F98
+Path = /5EAA14FA
+Reference = U2;
+ValeurCmp = KVU3;
+IdModule  = footprints:TL750M10CKVU;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED44BBC
+Path = 
+Reference = REF**;
+ValeurCmp = MountingHole_3.2mm_M3_Pad;
+IdModule  = MountingHole:MountingHole_3.2mm_M3_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED44BBC
+Path = 
+Reference = REF**;
+ValeurCmp = MountingHole_3.2mm_M3_Pad;
+IdModule  = MountingHole:MountingHole_3.2mm_M3_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED44B81
+Path = 
+Reference = REF**;
+ValeurCmp = MountingHole_3.2mm_M3_Pad;
+IdModule  = MountingHole:MountingHole_3.2mm_M3_Pad;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED463AF
+Path = /5ACB8796
+Reference = F1;
+ValeurCmp = Fuse;
+IdModule  = custom:littlefuse_01000020Z;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46776
+Path = /5E74C816
+Reference = U6;
+ValeurCmp = PIC16F1826-ISO;
+IdModule  = custom:PIC16F1826-ISO;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4675B
+Path = /5ACB06D8/5ACAFA52
+Reference = U4;
+ValeurCmp = INA826;
+IdModule  = footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4673E
+Path = /5ACAF8FB/5ACAFA52
+Reference = U3;
+ValeurCmp = INA826;
+IdModule  = footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED44ED2
+Path = /5E82A218/5ACAFA52
+Reference = U1;
+ValeurCmp = INA826;
+IdModule  = footprints:SOIC-8_3.9x4.9mm_Pitch1.27mm_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED466D9
+Path = /5E6A7DF5
+Reference = SW1;
+ValeurCmp = SW_DIP_x04;
+IdModule  = footprints:DIP_SWITCH_4X2;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED466BC
+Path = /5E758516
+Reference = R17;
+ValeurCmp = 330;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED466AB
+Path = /5E6A9C71
+Reference = R16;
+ValeurCmp = 10K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4669A
+Path = /5E757DB9
+Reference = R15;
+ValeurCmp = 10K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46689
+Path = /5E6A9A7C
+Reference = R14;
+ValeurCmp = 10K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46678
+Path = /5E6A980F
+Reference = R13;
+ValeurCmp = 10K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46667
+Path = /5E6A91A3
+Reference = R12;
+ValeurCmp = 10K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4A286
+Path = /5ACB06D8/5ACB2059
+Reference = R9;
+ValeurCmp = 0;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4A225
+Path = /5ACB06D8/5ACAFBC2
+Reference = R8;
+ValeurCmp = R;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4590C
+Path = /5ACAF8FB/5ACB2059
+Reference = R7;
+ValeurCmp = 0;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46623
+Path = /5ACAF8FB/5ACAFBC2
+Reference = R6;
+ValeurCmp = R;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46612
+Path = /5ACAEDD1
+Reference = R5;
+ValeurCmp = 10K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46601
+Path = /5E82A218/5ACB2059
+Reference = R4;
+ValeurCmp = 0;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED465F0
+Path = /5ACAEDCA
+Reference = R3;
+ValeurCmp = 5K;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4A437
+Path = /5E82A218/5ACAFBC2
+Reference = R2;
+ValeurCmp = R;
+IdModule  = footprints:R_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED465CE
+Path = /5E6C49FB
+Reference = J8;
+ValeurCmp = Conn_01x05_Female;
+IdModule  = footprints:PinHeader_5x2.54_SMD_90deg_952-3198-1-ND;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46385
+Path = /5E76575E
+Reference = C8;
+ValeurCmp = 0.1uF;
+IdModule  = footprints:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46374
+Path = /5ACB06D8/5ACAFF7B
+Reference = C6;
+ValeurCmp = 0.1uF;
+IdModule  = footprints:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46363
+Path = /5ACAF8FB/5ACAFF7B
+Reference = C5;
+ValeurCmp = 0.1uF;
+IdModule  = footprints:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED46352
+Path = /5EAAF20A
+Reference = C3;
+ValeurCmp = 10 uF;
+IdModule  = Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P2.50mm;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4633F
+Path = /5E82A218/5ACAFF7B
+Reference = C2;
+ValeurCmp = 0.1uF;
+IdModule  = footprints:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5ED4632E
+Path = /5EAAE718
+Reference = C1;
+ValeurCmp = 0.1 uF;
+IdModule  = footprints:C_0805_HandSoldering;
+EndCmp
+
+BeginCmp
+TimeStamp = 5AD4E9F6
+Path = 
+Reference = REF**;
+ValeurCmp = MountingHole_3.2mm_M3_Pad;
+IdModule  = MountingHole:MountingHole_3.2mm_M3_Pad;
+EndCmp
+
+EndListe
