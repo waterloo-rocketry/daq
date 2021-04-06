@@ -4,6 +4,11 @@ HOW SETUP IN-FLIGHT RECORDING USING A RASPBERRY PI ZERO:
 -Flash a copy of the Raspbian OS onto a large-capacity SD card (at least 128 GB)
 -Plug the camera module into the Pi using a ribbon cable
 -Enable ssh on the Pi and log into the Pi using an ssh session
+-SSH Details:
+    -host/ip: raspberrypi.local
+    -user: pi
+    -password: raspberry
+    -port: 22
 -Inside the ssh session, enable the camera and connect the Pi to the Internet
 -Update the Raspbian OS (Internet connection required)
 -In the home folder of the Pi, run "mkdir autovid"
