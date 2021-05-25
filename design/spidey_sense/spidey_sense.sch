@@ -20,7 +20,7 @@ P 5250 4000
 F 0 "U1" H 4650 5400 50  0000 C CNN
 F 1 "LTC2984" H 4750 5300 50  0000 C CNN
 F 2 "Package_QFP:LQFP-48_7x7mm_P0.5mm" H 4500 5200 50  0001 C CNN
-F 3 "" H 5250 4000 50  0001 C CNN
+F 3 "https://www.analog.com/media/en/technical-documentation/data-sheets/2984fb.pdf" H 5250 4000 50  0001 C CNN
 	1    5250 4000
 	1    0    0    -1  
 $EndComp
@@ -221,10 +221,6 @@ Wire Wire Line
 	6050 3200 6200 3200
 Wire Wire Line
 	6050 2900 6200 2900
-Text Notes 6600 3100 0    50   ~ 0
-X7R???
-Text Notes 8300 4150 0    50   ~ 0
-X5R???
 $Comp
 L power:GND #PWR08
 U 1 1 60AA08E6
@@ -309,22 +305,12 @@ Wire Wire Line
 	7150 5100 6500 5100
 Wire Wire Line
 	6500 5100 6500 5850
-Wire Notes Line
-	6800 5850 6100 5850
-Wire Notes Line
-	6100 5850 6100 6300
-Wire Notes Line
-	6100 6300 6800 6300
-Wire Notes Line
-	6800 6300 6800 5850
-Text Notes 6200 6150 0    50   ~ 0
-Power circuit\n 5-12+V
 $Comp
 L Device:R_US R2
 U 1 1 60AC48FD
 P 4100 2750
 F 0 "R2" V 4150 2900 50  0000 C CNN
-F 1 "R_US" V 3986 2750 50  0000 C CNN
+F 1 "10K" V 3986 2750 50  0000 C CNN
 F 2 "" V 4140 2740 50  0001 C CNN
 F 3 "~" H 4100 2750 50  0001 C CNN
 	1    4100 2750
@@ -379,7 +365,7 @@ L Device:R_US R1
 U 1 1 60ACABE7
 P 3800 3900
 F 0 "R1" V 3850 4050 50  0000 C CNN
-F 1 "R_US" V 3686 3900 50  0000 C CNN
+F 1 "10K" V 3686 3900 50  0000 C CNN
 F 2 "" V 3840 3890 50  0001 C CNN
 F 3 "~" H 3800 3900 50  0001 C CNN
 	1    3800 3900
@@ -553,4 +539,99 @@ Wire Wire Line
 Wire Wire Line
 	3450 4750 3350 4750
 Connection ~ 3450 4100
+$Comp
+L Regulator_Linear:LM2931-5.0_SO8 U2
+U 1 1 60ACB4C4
+P 7500 5850
+F 0 "U2" H 7500 6092 50  0000 C CNN
+F 1 "LM2931-5.0_SO8" H 7500 6001 50  0000 C CNN
+F 2 "Package_SO:SOIC-8_3.9x4.9mm_P1.27mm" H 7600 6050 50  0001 C CIN
+F 3 "http://www.ti.com/lit/ds/symlink/lm2931-n.pdf" H 7700 5850 50  0001 C CNN
+	1    7500 5850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6500 5850 7200 5850
+$Comp
+L Device:C C6
+U 1 1 60ADACD4
+P 6500 6000
+F 0 "C6" H 6615 6046 50  0000 L CNN
+F 1 "0.1uF" H 6615 5955 50  0000 L CNN
+F 2 "" H 6538 5850 50  0001 C CNN
+F 3 "~" H 6500 6000 50  0001 C CNN
+	1    6500 6000
+	1    0    0    -1  
+$EndComp
+Connection ~ 6500 5850
+$Comp
+L Device:C C7
+U 1 1 60AE0375
+P 8250 6000
+F 0 "C7" H 8365 6046 50  0000 L CNN
+F 1 "100uF" H 8365 5955 50  0000 L CNN
+F 2 "" H 8288 5850 50  0001 C CNN
+F 3 "~" H 8250 6000 50  0001 C CNN
+	1    8250 6000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 5850 8250 5850
+$Comp
+L power:GND #PWR013
+U 1 1 60AE56DF
+P 6500 6150
+F 0 "#PWR013" H 6500 5900 50  0001 C CNN
+F 1 "GND" H 6505 5977 50  0000 C CNN
+F 2 "" H 6500 6150 50  0001 C CNN
+F 3 "" H 6500 6150 50  0001 C CNN
+	1    6500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR014
+U 1 1 60AE5B77
+P 7500 6150
+F 0 "#PWR014" H 7500 5900 50  0001 C CNN
+F 1 "GND" H 7505 5977 50  0000 C CNN
+F 2 "" H 7500 6150 50  0001 C CNN
+F 3 "" H 7500 6150 50  0001 C CNN
+	1    7500 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR016
+U 1 1 60AE5EAB
+P 8250 6150
+F 0 "#PWR016" H 8250 5900 50  0001 C CNN
+F 1 "GND" H 8255 5977 50  0000 C CNN
+F 2 "" H 8250 6150 50  0001 C CNN
+F 3 "" H 8250 6150 50  0001 C CNN
+	1    8250 6150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR015
+U 1 1 60AE6209
+P 8250 5650
+F 0 "#PWR015" H 8250 5500 50  0001 C CNN
+F 1 "+5V" H 8265 5823 50  0000 C CNN
+F 2 "" H 8250 5650 50  0001 C CNN
+F 3 "" H 8250 5650 50  0001 C CNN
+	1    8250 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8250 5650 8250 5850
+Connection ~ 8250 5850
+Text Notes 7450 5150 0    50   ~ 0
+5-30V
+Text Notes 3200 5750 0    50   ~ 0
+D1-4 are cold junction temp sensors,\nneeded for the thermocouples, \nread the datasheet of the LTC2984 to learn more.
+Text Notes 7450 4600 0    50   ~ 0
+Power and Coms connector\n
+Text Notes 3600 2550 0    50   ~ 0
+Use <= 1% error resistors
+Text Notes 2350 6000 0    50   ~ 0
+Ideality factor is a key parameter here, \nlooks like the best way to find it might be experimental testing:\nhttps://electronics.stackexchange.com/questions/369256/what-is-a-typical-diodes-ideality-factor
 $EndSCHEMATC
