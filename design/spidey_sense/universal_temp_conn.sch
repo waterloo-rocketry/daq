@@ -26,8 +26,8 @@ AR Path="/60B815BF/60AF3E68" Ref="J4"  Part="1"
 AR Path="/60B85CDF/60AF3E68" Ref="J5"  Part="1" 
 F 0 "J2" H 7168 4217 50  0000 C CNN
 F 1 "Screw_Terminal_01x08" H 7168 4126 50  0000 C CNN
-F 2 "" H 7250 3700 50  0001 C CNN
-F 3 "~" H 7250 3700 50  0001 C CNN
+F 2 "footprints:Phoenix_Contact-1984675-0-0-0" H 7250 3700 50  0001 C CNN
+F 3 "https://www.digikey.ca/en/products/detail/phoenix-contact/1984675/950853" H 7250 3700 50  0001 C CNN
 	1    7250 3700
 	-1   0    0    -1  
 $EndComp
