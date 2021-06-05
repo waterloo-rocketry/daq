@@ -48,7 +48,7 @@ If you do not have physical access AND you are not the administrator of the WiFi
 
 1. SSH into the Pi
 1. In the home folder, run `mkdir autovid`
-1. `cd` into the autovid folder
+1. Run `cd autovid` to move into the autovid folder
 1. Download the contents of this folder and transfer all 4 files into `autovid` (see `Basic Pi setup` to learn how to transfer files)
 1. Run `chmod u+x setup.sh`
 1. Run `./setup.sh` to configure the autovid service
