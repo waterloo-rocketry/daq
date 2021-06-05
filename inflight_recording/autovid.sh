@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NOW=$(date +%Y%m%d%H%M%S)
+NOW=$(date +%Y-%m-%d %H:%M:%S)
 
 VIDEO_FILE="/home/pi/autovid/video$NOW.h264"
 

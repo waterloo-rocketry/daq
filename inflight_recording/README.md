@@ -1,5 +1,5 @@
 
-# HOW SETUP IN-FLIGHT RECORDING USING A RASPBERRY PI ZERO W
+# HOW TO SETUP IN-FLIGHT RECORDING USING A RASPBERRY PI ZERO W
 
 
 ## Instructions
@@ -20,10 +20,8 @@
 1. In the home folder of the Pi, run "mkdir autovid"
 1. `cd` into the autovid folder
 1. Clone this repository
-1. Run `sudo cp autovid.service /etc/systemd/system/`
-1. Run `sudo systemctl daemon-reload`
-1. Run `sudo systemctl enable autovid.service`
-1. Run `sudo shutdown -h now` to turn the Pi off
+1. Run `setup.sh` to configure the autovid service
+1. Run `sudo shutdown -h now` to turn the Pi off if you are done using the Pi.
 
 Done! Next time the Pi starts up, the camera will run and will stream its data over the network.
 
@@ -38,7 +36,7 @@ Done! Next time the Pi starts up, the camera will run and will stream its data o
 1. Navigate to the `/autovid` folder
 1. (if using FileZilla) Click and drag your files from the remote site to the local site.
 
-Done! All recorded footage is be in .h264 files in the folder. 
+Done! All recorded footage will be in .h264 files in the folder. 
 
 #### Streaming footage
 
