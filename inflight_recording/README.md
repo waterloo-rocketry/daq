@@ -53,7 +53,7 @@ If you do not have physical access AND you are not the administrator of the WiFi
 1. __Convert ALL line endings in the `.sh` and `.service` files to UNIX-style line endings (LF)__
 	1. Skipping this step will result in the service NOT running.
 	1. In Notepad++, this can be done by opening the file -> edit -> EOL conversion -> UNIX
-1. Transfer all 4 converted files into `autovid` (see `Basic Pi setup` to learn how to transfer files)
+1. Transfer the converted files into `autovid` (see `Basic Pi setup` to learn how to transfer files)
 1. Run `chmod u+x setup.sh`
 1. Run `./setup.sh` to configure the autovid service
 
