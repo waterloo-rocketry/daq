@@ -1,6 +1,6 @@
 [Unit]
-Description="automatically record video footage"
-After=local-fs.target
+Description="Automatically record video footage"
+After=network.target
 
 [Service]
 ExecStart=/home/pi/autovid/autovid.sh
@@ -11,4 +11,4 @@ Restart=always
 User=pi
 
 [Install]
-WantedBy=sysinit.target
+WantedBy=default.target
