@@ -10,7 +10,14 @@ VIDEO_FILE="/home/pi/autovid/autovid$NOW.h264"
 # -t 0 = sets the video duration to infinite
 # -fl = flush buffer after writing (reduce latency)
 # -ih = inserts headers for the video
-# - o - | tee = sets the output file to two locations, a video file ($VIDEO_FILE) and a stream (cvlc stream:///dev... etc)
-raspivid -t 0 -fl -ih -o - | tee $VIDEO_FILE | cvlc stream:///dev/stdin --sout '#rtp{sdp=rtsp://:5000}' :demux=h264
+# - o - | tee = sets the output file to two locations, a video file ($VIDEO_FILE) and a stream (ffmpeg -thread_queue_size 4096 ... etc)
+# ffmpeg = is a root command of ffmpeg, a video and audio streaming platform
+# -thread_queue_size 4096 = increase packet capacity to reduce discarded packets
+# -i - = read video from the tee command (which comes from raspivid)
+# -f lavfi -i anullsrc = sets audio to silence
+# -c:v copy = skip re-encoding the h264 stream, just copy it
+# -f h264 = set output format to h264
+# udp://192.168.1.5:5000 = output URL for the UDP stream
+raspivid -t 0 -w 1920 -h 1080 -fps 30 -b 6000000 -ih -o - | tee $VIDEO_FILE | ffmpeg -thread_queue_size 4096 -i - -f lavfi -i anullsrc -c:v copy -f h264 udp://192.168.1.5:5000
 
 #end

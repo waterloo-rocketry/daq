@@ -8,7 +8,7 @@
 1. Plug the camera module into the Pi using a ribbon cable
 1. Use a USB Micro B cable to connect the Pi to a computer (ensure you are connecting to the 'USB' port, not the 'PWR' port)
 1. SSH into the Pi (using PuTTY, or similar):
-    1. host/ip: raspberrypi.local if USB connected OR the IP of the Pi (see `Getting the IP of the Pi` for help)
+    1. host/ip: raspberrypi.local if USB connected OR the IP of the Pi (see `Getting the IP of the Pi` for help getting the IP)
     1. user: pi
     1. password: raspberry
     1. port: 22
@@ -21,7 +21,7 @@ There are many ways to accomplish this but an easy, free way to do this is using
 
 1. Download and install [FileZilla](https://filezilla-project.org/)
 1. Input the following details in the top-bar to establish a connection to the Pi
-    1. host/ip: raspberrypi.local if USB connected OR the IP of the Pi (see `Getting the IP of the Pi` for help)
+    1. host/ip: raspberrypi.local if USB connected OR the IP of the Pi (see `Getting the IP of the Pi` for help getting the IP)
     1. user: pi
     1. password: raspberry
     1. port: 22
@@ -71,9 +71,13 @@ Done! All recorded footage will be in .h264 files in the folder.
 
 ### Streaming footage
 
-1. Make sure the Pi is on
-1. Install VLC Media Player (or similar)
-1. Open a Network Stream (in VLC, media -> Open Network Stream)
-1. Use the url: `rtsp://<IPv4 Address of Pi>:5000/` __Note: Remember the final slash!__ (see `Getting the IP of the Pi` for help)
+1. Download [mpv](https://mpv.io/), a media player (does not require installation, it's a portable software)
+1. Extract the contents of the zip to a file, and open a command prompt to that location
+1. Ensure the Pi is turned on, and give it a minute to start up fully
+1. Run `mpv.exe --no-cache --untimed --no-demuxer-thread udp://<IPv4 Address of Pi>:5000`(see `Getting the IP of the Pi` for help getting the IP)
 
-Done! The stream should appear.
+Done! The stream should appear. If there is significant delay, try restarting the stream. Generally, about ~1 second of delay is expected.
+
+## Extra Details
+
+If lagging occurs, it may be possible that the `gpu_mem` component of `/boot/config.txt` needs to be upped to 264. We upped it on the original, but did not test if it was required (as it turned out another issue was the problem)
