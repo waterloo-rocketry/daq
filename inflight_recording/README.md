@@ -50,6 +50,7 @@ If you do not have physical access AND you are not the administrator of the WiFi
 1. In the home folder, run `mkdir autovid`
 1. Run `cd autovid` to move into the autovid folder
 1. Download the contents of this folder
+1. Open `autovid.sh` and set the IP and PORT variables to the correct values
 1. __Convert ALL line endings in the `.sh` and `.service` files to UNIX-style line endings (LF)__
 	1. Skipping this step will result in the service NOT running.
 	1. In Notepad++, this can be done by opening the file -> edit -> EOL conversion -> UNIX
@@ -74,9 +75,9 @@ Done! All recorded footage will be in .h264 files in the folder.
 1. Download [mpv](https://mpv.io/), a media player (does not require installation, it's a portable software)
 1. Extract the contents of the zip to a file, and open a command prompt to that location
 1. Ensure the Pi is turned on, and give it a minute to start up fully
-1. Run `mpv.exe --no-cache --untimed --no-demuxer-thread udp://<IPv4 Address of Pi>:5000`(see `Getting the IP of the Pi` for help getting the IP)
+1. Run `mpv.exe --no-cache --untimed --no-demuxer-thread udp://<IPv4 Address of Pi>:<PORT>`(see `Getting the IP of the Pi` for help getting the IP)
 
-Done! The stream should appear. If there is significant delay, try restarting the stream. Generally, about ~1 second of delay is expected.
+Done! The stream should appear. If there is significant delay, try restarting the stream. Generally, about ~1 second of delay is expected. If no footage appears, check your firewall settings and ensure the port(s) allow UDP traffic.
 
 ## Extra Details
 
