@@ -1,0 +1,14 @@
+[Unit]
+Description="Automatically record video footage"
+After=network.target
+
+[Service]
+ExecStart=/home/pi/autovid/autovid.sh
+WorkingDirectory=/home/pi/autovid
+StandardOutput=inherit
+StandardError=inherit
+Restart=always
+User=pi
+
+[Install]
+WantedBy=default.target
