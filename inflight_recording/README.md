@@ -81,4 +81,4 @@ Done! The stream should appear. If there is significant delay, try restarting th
 
 ## Extra Details
 
-If lagging occurs, it may be possible that the `gpu_mem` component of `/boot/config.txt` needs to be upped to 264. We upped it on the original, but did not test if it was required (as it turned out another issue was the problem)
+If lagging occurs, it may be possible that the `gpu_mem` component of `/boot/config.txt` needs to be upped to 256. We upped it on the original, but did not test if it was required (as it turned out another issue was the problem)
