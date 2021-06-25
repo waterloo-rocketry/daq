@@ -62,7 +62,7 @@ If you do not have physical access AND you are not the administrator of the WiFi
 
 ### Getting the IP of your PC
 
-These are Windows instructions. If you have a Linux, you already know how to do this. If you have a mac, MPV doesn't work on it anyway.
+These are Windows instructions. If you have Linux, you already know how to do this. If you have a mac, MPV doesn't work on it anyway.
 
 1. Ensure you are connected to the same network as the Pi
 1. Open a command prompt
