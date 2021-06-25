@@ -4,7 +4,9 @@
 
 ### Basic Pi setup
 
-1. Flash a copy of the Raspbian OS onto a large-capacity SD card (pereferably 128 GB or larger)
+1. Flash a default copy of the Raspbian OS onto a large-capacity SD card (pereferably 128 GB or larger)
+1. [Enable SSH](https://www.raspberrypi.org/documentation/remote-access/ssh/README.md) (skip to step 3 - `Enable SSH on a headless Raspberry Pi`)
+1. Follow the `Direct USB Connection (Pi Zero / Zero W Only)` section of [this article](https://www.tomshardware.com/reviews/raspberry-pi-headless-setup-how-to,6028.html)
 1. Plug the camera module into the Pi using a ribbon cable
 1. Use a USB Micro B cable to connect the Pi to a computer (ensure you are connecting to the 'USB' port, not the 'PWR' port)
 1. SSH into the Pi (using PuTTY, or similar):
