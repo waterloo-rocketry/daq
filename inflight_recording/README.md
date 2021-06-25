@@ -39,7 +39,7 @@ Done! Next time the Pi restarts, the camera will run and will stream its data ov
 1. Extract the contents of the zip to a file, and open a command prompt to that location
 1. Ensure the Pi is turned on, and give it a minute to start up fully
 1. Run `mpv.exe --no-cache --untimed --no-demuxer-thread udp://<IPv4 Address of Your PC>:<PORT>` (see [Getting the IP of your PC](#getting-the-ip-of-your-pc) for help)
-	1. The port is the one you specified in `autovid.sh`. If you don't know it, you'll have to check what is currently on the Pi.
+	1. The port and IP are the ones you specified in `autovid.sh`. If you don't know it, you'll have to check what is currently on the Pi.
 
 Done! The stream should appear. If there is significant delay, try restarting the stream. Generally, about ~1 second of delay is expected. If no footage appears, check your firewall settings and ensure the port(s) allow UDP traffic.
 
