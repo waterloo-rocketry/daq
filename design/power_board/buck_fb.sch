@@ -64,7 +64,7 @@ AR Path="/6157EC81/61329F28" Ref="C?"  Part="1"
 AR Path="/62A21C39/61329F28" Ref="C16"  Part="1" 
 AR Path="/62A272C6/61329F28" Ref="C29"  Part="1" 
 F 0 "C3" H 4965 4446 50  0000 L CNN
-F 1 "8.2nF" H 4965 4355 50  0000 L CNN
+F 1 "10nF" H 4965 4355 50  0000 L CNN
 F 2 "" H 4888 4250 50  0001 C CNN
 F 3 "~" H 4850 4400 50  0001 C CNN
 	1    4850 4400
@@ -228,30 +228,11 @@ AR Path="/6157EC81/61329F6B" Ref="D?"  Part="1"
 AR Path="/62A21C39/61329F6B" Ref="D2"  Part="1" 
 AR Path="/62A272C6/61329F6B" Ref="D3"  Part="1" 
 F 0 "D1" V 6304 3980 50  0000 L CNN
-F 1 "B540C-13-F" V 6395 3980 50  0000 L CNN
+F 1 "FSV360FP" V 6395 3980 50  0000 L CNN
 F 2 "" H 6350 3900 50  0001 C CNN
 F 3 "~" H 6350 3900 50  0001 C CNN
 	1    6350 3900
 	0    1    1    0   
-$EndComp
-$Comp
-L Device:L L?
-U 1 1 61329F71
-P 6600 3650
-AR Path="/61329F71" Ref="L?"  Part="1" 
-AR Path="/61323B71/61329F71" Ref="L?"  Part="1" 
-AR Path="/6152A5A7/61329F71" Ref="L?"  Part="1" 
-AR Path="/6153DA18/61329F71" Ref="L1"  Part="1" 
-AR Path="/6157E815/61329F71" Ref="L?"  Part="1" 
-AR Path="/6157EC81/61329F71" Ref="L?"  Part="1" 
-AR Path="/62A21C39/61329F71" Ref="L2"  Part="1" 
-AR Path="/62A272C6/61329F71" Ref="L3"  Part="1" 
-F 0 "L1" V 6790 3650 50  0000 C CNN
-F 1 "3.3uH" V 6699 3650 50  0000 C CNN
-F 2 "" H 6600 3650 50  0001 C CNN
-F 3 "~" H 6600 3650 50  0001 C CNN
-	1    6600 3650
-	0    -1   -1   0   
 $EndComp
 $Comp
 L power:GND #PWR?
@@ -279,7 +260,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 3550 5800 3550
 Text Notes 4750 5000 0    50   ~ 0
-Set soft-start\nto 2ms (pg. 11)
+Set soft-start\nto 2.5ms (pg. 11)
 Text Notes 4600 5000 2    50   ~ 0
 Set switching frequency\nto 1.7 MHz (pg. 11)
 Text HLabel 2850 3150 0    50   Input ~ 0
@@ -351,7 +332,7 @@ Wire Wire Line
 Wire Wire Line
 	3950 3650 4800 3650
 Text Notes 3800 2600 0    50   ~ 0
-Variable buck regulator. Most values taken from webench.ti.com for 17V out.\nhttps://www.ti.com/lit/ds/symlink/lmr14050.pdf
+Variable buck regulator. Most values taken from webench.ti.com for 17V 1A out.\nhttps://www.ti.com/lit/ds/symlink/lmr14050.pdf
 Text HLabel 7550 3650 2    50   Output ~ 0
 VOUT
 Text HLabel 5750 3750 2    50   Input ~ 0
@@ -523,4 +504,29 @@ $EndComp
 Connection ~ 6150 3650
 Wire Wire Line
 	6150 3650 6350 3650
+$Comp
+L Device:L L?
+U 1 1 61329F71
+P 6600 3650
+AR Path="/61329F71" Ref="L?"  Part="1" 
+AR Path="/61323B71/61329F71" Ref="L?"  Part="1" 
+AR Path="/6152A5A7/61329F71" Ref="L?"  Part="1" 
+AR Path="/6153DA18/61329F71" Ref="L1"  Part="1" 
+AR Path="/6157E815/61329F71" Ref="L?"  Part="1" 
+AR Path="/6157EC81/61329F71" Ref="L?"  Part="1" 
+AR Path="/62A21C39/61329F71" Ref="L2"  Part="1" 
+AR Path="/62A272C6/61329F71" Ref="L3"  Part="1" 
+F 0 "L1" V 6790 3650 50  0000 C CNN
+F 1 "8.2uH SRN6045-8R2Y" V 6700 3900 50  0000 R CNN
+F 2 "" H 6600 3650 50  0001 C CNN
+F 3 "~" H 6600 3650 50  0001 C CNN
+	1    6600 3650
+	0    -1   -1   0   
+$EndComp
+Text Notes 7200 3850 0    50   ~ 0
+Need 15mΩ ESR total
+Text Notes 7550 3400 0    50   ~ 0
+Output: 7-17V @ 1A
+Text Notes 2150 2900 0    50   ~ 0
+Input: 19.2-25.2V (24V nominal)
 $EndSCHEMATC
