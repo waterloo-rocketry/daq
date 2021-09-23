@@ -260,7 +260,7 @@ $EndComp
 Text Notes 8250 1450 2    50   ~ 0
 1A max
 Text Notes 7000 3800 0    50   ~ 0
-For 12V:\nSETSFS = 442 / (12*3 - 1) = 12.63\nSET = 5*12 = 60\n\nFor 10V:\nSETFS = 442 / (10*3 - 1) = 15.24\nSET = 5*10 = 50\n\nFor 5V:\nSETFS = 442 / (5*3 - 1) = 31.57\nSET = 5*5 = 25
+Resistor values...\nfor 12V:\n  SETSFS(kΩ) = 442 / (12*3 - 1) = 12.63k\n  SET(kΩ)  = 5*12 = 60k\n\nfor 10V:\n  SETFS(kΩ)  = 442 / (10*3 - 1) = 15.24k\n  SET(kΩ)  = 5*10 = 50k\n\nfor 5V:\n  SETFS(kΩ)  = 442 / (5*3 - 1) = 31.57k\n  SET(kΩ)  = 5*5 = 25k
 $Comp
 L power:+BATT #PWR09
 U 1 1 62BD3A39
@@ -307,7 +307,7 @@ Wire Wire Line
 Wire Wire Line
 	2800 1700 2900 1700
 Text Notes 2700 1400 2    50   ~ 0
-6S lipo (19.2 - 25.2V) or 24V
+6S lipo (19.2 - 25.2V)\nor 24V AC/DC adapter
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 6107878F
@@ -375,4 +375,8 @@ F 3 "" H 8600 4800 50  0001 C CNN
 	1    8600 4800
 	1    0    0    -1  
 $EndComp
+Text Notes 9150 4800 0    50   ~ 0
+Divide voltages by 3 so they\nfit in the 0-10V DAQ range.
+Text Notes 8600 6450 0    50   ~ 0
+All resistors/capacitors are 0603/1% unless otherwise specified.
 $EndSCHEMATC

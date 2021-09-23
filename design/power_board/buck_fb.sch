@@ -16,7 +16,7 @@ $EndDescr
 $Comp
 L power:GND #PWR?
 U 1 1 61329F1C
-P 4850 4550
+P 4700 4550
 AR Path="/61329F1C" Ref="#PWR?"  Part="1" 
 AR Path="/61323B71/61329F1C" Ref="#PWR?"  Part="1" 
 AR Path="/6152A5A7/61329F1C" Ref="#PWR?"  Part="1" 
@@ -25,11 +25,11 @@ AR Path="/6157E815/61329F1C" Ref="#PWR?"  Part="1"
 AR Path="/6157EC81/61329F1C" Ref="#PWR?"  Part="1" 
 AR Path="/62A21C39/61329F1C" Ref="#PWR?"  Part="1" 
 AR Path="/62A272C6/61329F1C" Ref="#PWR?"  Part="1" 
-F 0 "#PWR018" H 4850 4300 50  0001 C CNN
-F 1 "GND" H 4855 4377 50  0000 C CNN
-F 2 "" H 4850 4550 50  0001 C CNN
-F 3 "" H 4850 4550 50  0001 C CNN
-	1    4850 4550
+F 0 "#PWR018" H 4700 4300 50  0001 C CNN
+F 1 "GND" H 4705 4377 50  0000 C CNN
+F 2 "" H 4700 4550 50  0001 C CNN
+F 3 "" H 4700 4550 50  0001 C CNN
+	1    4700 4550
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -54,7 +54,7 @@ $EndComp
 $Comp
 L Device:C C?
 U 1 1 61329F28
-P 4850 4400
+P 4700 4400
 AR Path="/61329F28" Ref="C?"  Part="1" 
 AR Path="/61323B71/61329F28" Ref="C?"  Part="1" 
 AR Path="/6152A5A7/61329F28" Ref="C?"  Part="1" 
@@ -63,11 +63,11 @@ AR Path="/6157E815/61329F28" Ref="C?"  Part="1"
 AR Path="/6157EC81/61329F28" Ref="C?"  Part="1" 
 AR Path="/62A21C39/61329F28" Ref="C?"  Part="1" 
 AR Path="/62A272C6/61329F28" Ref="C?"  Part="1" 
-F 0 "C3" H 4965 4446 50  0000 L CNN
-F 1 "10nF" H 4965 4355 50  0000 L CNN
-F 2 "" H 4888 4250 50  0001 C CNN
-F 3 "~" H 4850 4400 50  0001 C CNN
-	1    4850 4400
+F 0 "C3" H 4815 4446 50  0000 L CNN
+F 1 "10nF 16V" H 4815 4355 50  0000 L CNN
+F 2 "" H 4738 4250 50  0001 C CNN
+F 3 "~" H 4700 4400 50  0001 C CNN
+	1    4700 4400
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -84,8 +84,8 @@ AR Path="/6157E815/61329F30" Ref="R?"  Part="1"
 AR Path="/6157EC81/61329F30" Ref="R?"  Part="1" 
 AR Path="/62A21C39/61329F30" Ref="R?"  Part="1" 
 AR Path="/62A272C6/61329F30" Ref="R?"  Part="1" 
-F 0 "R9" H 4518 4446 50  0000 L CNN
-F 1 "13.7k" H 4518 4355 50  0000 L CNN
+F 0 "R9" H 4250 4450 50  0000 L CNN
+F 1 "13.7k" H 4150 4350 50  0000 L CNN
 F 2 "" V 4380 4400 50  0001 C CNN
 F 3 "~" H 4450 4400 50  0001 C CNN
 	1    4450 4400
@@ -104,7 +104,7 @@ AR Path="/6157EC81/61329F37" Ref="C?"  Part="1"
 AR Path="/62A21C39/61329F37" Ref="C?"  Part="1" 
 AR Path="/62A272C6/61329F37" Ref="C?"  Part="1" 
 F 0 "C2" H 3465 3446 50  0000 L CNN
-F 1 "10uF" H 3465 3355 50  0000 L CNN
+F 1 "10uF 50V" H 3465 3355 50  0000 L CNN
 F 2 "" H 3388 3250 50  0001 C CNN
 F 3 "~" H 3350 3400 50  0001 C CNN
 	1    3350 3400
@@ -218,7 +218,7 @@ Connection ~ 5700 3950
 $Comp
 L Device:D_Schottky D?
 U 1 1 61329F6B
-P 6350 3900
+P 6400 3900
 AR Path="/61329F6B" Ref="D?"  Part="1" 
 AR Path="/61323B71/61329F6B" Ref="D?"  Part="1" 
 AR Path="/6152A5A7/61329F6B" Ref="D?"  Part="1" 
@@ -227,17 +227,17 @@ AR Path="/6157E815/61329F6B" Ref="D?"  Part="1"
 AR Path="/6157EC81/61329F6B" Ref="D?"  Part="1" 
 AR Path="/62A21C39/61329F6B" Ref="D?"  Part="1" 
 AR Path="/62A272C6/61329F6B" Ref="D?"  Part="1" 
-F 0 "D1" V 6304 3980 50  0000 L CNN
-F 1 "FSV360FP" V 6395 3980 50  0000 L CNN
-F 2 "" H 6350 3900 50  0001 C CNN
-F 3 "~" H 6350 3900 50  0001 C CNN
-	1    6350 3900
+F 0 "D1" V 6354 3980 50  0000 L CNN
+F 1 "FSV360FP" V 6445 3980 50  0000 L CNN
+F 2 "" H 6400 3900 50  0001 C CNN
+F 3 "~" H 6400 3900 50  0001 C CNN
+	1    6400 3900
 	0    1    1    0   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61329F89
-P 6350 4050
+P 6400 4050
 AR Path="/61329F89" Ref="#PWR?"  Part="1" 
 AR Path="/61323B71/61329F89" Ref="#PWR?"  Part="1" 
 AR Path="/6152A5A7/61329F89" Ref="#PWR?"  Part="1" 
@@ -246,11 +246,11 @@ AR Path="/6157E815/61329F89" Ref="#PWR?"  Part="1"
 AR Path="/6157EC81/61329F89" Ref="#PWR?"  Part="1" 
 AR Path="/62A21C39/61329F89" Ref="#PWR?"  Part="1" 
 AR Path="/62A272C6/61329F89" Ref="#PWR?"  Part="1" 
-F 0 "#PWR020" H 6350 3800 50  0001 C CNN
-F 1 "GND" H 6355 3877 50  0000 C CNN
-F 2 "" H 6350 4050 50  0001 C CNN
-F 3 "" H 6350 4050 50  0001 C CNN
-	1    6350 4050
+F 0 "#PWR020" H 6400 3800 50  0001 C CNN
+F 1 "GND" H 6405 3877 50  0000 C CNN
+F 2 "" H 6400 4050 50  0001 C CNN
+F 3 "" H 6400 4050 50  0001 C CNN
+	1    6400 4050
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -259,9 +259,9 @@ Wire Wire Line
 	4700 3150 4700 3550
 Wire Wire Line
 	5600 3550 5800 3550
-Text Notes 4750 5000 0    50   ~ 0
+Text Notes 4650 5000 0    50   ~ 0
 Set soft-start\nto 2.5ms (pg. 11)
-Text Notes 4600 5000 2    50   ~ 0
+Text Notes 4500 5000 2    50   ~ 0
 Set switching frequency\nto 1.7 MHz (pg. 11)
 Text HLabel 2850 3150 0    50   Input ~ 0
 VIN
@@ -271,7 +271,7 @@ Connection ~ 3350 3150
 Text Notes 3000 4500 0    50   ~ 0
 Voltage divider sets\nunder-voltage lockout\nto 19.2V, start voltage\nto 19.3V (pg. 11)
 Wire Wire Line
-	4800 3750 4600 3750
+	4800 3750 4450 3750
 Wire Wire Line
 	3350 3150 3950 3150
 Wire Wire Line
@@ -283,22 +283,10 @@ Wire Wire Line
 	3950 3250 3950 3150
 Connection ~ 3950 3150
 Wire Wire Line
-	4600 3750 4600 4150
+	6400 3750 6400 3650
+Connection ~ 6400 3650
 Wire Wire Line
-	4700 3850 4700 4150
-Wire Wire Line
-	4600 4150 4450 4150
-Wire Wire Line
-	4450 4150 4450 4250
-Wire Wire Line
-	4850 4150 4850 4250
-Wire Wire Line
-	4700 4150 4850 4150
-Wire Wire Line
-	6350 3750 6350 3650
-Connection ~ 6350 3650
-Wire Wire Line
-	6350 3650 6450 3650
+	6400 3650 6500 3650
 Wire Wire Line
 	5800 3150 6000 3150
 Wire Wire Line
@@ -354,7 +342,7 @@ AR Path="/6157EC81/61329F65" Ref="C?"  Part="1"
 AR Path="/62A21C39/61329F65" Ref="C?"  Part="1" 
 AR Path="/62A272C6/61329F65" Ref="C?"  Part="1" 
 F 0 "C4" H 5885 3354 50  0000 R CNN
-F 1 "100nF" H 5885 3445 50  0000 R CNN
+F 1 "100nF 50V" H 5885 3445 50  0000 R CNN
 F 2 "" H 6038 3250 50  0001 C CNN
 F 3 "~" H 6000 3400 50  0001 C CNN
 	1    6000 3400
@@ -366,43 +354,24 @@ Wire Wire Line
 	7150 3900 7150 4000
 Connection ~ 7150 3900
 Wire Wire Line
-	7550 3900 7550 4000
+	7750 3900 7750 4000
 Wire Wire Line
-	7150 3900 7550 3900
+	7150 3900 7750 3900
 Wire Wire Line
 	7150 3650 7150 3900
 Wire Wire Line
-	7550 4400 7550 4500
-Connection ~ 7550 4400
+	7750 4400 7750 4500
+Connection ~ 7750 4400
 Wire Wire Line
-	7150 4400 7550 4400
+	7150 4400 7750 4400
 Wire Wire Line
 	7150 4300 7150 4400
 Wire Wire Line
-	7550 4300 7550 4400
-$Comp
-L Device:CP1 C?
-U 1 1 61329FC3
-P 7150 4150
-AR Path="/61329FC3" Ref="C?"  Part="1" 
-AR Path="/61323B71/61329FC3" Ref="C?"  Part="1" 
-AR Path="/6152A5A7/61329FC3" Ref="C?"  Part="1" 
-AR Path="/6153DA18/61329FC3" Ref="C5"  Part="1" 
-AR Path="/6157E815/61329FC3" Ref="C?"  Part="1" 
-AR Path="/6157EC81/61329FC3" Ref="C?"  Part="1" 
-AR Path="/62A21C39/61329FC3" Ref="C?"  Part="1" 
-AR Path="/62A272C6/61329FC3" Ref="C?"  Part="1" 
-F 0 "C5" H 7265 4196 50  0000 L CNN
-F 1 "47uF" H 7265 4105 50  0000 L CNN
-F 2 "" H 7188 4000 50  0001 C CNN
-F 3 "~" H 7150 4150 50  0001 C CNN
-	1    7150 4150
-	1    0    0    -1  
-$EndComp
+	7750 4300 7750 4400
 $Comp
 L power:GND #PWR?
 U 1 1 61329FBD
-P 7550 4500
+P 7750 4500
 AR Path="/61329FBD" Ref="#PWR?"  Part="1" 
 AR Path="/61323B71/61329FBD" Ref="#PWR?"  Part="1" 
 AR Path="/6152A5A7/61329FBD" Ref="#PWR?"  Part="1" 
@@ -411,36 +380,17 @@ AR Path="/6157E815/61329FBD" Ref="#PWR?"  Part="1"
 AR Path="/6157EC81/61329FBD" Ref="#PWR?"  Part="1" 
 AR Path="/62A21C39/61329FBD" Ref="#PWR?"  Part="1" 
 AR Path="/62A272C6/61329FBD" Ref="#PWR?"  Part="1" 
-F 0 "#PWR021" H 7550 4250 50  0001 C CNN
-F 1 "GND" H 7555 4327 50  0000 C CNN
-F 2 "" H 7550 4500 50  0001 C CNN
-F 3 "" H 7550 4500 50  0001 C CNN
-	1    7550 4500
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:CP1 C?
-U 1 1 61329FB7
-P 7550 4150
-AR Path="/61329FB7" Ref="C?"  Part="1" 
-AR Path="/61323B71/61329FB7" Ref="C?"  Part="1" 
-AR Path="/6152A5A7/61329FB7" Ref="C?"  Part="1" 
-AR Path="/6153DA18/61329FB7" Ref="C6"  Part="1" 
-AR Path="/6157E815/61329FB7" Ref="C?"  Part="1" 
-AR Path="/6157EC81/61329FB7" Ref="C?"  Part="1" 
-AR Path="/62A21C39/61329FB7" Ref="C?"  Part="1" 
-AR Path="/62A272C6/61329FB7" Ref="C?"  Part="1" 
-F 0 "C6" H 7665 4196 50  0000 L CNN
-F 1 "47uF" H 7665 4105 50  0000 L CNN
-F 2 "" H 7588 4000 50  0001 C CNN
-F 3 "~" H 7550 4150 50  0001 C CNN
-	1    7550 4150
+F 0 "#PWR021" H 7750 4250 50  0001 C CNN
+F 1 "GND" H 7755 4327 50  0000 C CNN
+F 2 "" H 7750 4500 50  0001 C CNN
+F 3 "" H 7750 4500 50  0001 C CNN
+	1    7750 4500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	6750 3650 7150 3650
+	6800 3650 7150 3650
 Wire Wire Line
-	6000 3650 6150 3650
+	6000 3650 6100 3650
 Connection ~ 6000 3650
 Text Notes 5650 4550 0    50   ~ 0
 FB controlled by the LDO\nfor optimal dropout
@@ -490,24 +440,24 @@ Wire Wire Line
 $Comp
 L Connector:TestPoint TP2
 U 1 1 62E3D749
-P 6150 3650
+P 6100 3650
 AR Path="/6153DA18/62E3D749" Ref="TP2"  Part="1" 
 AR Path="/62A21C39/62E3D749" Ref="TP?"  Part="1" 
 AR Path="/62A272C6/62E3D749" Ref="TP?"  Part="1" 
-F 0 "TP2" H 6075 3875 50  0000 L CNN
-F 1 "TestPoint" H 6208 3677 50  0001 L CNN
-F 2 "" H 6350 3650 50  0001 C CNN
-F 3 "~" H 6350 3650 50  0001 C CNN
-	1    6150 3650
+F 0 "TP2" H 6025 3875 50  0000 L CNN
+F 1 "TestPoint" H 6158 3677 50  0001 L CNN
+F 2 "" H 6300 3650 50  0001 C CNN
+F 3 "~" H 6300 3650 50  0001 C CNN
+	1    6100 3650
 	-1   0    0    1   
 $EndComp
-Connection ~ 6150 3650
+Connection ~ 6100 3650
 Wire Wire Line
-	6150 3650 6350 3650
+	6100 3650 6400 3650
 $Comp
 L Device:L L?
 U 1 1 61329F71
-P 6600 3650
+P 6650 3650
 AR Path="/61329F71" Ref="L?"  Part="1" 
 AR Path="/61323B71/61329F71" Ref="L?"  Part="1" 
 AR Path="/6152A5A7/61329F71" Ref="L?"  Part="1" 
@@ -516,11 +466,11 @@ AR Path="/6157E815/61329F71" Ref="L?"  Part="1"
 AR Path="/6157EC81/61329F71" Ref="L?"  Part="1" 
 AR Path="/62A21C39/61329F71" Ref="L?"  Part="1" 
 AR Path="/62A272C6/61329F71" Ref="L?"  Part="1" 
-F 0 "L1" V 6790 3650 50  0000 C CNN
-F 1 "8.2uH SRN6045-8R2Y" V 6700 3900 50  0000 R CNN
-F 2 "" H 6600 3650 50  0001 C CNN
-F 3 "~" H 6600 3650 50  0001 C CNN
-	1    6600 3650
+F 0 "L1" V 6840 3650 50  0000 C CNN
+F 1 "15uH" V 6750 3650 50  0000 C CNN
+F 2 "" H 6650 3650 50  0001 C CNN
+F 3 "SRN6045-150M" H 6650 3650 50  0001 C CNN
+	1    6650 3650
 	0    -1   -1   0   
 $EndComp
 Text Notes 7200 3850 0    50   ~ 0
@@ -528,5 +478,47 @@ Need 15mΩ ESR total
 Text Notes 7550 3400 0    50   ~ 0
 Output: 7-17V @ 1A
 Text Notes 2150 2900 0    50   ~ 0
-Input: 19.2-25.2V (24V nominal)
+Input: 19.2-25.2V or 24V from wall
+Wire Wire Line
+	4450 3750 4450 4250
+Wire Wire Line
+	4700 3850 4700 4250
+$Comp
+L Device:CP1 C?
+U 1 1 614E3734
+P 7750 4150
+AR Path="/614E3734" Ref="C?"  Part="1" 
+AR Path="/61323B71/614E3734" Ref="C?"  Part="1" 
+AR Path="/6152A5A7/614E3734" Ref="C?"  Part="1" 
+AR Path="/6153DA18/614E3734" Ref="C6"  Part="1" 
+AR Path="/6157E815/614E3734" Ref="C?"  Part="1" 
+AR Path="/6157EC81/614E3734" Ref="C?"  Part="1" 
+AR Path="/62A21C39/614E3734" Ref="C?"  Part="1" 
+AR Path="/62A272C6/614E3734" Ref="C?"  Part="1" 
+F 0 "C6" H 7865 4196 50  0000 L CNN
+F 1 "39uF 35V" H 7865 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 7788 4000 50  0001 C CNN
+F 3 "35SVPF39M" H 7750 4150 50  0001 C CNN
+	1    7750 4150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:CP1 C?
+U 1 1 614E531B
+P 7150 4150
+AR Path="/614E531B" Ref="C?"  Part="1" 
+AR Path="/61323B71/614E531B" Ref="C?"  Part="1" 
+AR Path="/6152A5A7/614E531B" Ref="C?"  Part="1" 
+AR Path="/6153DA18/614E531B" Ref="C5"  Part="1" 
+AR Path="/6157E815/614E531B" Ref="C?"  Part="1" 
+AR Path="/6157EC81/614E531B" Ref="C?"  Part="1" 
+AR Path="/62A21C39/614E531B" Ref="C?"  Part="1" 
+AR Path="/62A272C6/614E531B" Ref="C?"  Part="1" 
+F 0 "C5" H 7265 4196 50  0000 L CNN
+F 1 "39uF 35V" H 7265 4105 50  0000 L CNN
+F 2 "Capacitor_SMD:CP_Elec_8x6.9" H 7188 4000 50  0001 C CNN
+F 3 "35SVPF39M" H 7150 4150 50  0001 C CNN
+	1    7150 4150
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
