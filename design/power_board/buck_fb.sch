@@ -143,7 +143,7 @@ AR Path="/62A272C6/61329F43" Ref="U?"  Part="1"
 F 0 "U1" H 5200 4190 50  0000 C CNN
 F 1 "LMR14050" H 5200 4099 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8" H 5200 4075 50  0001 C CNN
-F 3 "" H 5200 4075 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lmr14050.pdf" H 5200 4075 50  0001 C CNN
 	1    5200 3750
 	1    0    0    -1  
 $EndComp
