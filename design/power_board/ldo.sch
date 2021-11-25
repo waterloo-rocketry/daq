@@ -645,4 +645,6 @@ $EndComp
 Wire Wire Line
 	3500 5100 4050 5100
 Connection ~ 4050 5100
+Text Notes 6700 3800 0    50   ~ 0
+The 20mR resistors somehow make the LDOs share the\ncurrent, idk check the datasheet.
 $EndSCHEMATC
