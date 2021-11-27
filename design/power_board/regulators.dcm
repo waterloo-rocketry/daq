@@ -1,0 +1,14 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP +OUT
+D Power symbol creates a global label with name "+15V"
+K power-flag
+$ENDCMP
+#
+$CMP LT3045-1
+D 500mA, Adjustable, Ultralow Noise, Ultrahigh PSRR Linear Regulator, MSOP-12
+K linear voltage regulator low-noise
+F https://www.analog.com/media/en/technical-documentation/data-sheets/3045fa.pdf
+$ENDCMP
+#
+#End Doc Library
