@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name spidey_sense)(type Legacy)(uri ${KIPRJMOD}/spidey_sense.lib)(options "")(descr ""))
+)
