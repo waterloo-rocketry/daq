@@ -18,7 +18,7 @@ L Device:R R1
 U 1 1 61A1C3FB
 P 4750 2150
 F 0 "R1" H 4680 2104 50  0000 R CNN
-F 1 "470kΩ" H 4680 2195 50  0000 R CNN
+F 1 "150kΩ" H 4680 2195 50  0000 R CNN
 F 2 "" V 4680 2150 50  0001 C CNN
 F 3 "~" H 4750 2150 50  0001 C CNN
 	1    4750 2150
@@ -176,41 +176,8 @@ F 3 "~" H 3200 1850 50  0001 C CNN
 	1    3200 1850
 	1    0    0    -1  
 $EndComp
-$Comp
-L Connector:Screw_Terminal_01x01 J1
-U 1 1 61AA86D4
-P 9400 1400
-F 0 "J1" H 9318 1175 50  0000 C CNN
-F 1 "Output_Screw_Terminal" H 9318 1266 50  0000 C CNN
-F 2 "" H 9400 1400 50  0001 C CNN
-F 3 "~" H 9400 1400 50  0001 C CNN
-	1    9400 1400
-	-1   0    0    1   
-$EndComp
-$Comp
-L power:+15V #PWR04
-U 1 1 61AAB9E2
-P 5150 2150
-F 0 "#PWR04" H 5150 2000 50  0001 C CNN
-F 1 "+15V" H 5165 2323 50  0000 C CNN
-F 2 "" H 5150 2150 50  0001 C CNN
-F 3 "" H 5150 2150 50  0001 C CNN
-	1    5150 2150
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	5150 2150 5150 2250
-$Comp
-L power:-15V #PWR05
-U 1 1 61AAD663
-P 6500 2350
-F 0 "#PWR05" H 6500 2450 50  0001 C CNN
-F 1 "-15V" H 6515 2523 50  0000 C CNN
-F 2 "" H 6500 2350 50  0001 C CNN
-F 3 "" H 6500 2350 50  0001 C CNN
-	1    6500 2350
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	6000 2450 6500 2450
 Wire Wire Line
@@ -228,45 +195,12 @@ F 3 "" H 7800 2250 50  0001 C CNN
 	1    7800 2250
 	0    1    1    0   
 $EndComp
-$Comp
-L power:+15V #PWR06
-U 1 1 61AB0C8F
-P 7900 1900
-F 0 "#PWR06" H 7900 1750 50  0001 C CNN
-F 1 "+15V" H 7915 2073 50  0000 C CNN
-F 2 "" H 7900 1900 50  0001 C CNN
-F 3 "" H 7900 1900 50  0001 C CNN
-	1    7900 1900
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:-15V #PWR07
-U 1 1 61AB17F1
-P 8150 2650
-F 0 "#PWR07" H 8150 2750 50  0001 C CNN
-F 1 "-15V" H 8165 2823 50  0000 C CNN
-F 2 "" H 8150 2650 50  0001 C CNN
-F 3 "" H 8150 2650 50  0001 C CNN
-	1    8150 2650
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	7900 2500 7900 2750
 Wire Wire Line
 	7900 2750 8150 2750
 Wire Wire Line
 	8150 2750 8150 2650
-$Comp
-L power:-15V #PWR?
-U 1 1 61AB941A
-P 4750 1950
-F 0 "#PWR?" H 4750 2050 50  0001 C CNN
-F 1 "-15V" H 4765 2123 50  0000 C CNN
-F 2 "" H 4750 1950 50  0001 C CNN
-F 3 "" H 4750 1950 50  0001 C CNN
-	1    4750 1950
-	1    0    0    -1  
-$EndComp
 Wire Wire Line
 	2900 1850 3000 1850
 Wire Wire Line
@@ -291,17 +225,6 @@ Text Notes 2750 2700 0    50   ~ 0
 Vout = 10mV/°C
 Wire Wire Line
 	2900 1450 3000 1450
-$Comp
-L power:+15V #PWR?
-U 1 1 61ACD21A
-P 2700 1200
-F 0 "#PWR?" H 2700 1050 50  0001 C CNN
-F 1 "+15V" H 2715 1373 50  0000 C CNN
-F 2 "" H 2700 1200 50  0001 C CNN
-F 3 "" H 2700 1200 50  0001 C CNN
-	1    2700 1200
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 61ACEE9D
@@ -351,7 +274,101 @@ Wire Wire Line
 	7000 1400 7500 1400
 Connection ~ 7500 1400
 Text Notes 2750 2350 0    50   ~ 0
-R1 < 15V/30uA\n
-Text Notes 2750 3050 0    50   ~ 0
+R1 < 5V/30uA\n
+Text Notes 2750 3400 0    50   ~ 0
 G≈388\nVout @ 1350°C ≈ 23.2V\nVout @ -200°C ≈-1.7V\n
+$Comp
+L Connector:Screw_Terminal_01x02 J1
+U 1 1 61AA8955
+P 9400 1500
+F 0 "J1" H 9318 1175 50  0000 C CNN
+F 1 "Output_Screw_Terminal" H 9318 1266 50  0000 C CNN
+F 2 "" H 9400 1500 50  0001 C CNN
+F 3 "~" H 9400 1500 50  0001 C CNN
+	1    9400 1500
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 61AAA959
+P 9700 1550
+F 0 "#PWR?" H 9700 1300 50  0001 C CNN
+F 1 "GND" H 9705 1377 50  0000 C CNN
+F 2 "" H 9700 1550 50  0001 C CNN
+F 3 "" H 9700 1550 50  0001 C CNN
+	1    9700 1550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9700 1500 9700 1550
+Wire Wire Line
+	9600 1500 9700 1500
+$Comp
+L power:+5V #PWR?
+U 1 1 61AADBDB
+P 2700 1200
+F 0 "#PWR?" H 2700 1050 50  0001 C CNN
+F 1 "+5V" H 2715 1373 50  0000 C CNN
+F 2 "" H 2700 1200 50  0001 C CNN
+F 3 "" H 2700 1200 50  0001 C CNN
+	1    2700 1200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61AB04A9
+P 5150 2150
+F 0 "#PWR?" H 5150 2000 50  0001 C CNN
+F 1 "+5V" H 5165 2323 50  0000 C CNN
+F 2 "" H 5150 2150 50  0001 C CNN
+F 3 "" H 5150 2150 50  0001 C CNN
+	1    5150 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 61AB1BDF
+P 7900 1900
+F 0 "#PWR?" H 7900 1750 50  0001 C CNN
+F 1 "+5V" H 7915 2073 50  0000 C CNN
+F 2 "" H 7900 1900 50  0001 C CNN
+F 3 "" H 7900 1900 50  0001 C CNN
+	1    7900 1900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 61AB3FE8
+P 8150 2650
+F 0 "#PWR?" H 8150 2750 50  0001 C CNN
+F 1 "-5V" H 8165 2823 50  0000 C CNN
+F 2 "" H 8150 2650 50  0001 C CNN
+F 3 "" H 8150 2650 50  0001 C CNN
+	1    8150 2650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 61AB5554
+P 6500 2350
+F 0 "#PWR?" H 6500 2450 50  0001 C CNN
+F 1 "-5V" H 6515 2523 50  0000 C CNN
+F 2 "" H 6500 2350 50  0001 C CNN
+F 3 "" H 6500 2350 50  0001 C CNN
+	1    6500 2350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR?
+U 1 1 61AB6D5C
+P 4750 1950
+F 0 "#PWR?" H 4750 2050 50  0001 C CNN
+F 1 "-5V" H 4765 2123 50  0000 C CNN
+F 2 "" H 4750 1950 50  0001 C CNN
+F 3 "" H 4750 1950 50  0001 C CNN
+	1    4750 1950
+	1    0    0    -1  
+$EndComp
+Text Notes 2750 3150 0    50   ~ 0
+Datasheets says to use precision resistors to set or\ncalibrate gain, not sure how this is done (I assume\nit is the full scale trim resistor?).
 $EndSCHEMATC
