@@ -1,0 +1,471 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A 11000 8500
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:R R1
+U 1 1 61A1C3FB
+P 2600 2750
+F 0 "R1" H 2530 2704 50  0000 R CNN
+F 1 "150kΩ" H 2530 2795 50  0000 R CNN
+F 2 "" V 2530 2750 50  0001 C CNN
+F 3 "~" H 2600 2750 50  0001 C CNN
+	1    2600 2750
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 61A1DB36
+P 7650 2150
+F 0 "R2" H 7500 2100 50  0000 C CNN
+F 1 "1kΩ" H 7500 2200 50  0000 C CNN
+F 2 "" V 7580 2150 50  0001 C CNN
+F 3 "~" H 7650 2150 50  0001 C CNN
+	1    7650 2150
+	-1   0    0    1   
+$EndComp
+$Comp
+L Device:C C1
+U 1 1 61A1DF1A
+P 8100 3000
+F 0 "C1" H 8215 3046 50  0000 L CNN
+F 1 "0.1uF" H 8215 2955 50  0000 L CNN
+F 2 "" H 8138 2850 50  0001 C CNN
+F 3 "~" H 8100 3000 50  0001 C CNN
+	1    8100 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C2
+U 1 1 61A1EB10
+P 8850 1950
+F 0 "C2" V 8965 1996 50  0000 L CNN
+F 1 "0.1uF" V 9050 1950 50  0000 L CNN
+F 2 "" H 8888 1800 50  0001 C CNN
+F 3 "~" H 8850 1950 50  0001 C CNN
+	1    8850 1950
+	0    1    1    0   
+$EndComp
+NoConn ~ 3850 2950
+NoConn ~ 3850 2750
+NoConn ~ 3150 2750
+Wire Wire Line
+	3000 2850 3150 2850
+Text GLabel 4050 2850 2    50   Input ~ 0
+K-
+Wire Wire Line
+	3850 2850 4050 2850
+Text GLabel 8000 2700 0    50   Input ~ 0
+K+
+Wire Wire Line
+	8000 2700 8100 2700
+Text GLabel 9300 2600 2    50   Input ~ 0
+Vout
+Wire Wire Line
+	8950 2600 9200 2600
+Wire Wire Line
+	8100 2700 8100 2850
+Connection ~ 8100 2700
+Wire Wire Line
+	8100 2700 8150 2700
+$Comp
+L power:GND #PWR01
+U 1 1 61A4497B
+P 3000 3300
+F 0 "#PWR01" H 3000 3050 50  0001 C CNN
+F 1 "GND" H 3005 3127 50  0000 C CNN
+F 2 "" H 3000 3300 50  0001 C CNN
+F 3 "" H 3000 3300 50  0001 C CNN
+	1    3000 3300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR03
+U 1 1 61A455AD
+P 8100 3200
+F 0 "#PWR03" H 8100 2950 50  0001 C CNN
+F 1 "GND" H 8105 3027 50  0000 C CNN
+F 2 "" H 8100 3200 50  0001 C CNN
+F 3 "" H 8100 3200 50  0001 C CNN
+	1    8100 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3150 8100 3200
+Wire Wire Line
+	3150 3050 3000 3050
+Wire Wire Line
+	3000 3050 3000 3300
+$Comp
+L power:GND #PWR02
+U 1 1 61A4CC59
+P 7650 2350
+F 0 "#PWR02" H 7650 2100 50  0001 C CNN
+F 1 "GND" H 7655 2177 50  0000 C CNN
+F 2 "" H 7650 2350 50  0001 C CNN
+F 3 "" H 7650 2350 50  0001 C CNN
+	1    7650 2350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7650 2300 7650 2350
+$Comp
+L Device:R R3
+U 1 1 61A4ED99
+P 8850 1750
+F 0 "R3" V 8643 1750 50  0000 C CNN
+F 1 "255k" V 8734 1750 50  0000 C CNN
+F 2 "" V 8780 1750 50  0001 C CNN
+F 3 "~" H 8850 1750 50  0001 C CNN
+	1    8850 1750
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7650 1750 7650 2000
+Wire Wire Line
+	8150 2500 8150 1950
+Wire Wire Line
+	9000 1750 9200 1750
+Wire Wire Line
+	9200 1750 9200 1950
+Connection ~ 9200 2600
+Wire Wire Line
+	9200 2600 9300 2600
+Wire Wire Line
+	8150 1950 8700 1950
+Wire Wire Line
+	9000 1950 9200 1950
+Connection ~ 9200 1950
+Wire Wire Line
+	9200 1950 9200 2600
+Wire Wire Line
+	3000 2750 3000 2850
+Wire Wire Line
+	3850 3050 4350 3050
+Wire Wire Line
+	4350 3050 4350 2950
+Wire Wire Line
+	8550 2250 8550 2350
+Wire Wire Line
+	8550 2850 8550 3100
+Wire Wire Line
+	8550 3100 8800 3100
+Wire Wire Line
+	8800 3100 8800 3000
+Text GLabel 2250 2950 2    50   Input ~ 0
+K-
+Text GLabel 9350 2950 0    50   Input ~ 0
+Vout
+Wire Wire Line
+	2600 2550 2600 2600
+Wire Wire Line
+	2600 2900 2600 2950
+Wire Wire Line
+	2600 2950 3150 2950
+$Comp
+L power:GND #PWR05
+U 1 1 61ACEE9D
+P 5700 1150
+F 0 "#PWR05" H 5700 900 50  0001 C CNN
+F 1 "GND" H 5705 977 50  0000 C CNN
+F 2 "" H 5700 1150 50  0001 C CNN
+F 3 "" H 5700 1150 50  0001 C CNN
+	1    5700 1150
+	1    0    0    -1  
+$EndComp
+Text Notes 8300 3250 0    50   ~ 0
+R1 < 5V/30uA\n
+$Comp
+L power:GND #PWR08
+U 1 1 61AAA959
+P 9350 3050
+F 0 "#PWR08" H 9350 2800 50  0001 C CNN
+F 1 "GND" H 9355 2877 50  0000 C CNN
+F 2 "" H 9350 3050 50  0001 C CNN
+F 3 "" H 9350 3050 50  0001 C CNN
+	1    9350 3050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR04
+U 1 1 61AADBDB
+P 5700 1050
+F 0 "#PWR04" H 5700 900 50  0001 C CNN
+F 1 "+5V" H 5715 1223 50  0000 C CNN
+F 2 "" H 5700 1050 50  0001 C CNN
+F 3 "" H 5700 1050 50  0001 C CNN
+	1    5700 1050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 61AB04A9
+P 3000 2750
+F 0 "#PWR07" H 3000 2600 50  0001 C CNN
+F 1 "+5V" H 3015 2923 50  0000 C CNN
+F 2 "" H 3000 2750 50  0001 C CNN
+F 3 "" H 3000 2750 50  0001 C CNN
+	1    3000 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR010
+U 1 1 61AB1BDF
+P 8550 2250
+F 0 "#PWR010" H 8550 2100 50  0001 C CNN
+F 1 "+5V" H 8565 2423 50  0000 C CNN
+F 2 "" H 8550 2250 50  0001 C CNN
+F 3 "" H 8550 2250 50  0001 C CNN
+	1    8550 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR011
+U 1 1 61AB3FE8
+P 8800 3000
+F 0 "#PWR011" H 8800 3100 50  0001 C CNN
+F 1 "-5V" H 8815 3173 50  0000 C CNN
+F 2 "" H 8800 3000 50  0001 C CNN
+F 3 "" H 8800 3000 50  0001 C CNN
+	1    8800 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR09
+U 1 1 61AB5554
+P 4350 2950
+F 0 "#PWR09" H 4350 3050 50  0001 C CNN
+F 1 "-5V" H 4365 3123 50  0000 C CNN
+F 2 "" H 4350 2950 50  0001 C CNN
+F 3 "" H 4350 2950 50  0001 C CNN
+	1    4350 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:-5V #PWR06
+U 1 1 61AB6D5C
+P 2600 2550
+F 0 "#PWR06" H 2600 2650 50  0001 C CNN
+F 1 "-5V" H 2615 2723 50  0000 C CNN
+F 2 "" H 2600 2550 50  0001 C CNN
+F 3 "" H 2600 2550 50  0001 C CNN
+	1    2600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x02 J3
+U 1 1 61B42880
+P 9550 2950
+F 0 "J3" H 9630 2942 50  0000 L CNN
+F 1 "Screw_Terminal_01x02" H 9630 2851 50  0000 L CNN
+F 2 "" H 9550 2950 50  0001 C CNN
+F 3 "~" H 9550 2950 50  0001 C CNN
+	1    9550 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R4
+U 1 1 61B5558F
+P 7900 1750
+F 0 "R4" V 8107 1750 50  0000 C CNN
+F 1 "200Ω" V 8016 1750 50  0000 C CNN
+F 2 "" V 7830 1750 50  0001 C CNN
+F 3 "~" H 7900 1750 50  0001 C CNN
+	1    7900 1750
+	0    -1   -1   0   
+$EndComp
+Text Notes 8300 3700 0    50   ~ 0
+R4 > 250k\nIf 1% resistor \n0.99*R4 > 250k\nGain of 200 should keep us within 0V and 7.5V\n(previous gain calculation was incorrect)
+Wire Wire Line
+	7650 1750 7750 1750
+Wire Wire Line
+	8050 1750 8150 1750
+Wire Wire Line
+	8150 1750 8150 1950
+Connection ~ 8150 1750
+Wire Wire Line
+	8150 1750 8700 1750
+Connection ~ 8150 1950
+$Comp
+L Thermocouple:LT1025 U1
+U 1 1 61B5397B
+P 3500 2900
+F 0 "U1" H 3500 3315 50  0000 C CNN
+F 1 "LT1025" H 3500 3224 50  0000 C CNN
+F 2 "" H 2850 3200 50  0001 C CNN
+F 3 "" H 2850 3200 50  0001 C CNN
+	1    3500 2900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Thermocouple:LT1001 U3
+U 1 1 61B54620
+P 8450 2600
+F 0 "U3" V 8404 3144 50  0000 L CNN
+F 1 "LT1001" V 8495 3144 50  0000 L CNN
+F 2 "" H 8450 2600 50  0001 C CNN
+F 3 "" H 8450 2600 50  0001 C CNN
+	1    8450 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L Regulator_Linear:LM7905_TO220 U2
+U 1 1 61B56B4F
+P 6750 1250
+F 0 "U2" H 6750 1101 50  0000 C CNN
+F 1 "LM7905" H 6750 1010 50  0000 C CNN
+F 2 "Package_TO_SOT_THT:TO-220-3_Vertical" H 6750 1050 50  0001 C CIN
+F 3 "https://www.onsemi.com/pub/Collateral/MC7900-D.PDF" H 6750 1250 50  0001 C CNN
+	1    6750 1250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C3
+U 1 1 61B5AC46
+P 6400 900
+F 0 "C3" H 6515 946 50  0000 L CNN
+F 1 "C" H 6515 855 50  0000 L CNN
+F 2 "" H 6438 750 50  0001 C CNN
+F 3 "~" H 6400 900 50  0001 C CNN
+	1    6400 900 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 1050 6400 1250
+Connection ~ 6400 1250
+Wire Wire Line
+	6400 1250 6450 1250
+Wire Wire Line
+	6400 750  6750 750 
+Wire Wire Line
+	6750 750  6750 950 
+Wire Wire Line
+	6750 750  7100 750 
+Wire Wire Line
+	7100 750  7100 1250
+Wire Wire Line
+	7100 1250 7050 1250
+Connection ~ 6750 750 
+$Comp
+L power:-5V #PWR014
+U 1 1 61B5E6DB
+P 7250 1150
+F 0 "#PWR014" H 7250 1250 50  0001 C CNN
+F 1 "-5V" H 7265 1323 50  0000 C CNN
+F 2 "" H 7250 1150 50  0001 C CNN
+F 3 "" H 7250 1150 50  0001 C CNN
+	1    7250 1150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 1250 7250 1250
+Wire Wire Line
+	7250 1250 7250 1150
+Connection ~ 7100 1250
+$Comp
+L power:GND #PWR012
+U 1 1 61B5F9E1
+P 6200 850
+F 0 "#PWR012" H 6200 600 50  0001 C CNN
+F 1 "GND" H 6205 677 50  0000 C CNN
+F 2 "" H 6200 850 50  0001 C CNN
+F 3 "" H 6200 850 50  0001 C CNN
+	1    6200 850 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6400 750  6200 750 
+Wire Wire Line
+	6200 750  6200 850 
+Connection ~ 6400 750 
+Wire Wire Line
+	5950 1150 5950 1250
+Wire Wire Line
+	5950 1250 6400 1250
+$Comp
+L power:-12V #PWR015
+U 1 1 61B67BF1
+P 5950 1150
+F 0 "#PWR015" H 5950 1250 50  0001 C CNN
+F 1 "-12V" H 5965 1323 50  0000 C CNN
+F 2 "" H 5950 1150 50  0001 C CNN
+F 3 "" H 5950 1150 50  0001 C CNN
+	1    5950 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x03 J1
+U 1 1 61B69C96
+P 5350 1050
+F 0 "J1" H 5450 1050 50  0000 C CNN
+F 1 "Input_Screw_Terminal" H 5850 1150 50  0000 C CNN
+F 2 "" H 5350 1050 50  0001 C CNN
+F 3 "~" H 5350 1050 50  0001 C CNN
+	1    5350 1050
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5550 1150 5700 1150
+Wire Wire Line
+	5550 1050 5700 1050
+$Comp
+L power:-12V #PWR013
+U 1 1 61B8CC99
+P 5550 950
+F 0 "#PWR013" H 5550 1050 50  0001 C CNN
+F 1 "-12V" H 5565 1123 50  0000 C CNN
+F 2 "" H 5550 950 50  0001 C CNN
+F 3 "" H 5550 950 50  0001 C CNN
+	1    5550 950 
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 61B8FF50
+P 2050 2850
+F 0 "J2" H 2150 2850 50  0000 C CNN
+F 1 "Thermocouple_Screw_Terminal" H 2700 2950 50  0000 C CNN
+F 2 "" H 2050 2850 50  0001 C CNN
+F 3 "~" H 2050 2850 50  0001 C CNN
+	1    2050 2850
+	-1   0    0    1   
+$EndComp
+Text GLabel 2250 2850 2    50   Input ~ 0
+K-
+Text GLabel 2250 2750 2    50   Input ~ 0
+K-
+Text GLabel 2250 2650 2    50   Input ~ 0
+K-
+Text Notes 750  2800 0    50   ~ 0
+Not sure how to determine how\nmany thermocouples probes\nthe LT1025 can handle
+$Comp
+L Connector:Screw_Terminal_01x01 J4
+U 1 1 61BB8483
+P 7300 3000
+F 0 "J4" H 7400 2950 50  0000 L CNN
+F 1 "Amplifier_Screw_Terminal" H 7400 3050 50  0000 L CNN
+F 2 "" H 7300 3000 50  0001 C CNN
+F 3 "~" H 7300 3000 50  0001 C CNN
+	1    7300 3000
+	-1   0    0    1   
+$EndComp
+Text GLabel 7500 3000 2    50   Input ~ 0
+K+
+Text Notes 5100 1550 0    50   ~ 10
+Negative Voltage Regulator\n
+Text Notes 1150 3250 0    50   ~ 10
+Thermocouple Cold Junction Compensator
+Text Notes 7500 3800 0    50   ~ 10
+Amplifier
+$EndSCHEMATC

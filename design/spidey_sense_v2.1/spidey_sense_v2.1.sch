@@ -28,21 +28,21 @@ NoConn ~ 5600 4650
 $Comp
 L Connector:Screw_Terminal_01x02 J2
 U 1 1 61ABC308
-P 4150 3350
-F 0 "J2" H 4230 3342 50  0000 L CNN
-F 1 "Thermocouple_Screw_Terminal" H 4230 3251 50  0000 L CNN
-F 2 "" H 4150 3350 50  0001 C CNN
-F 3 "~" H 4150 3350 50  0001 C CNN
-	1    4150 3350
-	1    0    0    -1  
+P 4650 3450
+F 0 "J2" H 4730 3442 50  0000 L CNN
+F 1 "Thermocouple_Screw_Terminal" H 4730 3351 50  0000 L CNN
+F 2 "" H 4650 3450 50  0001 C CNN
+F 3 "~" H 4650 3450 50  0001 C CNN
+	1    4650 3450
+	-1   0    0    1   
 $EndComp
 Wire Wire Line
 	5600 4350 5550 4350
 Text GLabel 5200 3850 0    50   Input ~ 0
 K-
-Text GLabel 3950 3450 0    50   Input ~ 0
+Text GLabel 4850 3350 2    50   Input ~ 0
 K-
-Text GLabel 3950 3350 0    50   Input ~ 0
+Text GLabel 4850 3450 2    50   Input ~ 0
 K+
 Text Notes 5050 3750 0    50   ~ 0
 Will work on a filter for thermocouple if\ndesign seems better than the LT1025\n
@@ -254,44 +254,44 @@ Wire Wire Line
 $Comp
 L Connector:Screw_Terminal_01x02 J1
 U 1 1 61AED7D3
-P 4100 2900
-F 0 "J1" H 4180 2892 50  0000 L CNN
-F 1 "Input_Screw_Terminal" H 4180 2801 50  0000 L CNN
-F 2 "" H 4100 2900 50  0001 C CNN
-F 3 "~" H 4100 2900 50  0001 C CNN
-	1    4100 2900
-	1    0    0    -1  
+P 4650 2950
+F 0 "J1" H 4730 2942 50  0000 L CNN
+F 1 "Input_Screw_Terminal" H 4730 2851 50  0000 L CNN
+F 2 "" H 4650 2950 50  0001 C CNN
+F 3 "~" H 4650 2950 50  0001 C CNN
+	1    4650 2950
+	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR02
 U 1 1 61AEF37B
-P 3850 3050
-F 0 "#PWR02" H 3850 2800 50  0001 C CNN
-F 1 "GND" H 3855 2877 50  0000 C CNN
-F 2 "" H 3850 3050 50  0001 C CNN
-F 3 "" H 3850 3050 50  0001 C CNN
-	1    3850 3050
+P 4900 3000
+F 0 "#PWR02" H 4900 2750 50  0001 C CNN
+F 1 "GND" H 4905 2827 50  0000 C CNN
+F 2 "" H 4900 3000 50  0001 C CNN
+F 3 "" H 4900 3000 50  0001 C CNN
+	1    4900 3000
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+5V #PWR01
 U 1 1 61AF05AE
-P 3850 2850
-F 0 "#PWR01" H 3850 2700 50  0001 C CNN
-F 1 "+5V" H 3865 3023 50  0000 C CNN
-F 2 "" H 3850 2850 50  0001 C CNN
-F 3 "" H 3850 2850 50  0001 C CNN
-	1    3850 2850
+P 4900 2800
+F 0 "#PWR01" H 4900 2650 50  0001 C CNN
+F 1 "+5V" H 4915 2973 50  0000 C CNN
+F 2 "" H 4900 2800 50  0001 C CNN
+F 3 "" H 4900 2800 50  0001 C CNN
+	1    4900 2800
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3850 2850 3850 2900
+	4900 3000 4900 2950
 Wire Wire Line
-	3850 2900 3900 2900
+	4900 2950 4850 2950
 Wire Wire Line
-	3850 3050 3850 3000
+	4900 2800 4900 2850
 Wire Wire Line
-	3850 3000 3900 3000
+	4900 2850 4850 2850
 $Comp
 L power:+5V #PWR03
 U 1 1 61AF2214
@@ -306,15 +306,15 @@ $EndComp
 $Comp
 L Connector:Screw_Terminal_01x01 J3
 U 1 1 61AF2B8C
-P 7300 3950
-F 0 "J3" H 7218 3725 50  0000 C CNN
-F 1 "Output_Screw_Terminal" H 7218 3816 50  0000 C CNN
-F 2 "" H 7300 3950 50  0001 C CNN
-F 3 "~" H 7300 3950 50  0001 C CNN
-	1    7300 3950
-	-1   0    0    1   
+P 7300 3850
+F 0 "J3" H 7400 3800 50  0000 C CNN
+F 1 "Output_Screw_Terminal" H 7800 3900 50  0000 C CNN
+F 2 "" H 7300 3850 50  0001 C CNN
+F 3 "~" H 7300 3850 50  0001 C CNN
+	1    7300 3850
+	1    0    0    -1  
 $EndComp
-Text GLabel 7500 3950 2    50   Input ~ 0
+Text GLabel 7100 3850 0    50   Input ~ 0
 Vout
 Wire Wire Line
 	3700 4350 4050 4350
@@ -333,4 +333,6 @@ Text Notes 3900 4050 0    50   ~ 0
 This resistor divider\nprovides 1V to REF
 Text Notes 7250 4300 0    50   ~ 0
 Vout = (T*5mV/°C) + Vref\n@T = -200, Vout = 0V\n@T = 1800, Vout = 10V
+Text Notes 3050 5250 0    50   ~ 0
+Amplifier to provide clean signal\n(recommended in datasheet, not sure\nwhy a voltage regulator wasn't suggested)
 $EndSCHEMATC
