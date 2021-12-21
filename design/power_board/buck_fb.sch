@@ -64,7 +64,7 @@ AR Path="/6157EC81/61329F28" Ref="C?"  Part="1"
 AR Path="/62A21C39/61329F28" Ref="C?"  Part="1" 
 AR Path="/62A272C6/61329F28" Ref="C?"  Part="1" 
 F 0 "C3" H 4815 4446 50  0000 L CNN
-F 1 "10nF 16V" H 4815 4355 50  0000 L CNN
+F 1 "100nF 16V" H 4815 4355 50  0000 L CNN
 F 2 "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" H 4738 4250 50  0001 C CNN
 F 3 "~" H 4700 4400 50  0001 C CNN
 	1    4700 4400
@@ -130,7 +130,7 @@ F 3 "" H 3350 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L regulators:LMR14050 U?
+L regulators:LMR14030 U?
 U 1 1 61329F43
 P 5200 3750
 AR Path="/61323B71/61329F43" Ref="U?"  Part="1" 
@@ -141,9 +141,9 @@ AR Path="/6157EC81/61329F43" Ref="U?"  Part="1"
 AR Path="/62A21C39/61329F43" Ref="U?"  Part="1" 
 AR Path="/62A272C6/61329F43" Ref="U?"  Part="1" 
 F 0 "U1" H 5200 4190 50  0000 C CNN
-F 1 "LMR14050" H 5200 4099 50  0000 C CNN
+F 1 "LMR14030" H 5200 4099 50  0000 C CNN
 F 2 "Package_SO:TI_SO-PowerPAD-8" H 5200 4075 50  0001 C CNN
-F 3 "https://www.ti.com/lit/ds/symlink/lmr14050.pdf" H 5200 4075 50  0001 C CNN
+F 3 "https://www.ti.com/lit/ds/symlink/lmr14030.pdf" H 5200 4075 50  0001 C CNN
 	1    5200 3750
 	1    0    0    -1  
 $EndComp
@@ -260,7 +260,7 @@ Wire Wire Line
 Wire Wire Line
 	5600 3550 5800 3550
 Text Notes 4650 5000 0    50   ~ 0
-Set soft-start\nto 2.5ms (pg. 11)
+Set soft-start\nto 25ms (pg. 11)
 Text Notes 4500 5000 2    50   ~ 0
 Set switching frequency\nto 1.7 MHz (pg. 11)
 Text HLabel 2850 3150 0    50   Input ~ 0
