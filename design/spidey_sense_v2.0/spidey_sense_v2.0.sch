@@ -29,8 +29,6 @@ NoConn ~ 3500 3050
 NoConn ~ 2800 3050
 Wire Wire Line
 	2650 3150 2800 3150
-Text GLabel 3700 3150 2    50   Input ~ 0
-K-
 Wire Wire Line
 	3500 3150 3700 3150
 $Comp
@@ -117,7 +115,7 @@ Wire Wire Line
 	3250 1600 3400 1600
 Text Notes 800  3550 0    50   ~ 10
 Thermocouple Cold Junction Compensator
-Text Notes 8000 4300 0    50   ~ 10
+Text Notes 7450 5700 0    50   ~ 10
 Amplifier
 $Comp
 L Connector:Screw_Terminal_01x02 J1
@@ -238,86 +236,16 @@ Wire Wire Line
 	6000 950  6000 1400
 Connection ~ 5300 950 
 $Comp
-L Connector:Screw_Terminal_01x01 J2
-U 1 1 61BA0212
-P 6450 1300
-F 0 "J2" H 6530 1342 50  0000 L CNN
-F 1 "Testing_Screw_Terminal" H 6530 1251 50  0000 L CNN
-F 2 "" H 6450 1300 50  0001 C CNN
-F 3 "~" H 6450 1300 50  0001 C CNN
-	1    6450 1300
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:-5V #PWR016
 U 1 1 61BA7781
-P 6250 1300
-F 0 "#PWR016" H 6250 1400 50  0001 C CNN
-F 1 "-5V" H 6265 1473 50  0000 C CNN
-F 2 "" H 6250 1300 50  0001 C CNN
-F 3 "" H 6250 1300 50  0001 C CNN
-	1    6250 1300
+P 6750 1500
+F 0 "#PWR016" H 6750 1600 50  0001 C CNN
+F 1 "-5V" H 6765 1673 50  0000 C CNN
+F 2 "" H 6750 1500 50  0001 C CNN
+F 3 "" H 6750 1500 50  0001 C CNN
+	1    6750 1500
 	1    0    0    -1  
 $EndComp
-$Sheet
-S 8100 850  650  500 
-U 61C21E07
-F0 "Amplifier1" 50
-F1 "Amplifier.sch" 50
-F2 "K+" I L 8100 1250 50 
-F3 "GND" I R 8750 1250 50 
-F4 "-5V" I R 8750 1100 50 
-F5 "+5V" I R 8750 950 50 
-$EndSheet
-$Comp
-L power:GND #PWR010
-U 1 1 61C47D22
-P 8850 1300
-F 0 "#PWR010" H 8850 1050 50  0001 C CNN
-F 1 "GND" H 8855 1127 50  0000 C CNN
-F 2 "" H 8850 1300 50  0001 C CNN
-F 3 "" H 8850 1300 50  0001 C CNN
-	1    8850 1300
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 1250 8850 1250
-Wire Wire Line
-	8850 1250 8850 1300
-$Comp
-L power:+5V #PWR03
-U 1 1 61C48A84
-P 8850 900
-F 0 "#PWR03" H 8850 750 50  0001 C CNN
-F 1 "+5V" H 8865 1073 50  0000 C CNN
-F 2 "" H 8850 900 50  0001 C CNN
-F 3 "" H 8850 900 50  0001 C CNN
-	1    8850 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 900  8850 950 
-Wire Wire Line
-	8850 950  8750 950 
-$Comp
-L power:-5V #PWR011
-U 1 1 61C498FB
-P 9050 900
-F 0 "#PWR011" H 9050 1000 50  0001 C CNN
-F 1 "-5V" H 9065 1073 50  0000 C CNN
-F 2 "" H 9050 900 50  0001 C CNN
-F 3 "" H 9050 900 50  0001 C CNN
-	1    9050 900 
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 900  9050 1100
-Wire Wire Line
-	9050 1100 8750 1100
-Text GLabel 8000 1250 0    50   Input ~ 0
-K+
-Wire Wire Line
-	8000 1250 8100 1250
 $Comp
 L Device:C C4
 U 1 1 61C5D947
@@ -341,183 +269,6 @@ F 3 "" H 4800 1850 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Connection ~ 4800 1550
-$Sheet
-S 8100 1750 650  500 
-U 61C5A7A8
-F0 "Amplifier2" 50
-F1 "Amplifier.sch" 50
-F2 "K+" I L 8100 2150 50 
-F3 "GND" I R 8750 2150 50 
-F4 "-5V" I R 8750 2000 50 
-F5 "+5V" I R 8750 1850 50 
-$EndSheet
-$Comp
-L power:GND #PWR017
-U 1 1 61C5A7AE
-P 8850 2200
-F 0 "#PWR017" H 8850 1950 50  0001 C CNN
-F 1 "GND" H 8855 2027 50  0000 C CNN
-F 2 "" H 8850 2200 50  0001 C CNN
-F 3 "" H 8850 2200 50  0001 C CNN
-	1    8850 2200
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 2150 8850 2150
-Wire Wire Line
-	8850 2150 8850 2200
-$Comp
-L power:+5V #PWR09
-U 1 1 61C5A7B6
-P 8850 1800
-F 0 "#PWR09" H 8850 1650 50  0001 C CNN
-F 1 "+5V" H 8865 1973 50  0000 C CNN
-F 2 "" H 8850 1800 50  0001 C CNN
-F 3 "" H 8850 1800 50  0001 C CNN
-	1    8850 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 1800 8850 1850
-Wire Wire Line
-	8850 1850 8750 1850
-$Comp
-L power:-5V #PWR029
-U 1 1 61C5A7BE
-P 9050 1800
-F 0 "#PWR029" H 9050 1900 50  0001 C CNN
-F 1 "-5V" H 9065 1973 50  0000 C CNN
-F 2 "" H 9050 1800 50  0001 C CNN
-F 3 "" H 9050 1800 50  0001 C CNN
-	1    9050 1800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 1800 9050 2000
-Wire Wire Line
-	9050 2000 8750 2000
-Text GLabel 8000 2150 0    50   Input ~ 0
-K+
-Wire Wire Line
-	8000 2150 8100 2150
-$Sheet
-S 8100 2650 650  500 
-U 61C5C9FB
-F0 "Amplifier3" 50
-F1 "Amplifier.sch" 50
-F2 "K+" I L 8100 3050 50 
-F3 "GND" I R 8750 3050 50 
-F4 "-5V" I R 8750 2900 50 
-F5 "+5V" I R 8750 2750 50 
-$EndSheet
-$Comp
-L power:GND #PWR026
-U 1 1 61C5CA01
-P 8850 3100
-F 0 "#PWR026" H 8850 2850 50  0001 C CNN
-F 1 "GND" H 8855 2927 50  0000 C CNN
-F 2 "" H 8850 3100 50  0001 C CNN
-F 3 "" H 8850 3100 50  0001 C CNN
-	1    8850 3100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 3050 8850 3050
-Wire Wire Line
-	8850 3050 8850 3100
-$Comp
-L power:+5V #PWR025
-U 1 1 61C5CA09
-P 8850 2700
-F 0 "#PWR025" H 8850 2550 50  0001 C CNN
-F 1 "+5V" H 8865 2873 50  0000 C CNN
-F 2 "" H 8850 2700 50  0001 C CNN
-F 3 "" H 8850 2700 50  0001 C CNN
-	1    8850 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 2700 8850 2750
-Wire Wire Line
-	8850 2750 8750 2750
-$Comp
-L power:-5V #PWR030
-U 1 1 61C5CA11
-P 9050 2700
-F 0 "#PWR030" H 9050 2800 50  0001 C CNN
-F 1 "-5V" H 9065 2873 50  0000 C CNN
-F 2 "" H 9050 2700 50  0001 C CNN
-F 3 "" H 9050 2700 50  0001 C CNN
-	1    9050 2700
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 2700 9050 2900
-Wire Wire Line
-	9050 2900 8750 2900
-Text GLabel 8000 3050 0    50   Input ~ 0
-K+
-Wire Wire Line
-	8000 3050 8100 3050
-$Sheet
-S 8100 3550 650  500 
-U 61C5E810
-F0 "Amplifier4" 50
-F1 "Amplifier.sch" 50
-F2 "K+" I L 8100 3950 50 
-F3 "GND" I R 8750 3950 50 
-F4 "-5V" I R 8750 3800 50 
-F5 "+5V" I R 8750 3650 50 
-$EndSheet
-$Comp
-L power:GND #PWR028
-U 1 1 61C5E816
-P 8850 4000
-F 0 "#PWR028" H 8850 3750 50  0001 C CNN
-F 1 "GND" H 8855 3827 50  0000 C CNN
-F 2 "" H 8850 4000 50  0001 C CNN
-F 3 "" H 8850 4000 50  0001 C CNN
-	1    8850 4000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8750 3950 8850 3950
-Wire Wire Line
-	8850 3950 8850 4000
-$Comp
-L power:+5V #PWR027
-U 1 1 61C5E81E
-P 8850 3600
-F 0 "#PWR027" H 8850 3450 50  0001 C CNN
-F 1 "+5V" H 8865 3773 50  0000 C CNN
-F 2 "" H 8850 3600 50  0001 C CNN
-F 3 "" H 8850 3600 50  0001 C CNN
-	1    8850 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8850 3600 8850 3650
-Wire Wire Line
-	8850 3650 8750 3650
-$Comp
-L power:-5V #PWR031
-U 1 1 61C5E826
-P 9050 3600
-F 0 "#PWR031" H 9050 3700 50  0001 C CNN
-F 1 "-5V" H 9065 3773 50  0000 C CNN
-F 2 "" H 9050 3600 50  0001 C CNN
-F 3 "" H 9050 3600 50  0001 C CNN
-	1    9050 3600
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	9050 3600 9050 3800
-Wire Wire Line
-	9050 3800 8750 3800
-Text GLabel 8000 3950 0    50   Input ~ 0
-K+
-Wire Wire Line
-	8000 3950 8100 3950
 $Comp
 L power:GND #PWR08
 U 1 1 61C62489
@@ -534,63 +285,147 @@ Wire Wire Line
 Wire Wire Line
 	3600 3350 3600 3400
 $Comp
-L Connector:Screw_Terminal_01x02 J7
+L Connector:Screw_Terminal_01x02 J3
 U 1 1 61C64579
-P 7200 3100
-F 0 "J7" H 7300 3000 50  0000 C CNN
-F 1 "Thermocouple_Terminal" H 7700 3100 50  0000 C CNN
-F 2 "" H 7200 3100 50  0001 C CNN
-F 3 "~" H 7200 3100 50  0001 C CNN
-	1    7200 3100
+P 7050 3100
+F 0 "J3" H 7150 3000 50  0000 C CNN
+F 1 "Thermocouple_Terminal" H 7550 3100 50  0000 C CNN
+F 2 "" H 7050 3100 50  0001 C CNN
+F 3 "~" H 7050 3100 50  0001 C CNN
+	1    7050 3100
 	-1   0    0    1   
 $EndComp
-Text GLabel 7400 3000 2    50   Input ~ 0
-K+
-Text GLabel 7400 3100 2    50   Input ~ 0
-K-
 $Comp
-L Connector:Screw_Terminal_01x02 J8
+L Connector:Screw_Terminal_01x02 J4
 U 1 1 61C68E35
-P 7200 3400
-F 0 "J8" H 7300 3300 50  0000 C CNN
-F 1 "Thermocouple_Terminal" H 7700 3400 50  0000 C CNN
-F 2 "" H 7200 3400 50  0001 C CNN
-F 3 "~" H 7200 3400 50  0001 C CNN
-	1    7200 3400
+P 7050 3850
+F 0 "J4" H 7150 3750 50  0000 C CNN
+F 1 "Thermocouple_Terminal" H 7550 3850 50  0000 C CNN
+F 2 "" H 7050 3850 50  0001 C CNN
+F 3 "~" H 7050 3850 50  0001 C CNN
+	1    7050 3850
 	-1   0    0    1   
 $EndComp
-Text GLabel 7400 3300 2    50   Input ~ 0
-K+
-Text GLabel 7400 3400 2    50   Input ~ 0
-K-
 $Comp
-L Connector:Screw_Terminal_01x02 J9
+L Connector:Screw_Terminal_01x02 J5
 U 1 1 61C69E6C
-P 7200 3700
-F 0 "J9" H 7300 3600 50  0000 C CNN
-F 1 "Thermocouple_Terminal" H 7700 3700 50  0000 C CNN
-F 2 "" H 7200 3700 50  0001 C CNN
-F 3 "~" H 7200 3700 50  0001 C CNN
-	1    7200 3700
+P 7050 4600
+F 0 "J5" H 7150 4500 50  0000 C CNN
+F 1 "Thermocouple_Terminal" H 7550 4600 50  0000 C CNN
+F 2 "" H 7050 4600 50  0001 C CNN
+F 3 "~" H 7050 4600 50  0001 C CNN
+	1    7050 4600
 	-1   0    0    1   
 $EndComp
-Text GLabel 7400 3600 2    50   Input ~ 0
-K+
-Text GLabel 7400 3700 2    50   Input ~ 0
-K-
 $Comp
-L Connector:Screw_Terminal_01x02 J10
+L Connector:Screw_Terminal_01x02 J6
 U 1 1 61C6AF1A
-P 7200 4000
-F 0 "J10" H 7300 3900 50  0000 C CNN
-F 1 "Thermocouple_Terminal" H 7700 4000 50  0000 C CNN
-F 2 "" H 7200 4000 50  0001 C CNN
-F 3 "~" H 7200 4000 50  0001 C CNN
-	1    7200 4000
+P 7050 5350
+F 0 "J6" H 7150 5250 50  0000 C CNN
+F 1 "Thermocouple_Terminal" H 7550 5350 50  0000 C CNN
+F 2 "" H 7050 5350 50  0001 C CNN
+F 3 "~" H 7050 5350 50  0001 C CNN
+	1    7050 5350
 	-1   0    0    1   
 $EndComp
-Text GLabel 7400 3900 2    50   Input ~ 0
-K+
-Text GLabel 7400 4000 2    50   Input ~ 0
+$Comp
+L Connector:Screw_Terminal_01x04 J2
+U 1 1 61C31455
+P 9100 3100
+F 0 "J2" H 9180 3092 50  0000 L CNN
+F 1 "Output_Screw_Terminal" H 9180 3001 50  0000 L CNN
+F 2 "" H 9100 3100 50  0001 C CNN
+F 3 "~" H 9100 3100 50  0001 C CNN
+	1    9100 3100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP1
+U 1 1 61C32B05
+P 6750 1500
+F 0 "TP1" V 6704 1688 50  0000 L CNN
+F 1 "TestPoint" V 6795 1688 50  0000 L CNN
+F 2 "" H 6950 1500 50  0001 C CNN
+F 3 "~" H 6950 1500 50  0001 C CNN
+	1    6750 1500
+	0    1    1    0   
+$EndComp
+Text Label 3700 3150 0    50   ~ 0
+K-
+$Sheet
+S 7650 2750 650  500 
+U 61C21E07
+F0 "Amplifier1" 50
+F1 "Amplifier.sch" 50
+F2 "K+" I L 7650 3000 50 
+F3 "Vout" I R 8300 3000 50 
+$EndSheet
+$Sheet
+S 7650 3500 650  500 
+U 61C42E88
+F0 "Amplifier2" 50
+F1 "Amplifier.sch" 50
+F2 "K+" I L 7650 3750 50 
+F3 "Vout" I R 8300 3750 50 
+$EndSheet
+$Sheet
+S 7650 4250 650  500 
+U 61C43179
+F0 "Amplifier3" 50
+F1 "Amplifier.sch" 50
+F2 "K+" I L 7650 4500 50 
+F3 "Vout" I R 8300 4500 50 
+$EndSheet
+$Sheet
+S 7650 5000 650  500 
+U 61C43469
+F0 "Amplifier4" 50
+F1 "Amplifier.sch" 50
+F2 "K+" I L 7650 5250 50 
+F3 "Vout" I R 8300 5250 50 
+$EndSheet
+Wire Wire Line
+	8300 3000 8900 3000
+Wire Wire Line
+	8400 3750 8400 3100
+Wire Wire Line
+	8300 4500 8500 4500
+Wire Wire Line
+	8500 4500 8500 3200
+Wire Wire Line
+	8300 5250 8600 5250
+Wire Wire Line
+	8300 3750 8400 3750
+Wire Wire Line
+	8400 3100 8900 3100
+Wire Wire Line
+	8500 3200 8900 3200
+Wire Wire Line
+	8600 3300 8900 3300
+Wire Wire Line
+	8600 3300 8600 5250
+Wire Wire Line
+	7250 5250 7650 5250
+Wire Wire Line
+	7250 4500 7650 4500
+Wire Wire Line
+	7250 3750 7650 3750
+Wire Wire Line
+	7250 3000 7650 3000
+Wire Wire Line
+	7250 3100 7300 3100
+Wire Wire Line
+	7250 3850 7300 3850
+Wire Wire Line
+	7250 4600 7300 4600
+Wire Wire Line
+	7250 5350 7300 5350
+Text Label 7300 5350 0    50   ~ 0
+K-
+Text Label 7300 4600 0    50   ~ 0
+K-
+Text Label 7300 3850 0    50   ~ 0
+K-
+Text Label 7300 3100 0    50   ~ 0
 K-
 $EndSCHEMATC
