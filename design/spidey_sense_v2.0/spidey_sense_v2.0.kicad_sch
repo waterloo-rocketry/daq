@@ -891,7 +891,7 @@
     (uuid 00000000-0000-0000-0000-000061b5397b)
     (property "Reference" "U1" (id 0) (at 80.01 70.739 0))
     (property "Value" "LT1025" (id 1) (at 80.01 73.0504 0))
-    (property "Footprint" "SamacSys_Parts:SOIC127P599X175-8N" (id 2) (at 63.5 73.66 0)
+    (property "Footprint" "Package_SO:SOP-8_3.9x4.9mm_P1.27mm" (id 2) (at 63.5 73.66 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 63.5 73.66 0)
@@ -927,7 +927,7 @@
     (uuid 00000000-0000-0000-0000-000061b762cd)
     (property "Reference" "U2" (id 0) (at 143.51 28.829 0))
     (property "Value" "LTC1983-5" (id 1) (at 143.51 31.1404 0))
-    (property "Footprint" "SamacSys_Parts:SOT95P280X100-6N" (id 2) (at 143.51 39.37 0)
+    (property "Footprint" "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm" (id 2) (at 143.51 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "" (id 3) (at 143.51 39.37 0)
@@ -1460,22 +1460,22 @@
       (reference "TP1") (unit 1) (value "TestPoint") (footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
     )
     (path "/00000000-0000-0000-0000-000061b5397b"
-      (reference "U1") (unit 1) (value "LT1025") (footprint "SamacSys_Parts:SOIC127P599X175-8N")
+      (reference "U1") (unit 1) (value "LT1025") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061b762cd"
-      (reference "U2") (unit 1) (value "LTC1983-5") (footprint "SamacSys_Parts:SOT95P280X100-6N")
+      (reference "U2") (unit 1) (value "LTC1983-5") (footprint "Package_SO:TSOP-6_1.65x3.05mm_P0.95mm")
     )
     (path "/00000000-0000-0000-0000-000061c42e88/00000000-0000-0000-0000-000061c392ae"
-      (reference "U3") (unit 1) (value "LT1001") (footprint "SamacSys_Parts:NE555DR")
+      (reference "U3") (unit 1) (value "LT1001") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061c21e07/00000000-0000-0000-0000-000061c392ae"
-      (reference "U4") (unit 1) (value "LT1001") (footprint "SamacSys_Parts:NE555DR")
+      (reference "U4") (unit 1) (value "LT1001") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061c43179/00000000-0000-0000-0000-000061c392ae"
-      (reference "U5") (unit 1) (value "LT1001") (footprint "SamacSys_Parts:NE555DR")
+      (reference "U5") (unit 1) (value "LT1001") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
     )
     (path "/00000000-0000-0000-0000-000061c43469/00000000-0000-0000-0000-000061c392ae"
-      (reference "U6") (unit 1) (value "LT1001") (footprint "SamacSys_Parts:NE555DR")
+      (reference "U6") (unit 1) (value "LT1001") (footprint "Package_SO:SOP-8_3.9x4.9mm_P1.27mm")
     )
   )
 )
