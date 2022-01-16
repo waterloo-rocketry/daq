@@ -1,4 +1,4 @@
 (sym_lib_table
-  (lib (name Thermocouple)(type Legacy)(uri ${KIPRJMOD}/Thermocouple.lib)(options "")(descr ""))
-  (lib (name spidey_sense_v2.0-rescue)(type Legacy)(uri ${KIPRJMOD}/spidey_sense_v2.0-rescue.lib)(options "")(descr ""))
+  (lib (name "Thermocouple")(type "Legacy")(uri "${KIPRJMOD}/Thermocouple.lib")(options "")(descr ""))
+  (lib (name "spidey_sense_v2.0-rescue")(type "Legacy")(uri "${KIPRJMOD}/spidey_sense_v2.0-rescue.lib")(options "")(descr "")(disabled))
 )

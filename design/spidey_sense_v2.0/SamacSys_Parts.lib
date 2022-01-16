@@ -1,0 +1,241 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model NE555DR
+#/6648/2/2.37/8/4/Integrated Circuit
+DEF NE555DR IC 0 30 Y Y 1 F N
+F0 "IC" 1050 600 50 H V L CNN
+F1 "NE555DR" 1050 500 50 H V L CNN
+F2 "SOIC127P600X175-8N" 1050 400 50 H I L CNN
+F3 "http://www.ti.com/lit/ds/symlink/ne555.pdf" 1050 300 50 H I L CNN
+F4 "Single Precision Timer" 1050 200 50 H I L CNN "Description"
+F5 "1.75" 1050 100 50 H I L CNN "Height"
+F6 "Texas Instruments" 1050 0 50 H I L CNN "Manufacturer_Name"
+F7 "NE555DR" 1050 -100 50 H I L CNN "Manufacturer_Part_Number"
+F8 "595-NE555DR" 1050 -200 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=595-NE555DR" 1050 -300 50 H I L CNN "Mouser Price/Stock"
+F10 "1218414" 1050 -400 50 H I L CNN "RS Part Number"
+F11 "http//uk.rs-online.com/web/p/products/1218414" 1050 -500 50 H I L CNN "RS Price/Stock"
+DRAW
+X GND 1 600 -1000 200 U 50 50 0 0 B
+X TRIG 2 0 -400 200 R 50 50 0 0 B
+X OUT 3 1200 -200 200 L 50 50 0 0 B
+X ~RESET 4 0 0 200 R 50 50 0 0 B
+X CONT 5 500 600 200 D 50 50 0 0 B
+X THRES 6 0 -300 200 R 50 50 0 0 B
+X DISCH 7 0 -100 200 R 50 50 0 0 B
+X VCC 8 700 600 200 D 50 50 0 0 B
+P 5 0 1 6 200 400 1000 400 1000 -800 200 -800 200 400 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LTC1983ES6-5#TRPBF
+#/1514716/726756/2.49/6/3/Integrated Circuit
+DEF LTC1983ES6-5#TRPBF IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "LTC1983ES6-5#TRPBF" 1050 200 50 H V L CNN
+F2 "SOT95P280X100-6N" 1050 100 50 H I L CNN
+F3 "https://www.arrow.com/en/products/ltc1983es6-5trpbf/analog-devices" 1050 0 50 H I L CNN
+F4 "Switching Voltage Regulators 100mA Inverting Charge Pump in ThinSOT" 1050 -100 50 H I L CNN "Description"
+F5 "1" 1050 -200 50 H I L CNN "Height"
+F6 "584-C1983ES6-5TRPBF" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices/LTC1983ES6-5TRPBF?qs=hVkxg5c3xu%2F5BpeBL68S6w%3D%3D" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Analog Devices" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LTC1983ES6-5#TRPBF" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VCC 1 0 0 200 R 50 50 0 0 P
+X VOUT 2 0 -100 200 R 50 50 0 0 P
+X C+ 3 0 -200 200 R 50 50 0 0 P
+X ~SHDN 6 1200 0 200 L 50 50 0 0 P
+X GND 5 1200 -100 200 L 50 50 0 0 P
+X C- 4 1200 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LT1001CS8#PBF
+#/292950/726756/2.49/8/3/Integrated Circuit
+DEF LT1001CS8#PBF IC 0 30 Y Y 1 F N
+F0 "IC" 1550 300 50 H V L CNN
+F1 "LT1001CS8#PBF" 1550 200 50 H V L CNN
+F2 "SOIC127P599X175-8N" 1550 100 50 H I L CNN
+F3 "http://www.linear.com/docs/1672" 1550 0 50 H I L CNN
+F4 "LINEAR TECHNOLOGY - LT1001CS8#PBF - Operational Amplifier, Single, 1 Amplifier, 800 kHz, 0.25 V/s, +/- 3V to +/- 18V, SOIC, 8 Pins" 1550 -100 50 H I L CNN "Description"
+F5 "1.752" 1550 -200 50 H I L CNN "Height"
+F6 "Linear Technology" 1550 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LT1001CS8#PBF" 1550 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "584-LT1001CS8#PBF" 1550 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.co.uk/ProductDetail/Analog-Devices-Linear-Technology/LT1001CS8PBF?qs=ytflclh7QUXPrXuaZMy1cA%3D%3D" 1550 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1550 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 1550 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X VOS_TRIM_1 1 0 0 200 R 50 50 0 0 P
+X -IN 2 0 -100 200 R 50 50 0 0 P
+X +IN 3 0 -200 200 R 50 50 0 0 P
+X V- 4 0 -300 200 R 50 50 0 0 P
+X VOS_TRIM_2 8 1700 0 200 L 50 50 0 0 P
+X V+ 7 1700 -100 200 L 50 50 0 0 P
+X OUT 6 1700 -200 200 L 50 50 0 0 P
+X NC 5 1700 -300 200 L 50 50 0 0 N
+P 5 0 1 6 200 100 1500 100 1500 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LT1025CS8#PBF
+#/260342/726756/2.49/8/3/Integrated Circuit
+DEF LT1025CS8#PBF IC 0 30 Y Y 1 F N
+F0 "IC" 2050 300 50 H V L CNN
+F1 "LT1025CS8#PBF" 2050 200 50 H V L CNN
+F2 "SOIC127P599X175-8N" 2050 100 50 H I L CNN
+F3 "https://datasheet.datasheetarchive.com/originals/distributors/SFDatasheet-4/sf-00090774.pdf" 2050 0 50 H I L CNN
+F4 "LINEAR TECHNOLOGY - LT1025CS8#PBF - , , +/- 0.5C, 0 C, +70 C, SOIC, 8 " 2050 -100 50 H I L CNN "Description"
+F5 "1.752" 2050 -200 50 H I L CNN "Height"
+F6 "584-LT1025CS8#PBF" 2050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices-Linear-Technology/LT1025CS8PBF?qs=ytflclh7QUVFTkxgoaF%252Bog%3D%3D" 2050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Linear Technology" 2050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LT1025CS8#PBF" 2050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X E_60.9µV/°C 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X VO_10MV/°C 3 0 -200 200 R 50 50 0 0 P
+X GND 4 0 -300 200 R 50 50 0 0 P
+X J_51.7µV/°C 8 2200 0 200 L 50 50 0 0 P
+X K,_T_40.6µV/°C 7 2200 -100 200 L 50 50 0 0 P
+X R,_S_6µV/°C 6 2200 -200 200 L 50 50 0 0 P
+X R-_COMMON 5 2200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 2000 100 2000 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LT1025CN8PBF
+#/583232/726756/2.49/8/3/Integrated Circuit
+DEF LT1025CN8PBF IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "LT1025CN8PBF" 1050 200 50 H V L CNN
+F2 "DIP794W53P254L1016H394Q8N" 1050 100 50 H I L CNN
+F3 "" 1050 0 50 H I L CNN
+F4 "Micropower Thermocouple Cold Junction Compensator" 1050 -100 50 H I L CNN "Description"
+F5 "3.937" 1050 -200 50 H I L CNN "Height"
+F6 "" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Linear Technology" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LT1025CN8PBF" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X E 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X VO 3 0 -200 200 R 50 50 0 0 P
+X GND 4 0 -300 200 R 50 50 0 0 P
+X J 8 1200 0 200 L 50 50 0 0 P
+X K,_T 7 1200 -100 200 L 50 50 0 0 P
+X R,_S 6 1200 -200 200 L 50 50 0 0 P
+X COMMON 5 1200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LT1001CS8PBF
+#/583192/726756/2.49/8/3/Integrated Circuit
+DEF LT1001CS8PBF IC 0 30 Y Y 1 F N
+F0 "IC" 1550 300 50 H V L CNN
+F1 "LT1001CS8PBF" 1550 200 50 H V L CNN
+F2 "SOIC127P599X175-8N" 1550 100 50 H I L CNN
+F3 "https://www.mouser.in/datasheet/2/609/LT1001-1529864.pdf" 1550 0 50 H I L CNN
+F4 "Precision Operational Amplifier" 1550 -100 50 H I L CNN "Description"
+F5 "1.752" 1550 -200 50 H I L CNN "Height"
+F6 "Linear Technology" 1550 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LT1001CS8PBF" 1550 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "" 1550 -500 50 H I L CNN "Mouser Part Number"
+F9 "" 1550 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1550 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 1550 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X VOS_TRIM_1 1 0 0 200 R 50 50 0 0 P
+X -IN 2 0 -100 200 R 50 50 0 0 P
+X +IN 3 0 -200 200 R 50 50 0 0 P
+X V- 4 0 -300 200 R 50 50 0 0 P
+X VOS_TRIM_2 8 1700 0 200 L 50 50 0 0 P
+X V+ 7 1700 -100 200 L 50 50 0 0 P
+X OUT 6 1700 -200 200 L 50 50 0 0 P
+X NC 5 1700 -300 200 L 50 50 0 0 N
+P 5 0 1 6 200 100 1500 100 1500 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LTC1983ES6-3#PBF
+#/237809/726756/2.49/6/3/Integrated Circuit
+DEF LTC1983ES6-3#PBF IC 0 30 Y Y 1 F N
+F0 "IC" 1050 300 50 H V L CNN
+F1 "LTC1983ES6-3#PBF" 1050 200 50 H V L CNN
+F2 "SOT95P280X100-6N" 1050 100 50 H I L CNN
+F3 "" 1050 0 50 H I L CNN
+F4 "LINEAR TECHNOLOGY - LTC1983ES6-3#PBF - DC/DC Fixed Charge Pump Voltage Converter, 2.3 V to 5.5 V in, -3 V/100 mA out, SOT-23-6" 1050 -100 50 H I L CNN "Description"
+F5 "1" 1050 -200 50 H I L CNN "Height"
+F6 "" 1050 -300 50 H I L CNN "Mouser Part Number"
+F7 "" 1050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Linear Technology" 1050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LTC1983ES6-3#PBF" 1050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X VCC 1 0 0 200 R 50 50 0 0 P
+X VOUT 2 0 -100 200 R 50 50 0 0 P
+X C+ 3 0 -200 200 R 50 50 0 0 P
+X ~SHDN 6 1200 0 200 L 50 50 0 0 P
+X GND 5 1200 -100 200 L 50 50 0 0 P
+X C- 4 1200 -200 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 1000 100 1000 -300 200 -300 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LT1025CS8#TRPBF
+#/1151777/726756/2.49/8/4/Integrated Circuit
+DEF LT1025CS8#TRPBF IC 0 30 Y Y 1 F N
+F0 "IC" 2050 300 50 H V L CNN
+F1 "LT1025CS8#TRPBF" 2050 200 50 H V L CNN
+F2 "SOIC127P599X175-8N" 2050 100 50 H I L CNN
+F3 "http://www.linear.com/docs/1937" 2050 0 50 H I L CNN
+F4 "IC COMPENSATR THERM MCRPWR 8SOIC" 2050 -100 50 H I L CNN "Description"
+F5 "1.752" 2050 -200 50 H I L CNN "Height"
+F6 "584-LT1025CS8#TRPBF" 2050 -300 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Analog-Devices-Linear-Technology/LT1025CS8TRPBF?qs=ytflclh7QUV29yTuofC7nA%3D%3D" 2050 -400 50 H I L CNN "Mouser Price/Stock"
+F8 "Linear Technology" 2050 -500 50 H I L CNN "Manufacturer_Name"
+F9 "LT1025CS8#TRPBF" 2050 -600 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X E_60.9µV/°C 1 0 0 200 R 50 50 0 0 P
+X VIN 2 0 -100 200 R 50 50 0 0 P
+X VO_10MV/°C 3 0 -200 200 R 50 50 0 0 P
+X GND 4 0 -300 200 R 50 50 0 0 P
+X J_51.7µV/°C 8 2200 0 200 L 50 50 0 0 P
+X K,_T_40.6µV/°C 7 2200 -100 200 L 50 50 0 0 P
+X R,_S_6µV/°C 6 2200 -200 200 L 50 50 0 0 P
+X R-_COMMON 5 2200 -300 200 L 50 50 0 0 P
+P 5 0 1 6 200 100 2000 100 2000 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#SamacSys ECAD Model LT1001CN8
+#/292949/726756/2.49/8/3/Integrated Circuit
+DEF LT1001CN8 IC 0 30 Y Y 1 F N
+F0 "IC" 1550 300 50 H V L CNN
+F1 "LT1001CN8" 1550 200 50 H V L CNN
+F2 "DIP794W53P254L1016H394Q8N" 1550 100 50 H I L CNN
+F3 "https://www.analog.com/media/en/technical-documentation/data-sheets/LT1001.pdf" 1550 0 50 H I L CNN
+F4 "Precision Amplifiers LT1001 - Precision Operational Amplifier" 1550 -100 50 H I L CNN "Description"
+F5 "3.937" 1550 -200 50 H I L CNN "Height"
+F6 "Linear Technology" 1550 -300 50 H I L CNN "Manufacturer_Name"
+F7 "LT1001CN8" 1550 -400 50 H I L CNN "Manufacturer_Part_Number"
+F8 "584-LT1001CN8" 1550 -500 50 H I L CNN "Mouser Part Number"
+F9 "https://www.mouser.com/Search/Refine.aspx?Keyword=584-LT1001CN8" 1550 -600 50 H I L CNN "Mouser Price/Stock"
+F10 "" 1550 -700 50 H I L CNN "Arrow Part Number"
+F11 "" 1550 -800 50 H I L CNN "Arrow Price/Stock"
+DRAW
+X VOS_TRIM_1 1 0 0 200 R 50 50 0 0 P
+X -IN 2 0 -100 200 R 50 50 0 0 P
+X +IN 3 0 -200 200 R 50 50 0 0 P
+X V- 4 0 -300 200 R 50 50 0 0 P
+X VOS_TRIM_2 8 1700 0 200 L 50 50 0 0 P
+X V+ 7 1700 -100 200 L 50 50 0 0 P
+X OUT 6 1700 -200 200 L 50 50 0 0 P
+X NC 5 1700 -300 200 L 50 50 0 0 N
+P 5 0 1 6 200 100 1500 100 1500 -400 200 -400 200 100 N
+ENDDRAW
+ENDDEF
+#
+#End Library
