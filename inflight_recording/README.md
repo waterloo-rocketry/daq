@@ -17,21 +17,19 @@
 1. Inside the ssh session, [enable the camera](https://www.raspberrypi.org/documentation/configuration/camera.md) and [connect the Pi to the Internet](https://www.raspberrypi.org/documentation/configuration/wireless/wireless-cli.md)
 1. Update the [Raspbian OS](https://www.raspberrypi.org/documentation/raspbian/updating.md) (Internet connection required)
 
-### Setting up the autovid
+### Setting up the picam
 
 1. Establish an FTP connection (or however you want to transfer files) to the Pi (see [Transferring files to and from the Pi](#transferring-files-to-and-from-the-pi) for help)
-1. In the home folder, make a folder called `autovid`
+1. In the `home/Documents` folder, make a folder called `picam`
 1. Download all four files in this directory onto your computer (do not transfer them yet)
-1. Open `autovid.sh` in a text editor and set `IP` to the IP of the _device to stream to_, NOT the Pi (see [Getting the IP of your PC](#getting-the-ip-of-your-pc) for help)
-1. Set the PORT variable to a number somewhere around 5000. This number must be unique to this picam.
-1. __Convert ALL line endings in the `.sh` and `.service` files to UNIX-style line endings (LF)__
-	1. Skipping this step will result in the service NOT running.
-	1. In Notepad++, this can be done by opening the file -> edit -> EOL conversion -> UNIX (LF)
-1. Transfer the converted files into `autovid` (see [Transferring files to and from the Pi](#transferring-files-to-and-from-the-pi) for help)
+1. **Convert ALL line endings in the `.sh` and `.service` files to UNIX-style line endings (LF)**
+    1. Skipping this step will result in the service NOT running.
+    1. In Notepad++, this can be done by opening the file -> edit -> EOL conversion -> UNIX (LF)
+1. Transfer the converted files into `picam` on the raspberry pi (see [Transferring files to and from the Pi](#transferring-files-to-and-from-the-pi) for help)
 1. SSH into the Pi
-1. Run `cd autovid` to move into the correct directory
-1. Run `chmod u+x setup.sh`
-1. Run `./setup.sh` to configure the autovid service
+1. Run `cd picam` to move into the correct directory
+1. Run `chmod u+x picam_setup.sh`
+1. Run `./picam_setup.sh` to configure the picam service
 
 Done! Next time the Pi restarts, the camera will run and will stream its data over the network.
 
@@ -41,7 +39,7 @@ Done! Next time the Pi restarts, the camera will run and will stream its data ov
 1. Extract the contents of the zip to a file, and open a command prompt to that location
 1. Ensure the Pi is turned on, and give it a minute to start up fully
 1. Run `mpv.exe --no-cache --untimed --no-demuxer-thread udp://<IPv4 Address of Your PC>:<PORT>` (see [Getting the IP of your PC](#getting-the-ip-of-your-pc) for help)
-	1. The port and IP are the ones you specified in `autovid.sh`. If you don't know it, you'll have to check what is currently on the Pi.
+    1. The port and IP are the ones you specified in `picam_setup.sh`. If you don't know it, you'll have to check what is currently on the Pi.
 
 Done! The stream should appear. If there is significant delay, try restarting the stream. Generally, about ~1 second of delay is expected. If no footage appears, check your firewall settings and ensure the port(s) allow UDP traffic.
 
@@ -50,14 +48,14 @@ Done! The stream should appear. If there is significant delay, try restarting th
 ### Getting the IP of the Pi
 
 1. If you are able to connect to the Pi via USB:
-	1. SSH into the Pi (see [Basic Pi setup](#basic-pi-setup))
-	1. Run `ifconfig`
-	1. Under `wlan0`, the copy and record the address next to `inet` (usually something like 192.168.x.xx)
+    1. SSH into the Pi (see [Basic Pi setup](#basic-pi-setup))
+    1. Run `ifconfig`
+    1. Under `wlan0`, the copy and record the address next to `inet` (usually something like 192.168.x.xx)
 1. If you do not have access to the Pi:
-	1. Login to your WiFi network's remote gateway (this is usually only possible if you are the administrator of your wifi network)
-	1. Find the active devices list
-	1. Copy the IP Address of the Raspberry Pi on the network.
-	
+    1. Login to your WiFi network's remote gateway (this is usually only possible if you are the administrator of your wifi network)
+    1. Find the active devices list
+    1. Copy the IP Address of the Raspberry Pi on the network.
+
 If you do not have physical access AND you are not the administrator of the WiFi network, there is no way to get this address unfortunately.
 
 ### Getting the IP of your PC
@@ -84,7 +82,7 @@ There are many ways to accomplish this but an easy, free way to do this is using
     1. port: 22
 1. Click `quickconnect`
 1. The `/home/pi` folder should appear in the `remote site` tab
-1. Autovid files are stored in the `autovid` directory.
+1. PiCam files are stored in the `picam` directory.
 1. To upload files, simply navigate to the folder containing the desired file(s) on the `local site`, select them, right click -> upload
 1. To download files, simply navigate to the folder containing the desired file(s) on the `remote site`, select them, right click -> download
 

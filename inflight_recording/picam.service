@@ -1,0 +1,17 @@
+[Unit]
+Description="PiCamHomeSecurity PiCam automatic footage recording service"
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/Documents/PiCam/picam.sh
+WorkingDirectory=/home/pi/Documents/PiCam/
+StandardOutput=inherit
+StandardError=inherit
+Restart=on-failure
+RestartSec=5s
+User=pi
+RuntimeMaxSec=600
+
+[Install]
+WantedBy=default.target
