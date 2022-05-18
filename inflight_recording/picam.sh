@@ -33,4 +33,6 @@ ADDITIONAL_SETTINGS=`cat /home/pi/Documents/PiCamConfig/camera_settings.dat`
 #    - br = brightness (0-100, for night viewing)
 raspivid -t 0 -w 1920 -h 1080 -a 12 -fps 30 -b 6000000 $ADDITIONAL_SETTINGS -ih -o - | tee $VIDEO_FILE | ffmpeg -thread_queue_size 4096 -i - -f lavfi -i anullsrc -c:v copy -f h264 udp://$IP:$PORT
 
+python3 uart_comms.py
+
 #end
