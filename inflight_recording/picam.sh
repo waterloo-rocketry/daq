@@ -32,7 +32,20 @@ ADDITIONAL_SETTINGS=`cat /home/pi/Documents/PiCamConfig/camera_settings.dat`
 #    - rot = rotation (0-360deg)
 #    - br = brightness (0-100, for night viewing)
 raspivid -t 0 -w 1920 -h 1080 -a 12 -fps 30 -b 6000000 $ADDITIONAL_SETTINGS -ih -o - | tee $VIDEO_FILE | ffmpeg -thread_queue_size 4096 -i - -f lavfi -i anullsrc -c:v copy -f h264 udp://$IP:$PORT
+RETURN_CODE=$?
+# sets GPIO pin 15 as an output
+gpio mode 15 out 
 
-python3 uart_comms.py
+# Indicate whether recording started successfully
+if [ $RETURN_CODE -eq 0 ]
+then
+   gpio write 15 1
+else
+   gpio write 15 0
+fi
+
+# Wait for shutdown signal
+gpio wfi 16 rising
+shutdown now
 
 #end
