@@ -2,8 +2,8 @@
 
 cd /home/pi/Documents/
 
-mkdir PiCamConfig
-mkdir PiCamFootage
+mkdir -p PiCamConfig
+mkdir -p PiCamFootage
 
 cd PiCamConfig
 
@@ -37,6 +37,11 @@ chmod u+x ./picam.sh
 sudo cp ./picam.service /etc/systemd/system/
 sudo systemctl daemon-reload
 sudo systemctl enable picam.service
+
+chmod u+x ./uart.sh
+sudo cp ./uart.service /etc/systemd/system/
+sudo systemctl daemon-reload
+sudo systemctl enable uart.service
 
 echo "Setup complete. Reboot to get started."
 
