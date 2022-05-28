@@ -1,32 +1,34 @@
 #!/bin/bash
 
-# WiringPi pin numbering
-OUTPUT_PIN = 15
-INPUT_PIN  = 16
+# BROADCOM pin numbering
+OUTPUT_PIN=14
+INPUT_PIN=15
 
-# sets GPIO pin 15 as an output
-gpio mode $OUTPUT_PIN out 
+SERVICE=raspivid
 
-# sets GPIO pin 16 as an input
-gpio mode $INPUT_PIN in 
+# sets GPIO pin as an output
+raspi-gpio set $OUTPUT_PIN op
+
+# sets GPIO pin as an input
+raspi-gpio set $INPUT_PIN ip
 
 while true
 do
     # Check whether the "raspivid" process is running, and signal the result
-    SERVICE=raspivid
-    if pgrep -x $SERVICE >/dev/null
+    PID=$(pgrep -x $SERVICE)
+    if [ -z "$PID" ]
     then
-        gpio write $OUTPUT_PIN 1
+        # raspivid is not running (pin is active low)
+        raspi-gpio set $OUTPUT_PIN dh
     else
-        gpio write $OUTPUT_PIN 0
+        raspi-gpio set $OUTPUT_PIN dl
+        # Check whether the shutdown signal is raised
+        if [[ $(raspi-gpio get $INPUT_PIN) == *"level=1"* ]]
+        then
+            kill $PID
+        fi
     fi
     
-    # Check whether the shutdown signal is raised
-    if [ $(gpio read $INPUT_PIN) -eq 1 ]
-    then
-        shutdown now
-    fi
-
     sleep 3
 done
 
