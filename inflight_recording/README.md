@@ -21,7 +21,7 @@
 
 1. Establish an FTP connection (or however you want to transfer files) to the Pi (see [Transferring files to and from the Pi](#transferring-files-to-and-from-the-pi) for help)
 1. In the `home/Documents` folder, make a folder called `picam`
-1. Download all four files in this directory onto your computer (do not transfer them yet)
+1. Download all files in this directory onto your computer (do not transfer them yet)
 1. **Convert ALL line endings in the `.sh` and `.service` files to UNIX-style line endings (LF)**
     1. Skipping this step will result in the service NOT running.
     1. In Notepad++, this can be done by opening the file -> edit -> EOL conversion -> UNIX (LF)

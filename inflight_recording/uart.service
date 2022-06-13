@@ -1,0 +1,14 @@
+[Unit]
+Description="PiCam automatic UART communication service"
+Wants=network-online.target
+After=network-online.target
+
+[Service]
+ExecStart=/home/pi/Documents/PiCam/uart.sh
+WorkingDirectory=/home/pi/Documents/PiCam/
+StandardOutput=inherit
+StandardError=inherit
+User=pi
+
+[Install]
+WantedBy=default.target
