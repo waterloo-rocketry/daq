@@ -23,10 +23,10 @@ do
     else
         raspi-gpio set $OUTPUT_PIN dl
         # Check whether the shutdown signal is raised
-        if [[ $(raspi-gpio get $INPUT_PIN) == *"level=1"* ]]
-        then
-            kill $PID
-        fi
+        #if [[ $(raspi-gpio get $INPUT_PIN) == *"level=1"* ]]
+        #then
+        #    kill $PID
+        #fi
     fi
     
     sleep 3
