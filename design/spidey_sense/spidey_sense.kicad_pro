@@ -333,7 +333,7 @@
     "pinned_symbol_libs": []
   },
   "meta": {
-    "filename": "spidey_sense_v2.0.kicad_pro",
+    "filename": "spidey_sense.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -414,22 +414,6 @@
     [
       "d236dd2a-a354-4c1a-ad0d-49a80e313800",
       ""
-    ],
-    [
-      "00000000-0000-0000-0000-000061c21e07",
-      "Amplifier1"
-    ],
-    [
-      "00000000-0000-0000-0000-000061c42e88",
-      "Amplifier2"
-    ],
-    [
-      "00000000-0000-0000-0000-000061c43179",
-      "Amplifier3"
-    ],
-    [
-      "00000000-0000-0000-0000-000061c43469",
-      "Amplifier4"
     ]
   ],
   "text_variables": {}
