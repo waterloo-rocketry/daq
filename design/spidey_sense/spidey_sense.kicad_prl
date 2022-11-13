@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 0,
+    "active_layer": 37,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_nets": [],
@@ -66,7 +66,7 @@
     "zone_display_mode": 0
   },
   "meta": {
-    "filename": "spidey_sense_v2.0.kicad_prl",
+    "filename": "spidey_sense.kicad_prl",
     "version": 3
   },
   "project": {
