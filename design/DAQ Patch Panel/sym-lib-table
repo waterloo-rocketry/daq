@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "DAQLibrary")(type "KiCad")(uri "${KIPRJMOD}/DAQLibrary.kicad_sym")(options "")(descr ""))
+)
