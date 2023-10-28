@@ -244,7 +244,9 @@
   },
   "libraries": {
     "pinned_footprint_libs": [],
-    "pinned_symbol_libs": []
+    "pinned_symbol_libs": [
+      "DAQLibrary"
+    ]
   },
   "meta": {
     "filename": "DAQ_Power_Patch_PM_SC.kicad_pro",
