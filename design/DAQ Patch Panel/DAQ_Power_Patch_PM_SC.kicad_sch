@@ -9,6 +9,7 @@
     (date "2023-11-13")
     (rev "V-5")
     (company "Waterloo Rocketry ")
+    (comment 1 "Schematic to be triplicated for a total of 3 sensor ports per patch board")
   )
 
   (lib_symbols
@@ -1872,10 +1873,10 @@
   (symbol (lib_id "Device:R_US") (at 115.57 106.68 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dc1ce534-9dbe-4dc1-b69d-434bde3014de)
-    (property "Reference" "R3" (at 105.41 91.44 90)
+    (property "Reference" "R3" (at 115.57 100.33 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "100 ohms" (at 105.41 93.98 90)
+    (property "Value" "100 ohms" (at 115.57 102.87 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Footprint" "" (at 115.824 105.664 90)
