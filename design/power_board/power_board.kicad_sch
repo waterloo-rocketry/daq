@@ -617,7 +617,7 @@
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d017856c-c766-4ce1-9568-b85de5d8d801)
   )
-  (text "6S lipo (19.2 - 25.2V)\nor 24V AC/DC adapter" (at 68.58 35.56 0)
+  (text "24V from GSPD" (at 68.58 35.56 0)
     (effects (font (size 1.27 1.27)) (justify right bottom))
     (uuid d6c675a2-d508-475a-947e-38c29164dc08)
   )
