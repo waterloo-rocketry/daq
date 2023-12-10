@@ -494,20 +494,23 @@
     (uuid fb93fce1-4cbf-4571-90eb-0a0e2b7b485a)
   )
 
-  (text "Voltage divider sets\nunder-voltage lockout\nto 19.2V"
-    (at 97.79 77.47 0)
+  (text " fsw = 2.1MHz\n" (at 189.23 64.77 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid a21c0181-8b15-407b-9a9b-0c783b67f03c)
+    (uuid 041031f7-aac0-4144-af21-c015da07bc7d)
   )
-  (text "A resistor between SET and GND\nsets the output voltage according\nto V = 0.75*221/R (kΩ) + 0.75"
-    (at 176.53 127 0)
+  (text "Values for capacitors and inductors taken from \nhttps://www.ti.com/lit/ds/symlink/lv2862.pdf\nfor VOUT = 12V\n"
+    (at 130.81 63.5 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid d69db27f-3148-4f86-b949-9d4bf40ba50a)
+    (uuid 6bb292b5-280a-46f6-b306-a771173a110d)
   )
-  (text "Variable buck regulator. Most values taken from webench.ti.com for 17V out."
-    (at 168.91 64.77 0)
-    (effects (font (size 1.27 1.27)) (justify right bottom))
-    (uuid d84cc893-264f-4292-b73e-ced96f26f428)
+  (text "R7 is a chosen value\nfrom 1 kΩ–100 kΩ" (at 148.59 123.19 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid b464db07-34b0-4cb2-82a0-2f1306000537)
+  )
+  (text "Voltage divider sets\noutput voltage to 24V\nR6 = R7 ((VOUT/0.765)-1)"
+    (at 180.34 124.46 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid cf02f542-609b-4ada-84ed-4c7bdee90d58)
   )
 
   (hierarchical_label "VOUT" (shape output) (at 206.375 95.25 0) (fields_autoplaced)
@@ -522,7 +525,7 @@
   (symbol (lib_id "Device:C") (at 86.36 93.98 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f37)
-    (property "Reference" "C?" (at 89.281 92.8116 0)
+    (property "Reference" "C1" (at 89.281 92.8116 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10uF" (at 89.281 95.123 0)
@@ -539,7 +542,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "C?") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
       (project "power_board"
@@ -553,7 +556,7 @@
   (symbol (lib_id "power:GND") (at 86.36 97.79 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f3d)
-    (property "Reference" "#PWR?" (at 86.36 104.14 0)
+    (property "Reference" "#PWR0105" (at 86.36 104.14 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 86.487 102.1842 0)
@@ -569,7 +572,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0105") (unit 1)
         )
       )
       (project "power_board"
@@ -583,7 +586,7 @@
   (symbol (lib_id "Device:C") (at 140.97 91.44 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f65)
-    (property "Reference" "C?" (at 143.891 90.2716 0)
+    (property "Reference" "C2" (at 143.891 90.2716 0)
       (effects (font (size 1.27 1.27)) (justify right))
     )
     (property "Value" "1uF" (at 143.891 92.583 0)
@@ -600,7 +603,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "C?") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
       (project "power_board"
@@ -614,7 +617,7 @@
   (symbol (lib_id "Device:D_Schottky") (at 147.955 99.06 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f6b)
-    (property "Reference" "D?" (at 149.987 97.8916 90)
+    (property "Reference" "D1" (at 149.987 97.8916 90)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "B540C-13-F" (at 149.987 100.203 90)
@@ -631,7 +634,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "D?") (unit 1)
+          (reference "D1") (unit 1)
         )
       )
       (project "power_board"
@@ -645,7 +648,7 @@
   (symbol (lib_id "Device:L") (at 161.29 95.25 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f71)
-    (property "Reference" "L?" (at 161.29 90.424 90)
+    (property "Reference" "L1" (at 161.29 90.424 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "22uH" (at 161.29 92.7354 90)
@@ -662,7 +665,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "L?") (unit 1)
+          (reference "L1") (unit 1)
         )
       )
       (project "power_board"
@@ -676,7 +679,7 @@
   (symbol (lib_id "Device:R_US") (at 175.26 99.06 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f7d)
-    (property "Reference" "R?" (at 176.9872 97.8916 0)
+    (property "Reference" "R2" (at 176.9872 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "330k" (at 176.9872 100.203 0)
@@ -693,7 +696,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "R?") (unit 1)
+          (reference "R2") (unit 1)
         )
       )
       (project "power_board"
@@ -707,7 +710,7 @@
   (symbol (lib_id "power:GND") (at 147.955 102.87 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 00000000-0000-0000-0000-000061329f89)
-    (property "Reference" "#PWR?" (at 147.955 109.22 0)
+    (property "Reference" "#PWR0102" (at 147.955 109.22 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 148.082 107.2642 0)
@@ -723,7 +726,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0102") (unit 1)
         )
       )
       (project "power_board"
@@ -758,7 +761,7 @@
       )
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0103") (unit 1)
         )
       )
       (project "power_board"
@@ -772,7 +775,7 @@
   (symbol (lib_id "Buck:LV2862YDDCR") (at 102.87 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 43652729-863a-4ace-a7a8-22dae61e1063)
-    (property "Reference" "U?" (at 120.65 78.74 0)
+    (property "Reference" "U1" (at 120.65 78.74 0)
       (effects (font (size 1.524 1.524)))
     )
     (property "Value" "LV2862YDDCR" (at 120.65 81.28 0)
@@ -793,7 +796,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "U?") (unit 1)
+          (reference "U1") (unit 1)
         )
       )
       (project "power_board"
@@ -807,7 +810,7 @@
   (symbol (lib_id "Device:R_US") (at 99.06 91.44 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4e44ad2b-7f83-499f-8ddb-404d4aeb2009)
-    (property "Reference" "R?" (at 100.7872 90.2716 0)
+    (property "Reference" "R1" (at 100.7872 90.2716 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "100k" (at 100.7872 92.583 0)
@@ -824,7 +827,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "R?") (unit 1)
+          (reference "R1") (unit 1)
         )
       )
       (project "power_board"
@@ -838,7 +841,7 @@
   (symbol (lib_id "Device:R_US") (at 175.26 109.855 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 7bb96ec0-1234-4760-a797-494d1c5c674c)
-    (property "Reference" "R?" (at 176.9872 108.6866 0)
+    (property "Reference" "R3" (at 176.9872 108.6866 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "10k" (at 176.9872 110.998 0)
@@ -855,7 +858,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "R?") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
       (project "power_board"
@@ -869,7 +872,7 @@
   (symbol (lib_id "power:GND") (at 175.26 113.665 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid dda2bdba-26ef-47d6-8dfb-dcfc22768cdd)
-    (property "Reference" "#PWR?" (at 175.26 120.015 0)
+    (property "Reference" "#PWR0104" (at 175.26 120.015 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 175.387 118.0592 0)
@@ -885,7 +888,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0104") (unit 1)
         )
       )
       (project "power_board"
@@ -899,7 +902,7 @@
   (symbol (lib_id "power:GND") (at 138.43 111.125 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e135c372-675f-4384-82fb-b4e95868cf4b)
-    (property "Reference" "#PWR?" (at 138.43 117.475 0)
+    (property "Reference" "#PWR0101" (at 138.43 117.475 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 138.557 115.5192 0)
@@ -915,7 +918,7 @@
     (instances
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "#PWR?") (unit 1)
+          (reference "#PWR0101") (unit 1)
         )
       )
       (project "power_board"
@@ -951,7 +954,7 @@
       )
       (project "buck_fixed"
         (path "/5a149a99-7ef6-4309-ac70-ee1dc896f69a"
-          (reference "COUT?") (unit 1)
+          (reference "COUT1") (unit 1)
         )
       )
       (project "power_board"
@@ -960,5 +963,9 @@
         )
       )
     )
+  )
+
+  (sheet_instances
+    (path "/" (page "1"))
   )
 )
