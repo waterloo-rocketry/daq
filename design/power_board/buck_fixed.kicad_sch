@@ -781,7 +781,7 @@
     (property "Value" "LV2862YDDCR" (at 120.65 81.28 0)
       (effects (font (size 1.524 1.524)))
     )
-    (property "Footprint" "footprints:DDC0006A-IPC_A" (at 82.55 90.17 0)
+    (property "Footprint" "Package_TO_SOT_SMD:TSOT-23-6_HandSoldering" (at 82.55 90.17 0)
       (effects (font (size 1.27 1.27) italic) hide)
     )
     (property "Datasheet" "LV2862YDDCR" (at 82.55 86.36 0)
