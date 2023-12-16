@@ -328,6 +328,18 @@
     [
       "da75d2ac-4c40-407d-8f74-3497a5ffc88d",
       ""
+    ],
+    [
+      "ba4acd4d-597d-4fed-a638-568443a1df6b",
+      "Sensor2 Port"
+    ],
+    [
+      "43f3ae2a-a0d1-47e7-936f-6e61be960897",
+      "Sensor1 Port"
+    ],
+    [
+      "d8db947f-2874-4568-b320-120f70c7a572",
+      "Sensor3 Port"
     ]
   ],
   "text_variables": {}
