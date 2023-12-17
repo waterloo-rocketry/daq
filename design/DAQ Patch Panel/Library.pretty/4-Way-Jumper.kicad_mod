@@ -1,6 +1,6 @@
 (footprint "4-Way-Jumper" (version 20221018) (generator pcbnew)
   (layer "F.Cu")
-  (attr smd)
+  (attr through_hole)
   (fp_text reference "J" (at 0 -0.5 unlocked) (layer "F.SilkS") hide
       (effects (font (size 1 1) (thickness 0.1)))
     (tstamp 25fe8184-e7bf-44aa-b427-60a6a2df4515)
