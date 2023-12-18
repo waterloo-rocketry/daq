@@ -512,6 +512,11 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cf02f542-609b-4ada-84ed-4c7bdee90d58)
   )
+  (text "Resistor values for R6 = 10k:\nR7 sets the voltage output\nfor 22V out (20V out of LDO)\n	R9 = 10(22/0.765 - 1)\n	R9 = 277.58k\n\nfor 14V (12V out of LDO):\n  R9 = 10(14/0.765 - 1)\n  R9 = 173k\n\nfor 12V (10V out of LDO):\n  R9 = 10(12/0.765 - 1)\n  R9 = 146.86k\n\nfor 7V(5V out of LDO):\n  R9 = 10(7/0.765 - 1)\n  R9 = 81.50k\n\nBoth 1%"
+    (at 222.25 111.76 0)
+    (effects (font (size 1.27 1.27)) (justify left bottom))
+    (uuid f0f8cf47-d8a8-44a9-b354-af74bebf8b0c)
+  )
 
   (hierarchical_label "VOUT" (shape output) (at 206.375 95.25 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left))
