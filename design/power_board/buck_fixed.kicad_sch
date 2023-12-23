@@ -512,7 +512,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cf02f542-609b-4ada-84ed-4c7bdee90d58)
   )
-  (text "Resistor values for R6 = 10k:\nR7 sets the voltage output\nfor 22V out (20V out of LDO)\n	R9 = 10(22/0.765 - 1)\n	R9 = 277.58k\n\nfor 14V (12V out of LDO):\n  R9 = 10(14/0.765 - 1)\n  R9 = 173k\n\nfor 12V (10V out of LDO):\n  R9 = 10(12/0.765 - 1)\n  R9 = 146.86k\n\nfor 7V(5V out of LDO):\n  R9 = 10(7/0.765 - 1)\n  R9 = 81.50k\n\nBoth 1%"
+  (text "Resistor values for R7 = 10k:\nR6 sets the voltage output\nfor 22V out (20V out of LDO)\n	R6 = 10(22/0.765 - 1)\n	R6 = 277.58k\n\nfor 14V (12V out of LDO):\n  R6 = 10(14/0.765 - 1)\n  R6 = 173k\n\nfor 12V (10V out of LDO):\n  R6 = 10(12/0.765 - 1)\n  R6 = 146.86k\n\nfor 7V(5V out of LDO):\n  R6 = 10(7/0.765 - 1)\n  R6 = 81.50k\n\nBoth 1%"
     (at 222.25 111.76 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f0f8cf47-d8a8-44a9-b354-af74bebf8b0c)
@@ -687,7 +687,7 @@
     (property "Reference" "R2" (at 176.9872 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "330k" (at 176.9872 100.203 0)
+    (property "Value" "277.58k" (at 176.9872 100.203 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 173.482 99.06 90)
