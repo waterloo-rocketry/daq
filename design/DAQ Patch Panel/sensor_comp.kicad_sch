@@ -795,7 +795,7 @@
     )
     (pin "1" (uuid 0d037679-a851-4009-b2d5-d725700b53ad))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR01") (unit 1)
         )
@@ -831,7 +831,7 @@
     (pin "2" (uuid 163fa4a8-33eb-475c-ae6a-31dd7b97f1e0))
     (pin "3" (uuid 0944c94b-5911-4d89-95fd-67ed8289f815))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "JP2") (unit 1)
         )
@@ -866,7 +866,7 @@
     (pin "1" (uuid 46feadc0-bea3-409a-9aa8-5afaabfe33d8))
     (pin "2" (uuid 42c01655-bf2b-47a0-9ed1-e9d71c1cec8c))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "F1") (unit 1)
         )
@@ -901,7 +901,7 @@
     (pin "1" (uuid d8c9da20-b91f-46f6-9551-810c143f914e))
     (pin "2" (uuid 25628c06-eaba-487a-9cbd-fb52e0cb0fd5))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "R6") (unit 1)
         )
@@ -935,7 +935,7 @@
     )
     (pin "1" (uuid 08431f7b-a986-4972-850f-91119fe855cd))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR06") (unit 1)
         )
@@ -969,7 +969,7 @@
     )
     (pin "1" (uuid 62d36a9c-eef5-46c5-bdb1-82abd936ff28))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR05") (unit 1)
         )
@@ -1004,7 +1004,7 @@
     (pin "1" (uuid 47083d58-438e-4994-851d-c4237d6ed2ec))
     (pin "2" (uuid 1054f50f-a8ee-4f1f-9e02-a3822d9e6526))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "R4") (unit 1)
         )
@@ -1039,7 +1039,7 @@
     (pin "1" (uuid 5bb8e60c-c0d6-4040-8f19-2988bd8fe23c))
     (pin "2" (uuid 7a21d25f-9af3-4a04-947f-b1f56506f3b9))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "C1") (unit 1)
         )
@@ -1073,7 +1073,7 @@
     )
     (pin "1" (uuid a7203d0f-a89e-48ca-8dbc-ded601c9d489))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR018") (unit 1)
         )
@@ -1107,7 +1107,7 @@
     )
     (pin "1" (uuid 3e925541-7cfa-497a-a608-7cb542a9bd79))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR07") (unit 1)
         )
@@ -1142,7 +1142,7 @@
     (pin "1" (uuid 790a3988-b4c7-4e21-bb2b-8777b8b0b43b))
     (pin "2" (uuid f1734528-a9c4-498d-9e1c-d435652fbc11))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "C2") (unit 1)
         )
@@ -1176,7 +1176,7 @@
     )
     (pin "1" (uuid 6ff8f834-a75e-4794-a771-275c43b36f8f))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR03") (unit 1)
         )
@@ -1211,7 +1211,7 @@
     (pin "1" (uuid 7e3ca4af-13be-4148-918b-4440c7c571d2))
     (pin "2" (uuid 040a7b83-1a18-4c4b-9f55-046e3d9a983e))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "R5") (unit 1)
         )
@@ -1246,7 +1246,7 @@
     (pin "1" (uuid 3b82c92b-1c63-47b9-b66e-d12532aba38c))
     (pin "2" (uuid 10312814-a935-4358-9a3d-a3f0b5d6b2bb))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "R3") (unit 1)
         )
@@ -1281,7 +1281,7 @@
     (pin "1" (uuid 54554843-9f9c-4741-a43a-5924180dac6d))
     (pin "2" (uuid a816d80f-d00e-4077-b390-b11a8095c4b3))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "R2") (unit 1)
         )
@@ -1315,7 +1315,7 @@
     )
     (pin "1" (uuid d6fb63c6-a495-4d73-a0d0-28bb406aa582))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR04") (unit 1)
         )
@@ -1349,7 +1349,7 @@
     )
     (pin "1" (uuid 4a338dd2-61a4-42b8-bb68-c4dc45e4c620))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR09") (unit 1)
         )
@@ -1384,7 +1384,7 @@
     (pin "1" (uuid e7459a7c-9971-4b0d-b87b-4dae0618f277))
     (pin "2" (uuid 6ca12bec-f11b-4476-9c30-a1d80427bff9))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "R1") (unit 1)
         )
@@ -1420,7 +1420,7 @@
     (pin "2" (uuid 125eae79-1288-416b-9c3e-4e1c0aaebdaf))
     (pin "3" (uuid a4fb4632-3c7a-4f76-b8ce-2ee5ca8a7a6e))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "JP7") (unit 1)
         )
@@ -1446,7 +1446,7 @@
     (property "Value" "Power_Jumpers" (at 127 66.04 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Library:4-Pole Jumper" (at 116.84 62.23 0)
+    (property "Footprint" "Library:4-Way-Jumper" (at 116.84 62.23 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 118.11 58.42 0)
@@ -1458,7 +1458,7 @@
     (pin "4" (uuid e9c97132-5560-45a2-8175-bc937919e7f6))
     (pin "5" (uuid 5baaaedb-315e-44b9-b4b3-d99e035e38f9))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "JP1") (unit 1)
         )
@@ -1492,7 +1492,7 @@
     )
     (pin "1" (uuid f6ea12b4-8e6d-422a-a67c-03d2ebbbf31d))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR016") (unit 1)
         )
@@ -1526,7 +1526,7 @@
     )
     (pin "1" (uuid b4b7d7a2-1617-406f-aca2-80e1d6cc008c))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR08") (unit 1)
         )
@@ -1560,7 +1560,7 @@
     )
     (pin "1" (uuid 80dbc848-e043-41e2-b1a7-c61e6ca5cdf5))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "#PWR02") (unit 1)
         )
@@ -1596,7 +1596,7 @@
     (pin "2" (uuid e79e1c45-aa12-4dcb-ab9e-0b5b431bda41))
     (pin "3" (uuid 2845d582-6b22-45a0-9e1f-b4563d237765))
     (instances
-      (project "DAQ_Power_Patch"
+      (project "DAQ_Patch_Panel"
         (path "/da75d2ac-4c40-407d-8f74-3497a5ffc88d"
           (reference "JP4") (unit 1)
         )
