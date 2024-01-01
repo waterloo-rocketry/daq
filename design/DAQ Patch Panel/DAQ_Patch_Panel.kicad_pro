@@ -249,7 +249,7 @@
     ]
   },
   "meta": {
-    "filename": "DAQ_Power_Patch.kicad_pro",
+    "filename": "DAQ_Patch_Panel.kicad_pro",
     "version": 1
   },
   "net_settings": {
@@ -330,7 +330,7 @@
       ""
     ],
     [
-      "ba4acd4d-597d-4fed-a638-568443a1df6b",
+      "ca703ce6-1268-4a82-83bf-6521abcdefcd",
       "Sensor2 Port"
     ],
     [
@@ -338,7 +338,7 @@
       "Sensor1 Port"
     ],
     [
-      "d8db947f-2874-4568-b320-120f70c7a572",
+      "55101481-7cbc-4575-a87f-20cffe92dd4e",
       "Sensor3 Port"
     ]
   ],
