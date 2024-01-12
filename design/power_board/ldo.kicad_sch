@@ -437,7 +437,7 @@
     (uuid ad4d1c1d-e149-4640-a60d-3f1cc80aede2)
   )
   (text "Resistor values for R8 = 0.24k:\nR9\n sets the voltage output\nfor 20V \n	R9 = 0.24(20/1.25 - 1)\n	R9 = 3.6k\n\nfor 12V:\n  R9 = 0.24(12/1.25 - 1)\n  R9 = 2.06k\n\nfor 10V:\n  R9 = 0.24(10/1.25 - 1)\n  R9 = 1.68k\n\nfor 5V:\n  R9 = 0.24(5/1.25 - 1)\n  R9 = 0.72k\n\nBoth 1%"
-    (at 74.93 160.02 0)
+    (at 41.91 115.57 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid cedeed79-0e3a-422a-8520-d3c4c1e84fdd)
   )

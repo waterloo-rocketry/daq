@@ -494,12 +494,12 @@
     (uuid fb93fce1-4cbf-4571-90eb-0a0e2b7b485a)
   )
 
-  (text " fsw = 2.1MHz\n" (at 189.23 64.77 0)
+  (text " fsw = 2.1MHz\n" (at 185.42 83.82 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 041031f7-aac0-4144-af21-c015da07bc7d)
   )
-  (text "Values for capacitors and inductors taken from \nhttps://www.ti.com/lit/ds/symlink/lv2862.pdf\nfor VOUT = 12V\n"
-    (at 130.81 63.5 0)
+  (text "Values for capacitors and inductors taken from \nhttps://www.ti.com/lit/ds/symlink/lv2862.pdf\n"
+    (at 134.62 73.66 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 6bb292b5-280a-46f6-b306-a771173a110d)
   )
@@ -513,7 +513,7 @@
     (uuid cf02f542-609b-4ada-84ed-4c7bdee90d58)
   )
   (text "Resistor values for R7 = 10k:\nR6 sets the voltage output\nfor 22V out (20V out of LDO)\n	R6 = 10(22/0.765 - 1)\n	R6 = 277.58k\n\nfor 14V (12V out of LDO):\n  R6 = 10(14/0.765 - 1)\n  R6 = 173k\n\nfor 12V (10V out of LDO):\n  R6 = 10(12/0.765 - 1)\n  R6 = 146.86k\n\nfor 7V(5V out of LDO):\n  R6 = 10(7/0.765 - 1)\n  R6 = 81.50k\n\nBoth 1%"
-    (at 222.25 111.76 0)
+    (at 214.63 109.22 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid f0f8cf47-d8a8-44a9-b354-af74bebf8b0c)
   )
