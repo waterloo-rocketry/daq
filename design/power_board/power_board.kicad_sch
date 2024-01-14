@@ -1112,7 +1112,7 @@
     (property "Sheetname" "buck" (at 109.22 74.2184 0)
       (effects (font (size 1.27 1.27)) (justify left bottom))
     )
-    (property "Sheetfile" "buck_fixed.kicad_sch" (at 109.22 92.0246 0)
+    (property "Sheetfile" "buck.kicad_sch" (at 109.22 92.0246 0)
       (effects (font (size 1.27 1.27)) (justify left top))
     )
     (pin "VIN" input (at 109.22 78.74 180)
