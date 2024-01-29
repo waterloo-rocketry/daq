@@ -797,7 +797,7 @@
           (reference "C?") (unit 1)
         )
         (path "/8a849c59-59c0-42e0-a511-c33c123656fd/00000000-0000-0000-0000-00006162a42b"
-          (reference "C3") (unit 1)
+          (reference "C8") (unit 1)
         )
       )
       (project "ldo"
