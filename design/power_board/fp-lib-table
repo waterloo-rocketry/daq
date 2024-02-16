@@ -2,4 +2,5 @@
   (version 7)
   (lib (name "footprints")(type "KiCad")(uri "${KIPRJMOD}/lib/footprints.pretty")(options "")(descr ""))
   (lib (name "SRU8028_220Y")(type "KiCad")(uri "${KIPROJMOD}/lib/newfootprints.pretty")(options "")(descr ""))
+  (lib (name "kicad-footprints-master")(type "KiCad")(uri "${KIPRJMOD}/kicad-footprints-master")(options "")(descr ""))
 )

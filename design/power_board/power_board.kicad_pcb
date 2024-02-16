@@ -2050,7 +2050,7 @@
   (gr_text "OUT" (at 118.588 98.46 180) (layer "F.SilkS") (tstamp 243af802-3522-464b-bb49-bfa14a3e0413)
     (effects (font (size 1 1) (thickness 0.15)))
   )
-  (gr_text "Silence" (at 135.382 90.424) (layer "F.SilkS") (tstamp 32256c44-e946-4bf5-afd1-1d11b392b647)
+  (gr_text "DAQ Power\n" (at 136.906 90.424) (layer "F.SilkS") (tstamp 32256c44-e946-4bf5-afd1-1d11b392b647)
     (effects (font (size 1.2 1.2) (thickness 0.2)))
   )
   (gr_text "OUT" (at 158.626 109.64 90) (layer "F.SilkS") (tstamp 50be53d5-7f24-483c-8500-8761df60aa2d)
