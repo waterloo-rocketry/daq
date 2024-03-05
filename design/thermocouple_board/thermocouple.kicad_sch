@@ -465,7 +465,6 @@
     )
   )
 
-
   (junction (at 115.57 110.49) (diameter 0) (color 0 0 0 0)
     (uuid 0ae21e3d-87db-4549-8a9d-9006c2d70c9a)
   )
@@ -550,7 +549,7 @@
   (symbol (lib_id "Device:L_Ferrite_Small") (at 107.95 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1fe85399-3e33-4b06-93b8-8479ef97756e)
-    (property "Reference" "L1" (at 107.95 111.76 90)
+    (property "Reference" "L4" (at 107.95 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1K @ 100 MHz" (at 107.95 114.3 90)
@@ -567,10 +566,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "L1") (unit 1)
+          (reference "L4") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "L4") (unit 1)
+          (reference "L2") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "L6") (unit 1)
@@ -626,7 +625,7 @@
   (symbol (lib_id "power:GND") (at 172.72 90.17 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 34dafb1d-1fd7-4ff9-b906-bc9839feca76)
-    (property "Reference" "#PWR023" (at 172.72 96.52 0)
+    (property "Reference" "#PWR030" (at 172.72 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 172.72 95.25 0)
@@ -642,10 +641,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "#PWR023") (unit 1)
+          (reference "#PWR030") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "#PWR030") (unit 1)
+          (reference "#PWR026") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "#PWR034") (unit 1)
@@ -660,7 +659,7 @@
   (symbol (lib_id "Device:C_Small") (at 115.57 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 39eccafc-f584-4763-b8fa-25816bbb5aaa)
-    (property "Reference" "C5" (at 118.11 106.68 0)
+    (property "Reference" "C9" (at 118.11 106.68 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.01uF" (at 118.11 109.22 0)
@@ -677,10 +676,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "C5") (unit 1)
+          (reference "C9") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "C9") (unit 1)
+          (reference "C7") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "C11") (unit 1)
@@ -695,7 +694,7 @@
   (symbol (lib_id "power:+3.3V") (at 172.72 85.09 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 43b48a51-1b56-4e37-a0bf-49e925041bae)
-    (property "Reference" "#PWR022" (at 172.72 88.9 0)
+    (property "Reference" "#PWR029" (at 172.72 88.9 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 172.72 81.28 0)
@@ -711,10 +710,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "#PWR022") (unit 1)
+          (reference "#PWR029") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "#PWR029") (unit 1)
+          (reference "#PWR025") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "#PWR033") (unit 1)
@@ -729,7 +728,7 @@
   (symbol (lib_id "Sensor_Temperature:MAX31855KASA") (at 152.4 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 44e012f0-0886-44a8-b9d2-87d1101c87ea)
-    (property "Reference" "U3" (at 143.51 88.9 0)
+    (property "Reference" "U5" (at 143.51 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "MAX31855KASA" (at 137.16 91.44 0)
@@ -751,10 +750,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "U3") (unit 1)
+          (reference "U5") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "U5") (unit 1)
+          (reference "U4") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "U6") (unit 1)
@@ -769,7 +768,7 @@
   (symbol (lib_id "Device:L_Ferrite_Small") (at 107.95 105.41 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65ed3f16-1284-4575-abb2-c91c8fe2e030)
-    (property "Reference" "L2" (at 107.95 99.06 90)
+    (property "Reference" "L3" (at 107.95 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "1K @ 100 MHz" (at 107.95 101.6 90)
@@ -786,10 +785,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "L2") (unit 1)
+          (reference "L3") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "L3") (unit 1)
+          (reference "L1") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "L5") (unit 1)
@@ -845,7 +844,7 @@
   (symbol (lib_id "power:+3.3V") (at 165.1 92.71 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 66ccf276-7ac6-44b9-91fa-4848bb21c051)
-    (property "Reference" "#PWR020" (at 165.1 96.52 0)
+    (property "Reference" "#PWR027" (at 165.1 96.52 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 165.1 88.9 0)
@@ -861,10 +860,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "#PWR020") (unit 1)
+          (reference "#PWR027") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "#PWR027") (unit 1)
+          (reference "#PWR023") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "#PWR031") (unit 1)
@@ -879,7 +878,7 @@
   (symbol (lib_id "power:GND") (at 165.1 113.03 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 69bbcffa-82a5-451c-9bf7-a360aae77bd4)
-    (property "Reference" "#PWR021" (at 165.1 119.38 0)
+    (property "Reference" "#PWR028" (at 165.1 119.38 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 165.1 118.11 0)
@@ -895,10 +894,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "#PWR021") (unit 1)
+          (reference "#PWR028") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "#PWR028") (unit 1)
+          (reference "#PWR024") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "#PWR032") (unit 1)
@@ -913,7 +912,7 @@
   (symbol (lib_id "Device:C_Small") (at 172.72 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 9e38f76a-3b07-444b-a972-782b2ae636c4)
-    (property "Reference" "C6" (at 175.26 86.36 0)
+    (property "Reference" "C10" (at 175.26 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "0.01uF" (at 175.26 88.9 0)
@@ -930,10 +929,10 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
-          (reference "C6") (unit 1)
+          (reference "C10") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
-          (reference "C10") (unit 1)
+          (reference "C8") (unit 1)
         )
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
           (reference "C12") (unit 1)

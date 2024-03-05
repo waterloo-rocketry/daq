@@ -786,6 +786,55 @@
         )
       )
     )
+    (symbol "Jumper:Jumper_2_Open" (pin_names (offset 0) hide) (in_bom yes) (on_board yes)
+      (property "Reference" "JP" (at 0 2.794 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Value" "Jumper_2_Open" (at 0 -2.286 0)
+        (effects (font (size 1.27 1.27)))
+      )
+      (property "Footprint" "" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "Datasheet" "~" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_keywords" "Jumper SPST" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_description" "Jumper, 2-pole, open" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (property "ki_fp_filters" "Jumper* TestPoint*2Pads* TestPoint*Bridge*" (at 0 0 0)
+        (effects (font (size 1.27 1.27)) hide)
+      )
+      (symbol "Jumper_2_Open_0_0"
+        (circle (center -2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+        (circle (center 2.032 0) (radius 0.508)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Jumper_2_Open_0_1"
+        (arc (start 1.524 1.27) (mid 0 1.778) (end -1.524 1.27)
+          (stroke (width 0) (type default))
+          (fill (type none))
+        )
+      )
+      (symbol "Jumper_2_Open_1_1"
+        (pin passive line (at -5.08 0 0) (length 2.54)
+          (name "A" (effects (font (size 1.27 1.27))))
+          (number "1" (effects (font (size 1.27 1.27))))
+        )
+        (pin passive line (at 5.08 0 180) (length 2.54)
+          (name "B" (effects (font (size 1.27 1.27))))
+          (number "2" (effects (font (size 1.27 1.27))))
+        )
+      )
+    )
     (symbol "Mechanical:MountingHole" (pin_names (offset 1.016)) (in_bom yes) (on_board yes)
       (property "Reference" "H" (at 0 5.08 0)
         (effects (font (size 1.27 1.27)))
@@ -1190,7 +1239,6 @@
     )
   )
 
-
   (junction (at 57.15 102.87) (diameter 0) (color 0 0 0 0)
     (uuid 1c753a03-7f77-4591-9d36-6d188df701b1)
   )
@@ -1200,6 +1248,9 @@
   (junction (at 143.51 40.64) (diameter 0) (color 0 0 0 0)
     (uuid 3a45f5d8-90a5-4cd8-a79a-70a439f6e50d)
   )
+  (junction (at 124.46 138.43) (diameter 0) (color 0 0 0 0)
+    (uuid 3c15398d-96b3-4d09-98a6-b923789ce74f)
+  )
   (junction (at 92.71 135.89) (diameter 0) (color 0 0 0 0)
     (uuid 4ae35230-70e9-4783-acc7-74ca33be83bf)
   )
@@ -1208,6 +1259,9 @@
   )
   (junction (at 168.91 40.64) (diameter 0) (color 0 0 0 0)
     (uuid 92271490-db74-410c-8ba5-36eee5d9cc8b)
+  )
+  (junction (at 129.54 140.97) (diameter 0) (color 0 0 0 0)
+    (uuid af7a8289-4494-40cf-bd09-d34201d20c74)
   )
   (junction (at 57.15 90.17) (diameter 0) (color 0 0 0 0)
     (uuid bb161ebd-8067-4cef-afa7-825fd65912df)
@@ -1235,6 +1289,10 @@
   (wire (pts (xy 163.83 91.44) (xy 163.83 86.36))
     (stroke (width 0) (type default))
     (uuid 0334dada-c4d1-4006-a335-d6c702bbe7c4)
+  )
+  (wire (pts (xy 129.54 135.89) (xy 129.54 140.97))
+    (stroke (width 0) (type default))
+    (uuid 041b49b1-2134-4779-8df1-777f51e432ac)
   )
   (wire (pts (xy 213.36 86.36) (xy 215.9 86.36))
     (stroke (width 0) (type default))
@@ -1279,10 +1337,6 @@
   (wire (pts (xy 99.06 43.18) (xy 101.6 43.18))
     (stroke (width 0) (type default))
     (uuid 172a0ca7-d8ed-455b-9b58-b1ddde5098a4)
-  )
-  (wire (pts (xy 119.38 138.43) (xy 124.46 138.43))
-    (stroke (width 0) (type default))
-    (uuid 173d8774-8d2d-4d8f-aa3e-31e02412b44a)
   )
   (wire (pts (xy 78.74 35.56) (xy 78.74 38.1))
     (stroke (width 0) (type default))
@@ -1356,6 +1410,10 @@
     (stroke (width 0) (type default))
     (uuid 4ce68b22-46cc-45e4-a794-2b5a648d56a1)
   )
+  (wire (pts (xy 124.46 128.27) (xy 124.46 125.73))
+    (stroke (width 0) (type default))
+    (uuid 4d13702d-a13a-4ea4-82e8-7659983709a4)
+  )
   (wire (pts (xy 101.6 35.56) (xy 101.6 38.1))
     (stroke (width 0) (type default))
     (uuid 4e120843-2bef-4c72-a20d-dae6311dec63)
@@ -1395,6 +1453,18 @@
   (wire (pts (xy 86.36 81.28) (xy 88.9 81.28))
     (stroke (width 0) (type default))
     (uuid 6a56560d-eb39-4fdb-9dab-93560c937ae2)
+  )
+  (wire (pts (xy 129.54 140.97) (xy 137.16 140.97))
+    (stroke (width 0) (type default))
+    (uuid 6c22c41d-7744-4b48-8280-2892bb849d61)
+  )
+  (wire (pts (xy 119.38 138.43) (xy 124.46 138.43))
+    (stroke (width 0) (type default))
+    (uuid 6c3cc50d-f0e7-44ea-a1a0-a02f9a1f350a)
+  )
+  (wire (pts (xy 124.46 125.73) (xy 129.54 125.73))
+    (stroke (width 0) (type default))
+    (uuid 6f6c7601-60e4-41df-bc60-3b3c7a1995e1)
   )
   (wire (pts (xy 168.91 48.26) (xy 156.21 48.26))
     (stroke (width 0) (type default))
@@ -1448,6 +1518,14 @@
     (stroke (width 0) (type default))
     (uuid a4c62271-614c-431e-ba07-4d6828156ab4)
   )
+  (wire (pts (xy 119.38 140.97) (xy 129.54 140.97))
+    (stroke (width 0) (type default))
+    (uuid a6cab2a9-4924-447f-8957-5e43c91f48c6)
+  )
+  (wire (pts (xy 124.46 138.43) (xy 137.16 138.43))
+    (stroke (width 0) (type default))
+    (uuid a7bc28c7-80c3-47c9-93a4-6fdb68505dbe)
+  )
   (wire (pts (xy 173.99 93.98) (xy 173.99 86.36))
     (stroke (width 0) (type default))
     (uuid a925df4d-473b-4a3f-ba76-734c23407ed2)
@@ -1500,6 +1578,10 @@
     (stroke (width 0) (type default))
     (uuid c63c1ee5-ebd3-4793-8c3a-828946e4fbb0)
   )
+  (wire (pts (xy 124.46 135.89) (xy 124.46 138.43))
+    (stroke (width 0) (type default))
+    (uuid c83f29a8-faf5-4bcd-8803-67cd8d80b5dd)
+  )
   (wire (pts (xy 38.1 90.17) (xy 38.1 102.87))
     (stroke (width 0) (type default))
     (uuid caddc392-a7d4-4a08-84e7-302b290da602)
@@ -1515,10 +1597,6 @@
   (wire (pts (xy 128.27 111.76) (xy 128.27 114.3))
     (stroke (width 0) (type default))
     (uuid d1679636-4382-4a0b-a2a5-ba92ee4dc3c1)
-  )
-  (wire (pts (xy 119.38 140.97) (xy 124.46 140.97))
-    (stroke (width 0) (type default))
-    (uuid d7db6523-6441-42ed-b18b-ba673930ef48)
   )
   (wire (pts (xy 99.06 45.72) (xy 101.6 45.72))
     (stroke (width 0) (type default))
@@ -1597,10 +1675,6 @@
     (uuid ffd5fda6-a7e5-4856-8eeb-ffbea648ee28)
   )
 
-  (text "Add optional can termination resistor?\n" (at 132.08 139.7 0)
-    (effects (font (size 1.27 1.27)) (justify left bottom))
-    (uuid 4d407997-badb-4d84-89b7-722d8999ad4f)
-  )
   (text "This PIC uses 3 wire SPI. RC4 \ncan either send or receive data"
     (at 48.26 116.84 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
@@ -1715,7 +1789,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid c9b9c7ca-9d51-45f9-8966-b6cd3b497be8)
   )
-  (label "CANH" (at 124.46 138.43 0) (fields_autoplaced)
+  (label "CANH" (at 137.16 138.43 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid dbddd04d-3ea9-4a1b-85b7-9f6088f57ee2)
   )
@@ -1747,7 +1821,7 @@
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid e87def8d-78a3-42ac-baad-52aab2e5e144)
   )
-  (label "CANL" (at 124.46 140.97 0) (fields_autoplaced)
+  (label "CANL" (at 137.16 140.97 0) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid eadce7ec-71f0-47cb-80ff-25a193f82f12)
   )
@@ -1815,7 +1889,7 @@
   (symbol (lib_id "power:GND") (at 128.27 116.84 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 04e73884-81d4-45ab-84ba-aee0a61ea579)
-    (property "Reference" "#PWR03" (at 128.27 123.19 0)
+    (property "Reference" "#PWR014" (at 128.27 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 128.27 121.92 0)
@@ -1831,7 +1905,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR03") (unit 1)
+          (reference "#PWR014") (unit 1)
         )
       )
     )
@@ -1861,7 +1935,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR013") (unit 1)
+          (reference "#PWR015") (unit 1)
         )
       )
     )
@@ -1870,7 +1944,7 @@
   (symbol (lib_id "power:GND") (at 156.21 50.8 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 08673782-f265-4307-92e1-782e22e6d179)
-    (property "Reference" "#PWR024" (at 156.21 57.15 0)
+    (property "Reference" "#PWR019" (at 156.21 57.15 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 156.21 55.88 0)
@@ -1886,7 +1960,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR024") (unit 1)
+          (reference "#PWR019") (unit 1)
         )
       )
     )
@@ -1895,7 +1969,7 @@
   (symbol (lib_name "+5V_1") (lib_id "power:+5V") (at 58.42 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0c149bfe-f3c1-499c-8586-9e3695beee64)
-    (property "Reference" "#PWR04" (at 58.42 39.37 0)
+    (property "Reference" "#PWR02" (at 58.42 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 58.42 31.75 0)
@@ -1911,7 +1985,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR04") (unit 1)
+          (reference "#PWR02") (unit 1)
         )
       )
     )
@@ -2004,10 +2078,36 @@
     )
   )
 
+  (symbol (lib_id "Jumper:Jumper_2_Open") (at 129.54 130.81 270) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 20368e50-c467-4606-a0a5-b2db6f46f63c)
+    (property "Reference" "JP1" (at 132.08 130.175 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "Jumper" (at 132.08 132.715 90)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "" (at 129.54 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 129.54 130.81 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 16403728-3591-48e2-9cce-d690e48fe7bb))
+    (pin "2" (uuid 639c6094-ba0b-40b2-82f9-480263acb289))
+    (instances
+      (project "thermocouple_board"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
+          (reference "JP1") (unit 1)
+        )
+      )
+    )
+  )
+
   (symbol (lib_id "power:+3.3V") (at 168.91 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 21fb5430-6819-41b6-b4b9-c548ea5e73ab)
-    (property "Reference" "#PWR026" (at 168.91 41.91 0)
+    (property "Reference" "#PWR021" (at 168.91 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 168.91 34.29 0)
@@ -2023,7 +2123,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR026") (unit 1)
+          (reference "#PWR021") (unit 1)
         )
       )
     )
@@ -2032,7 +2132,7 @@
   (symbol (lib_id "Device:C_Small") (at 168.91 44.45 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 2741aab9-aa44-4055-b76f-134c9af388a6)
-    (property "Reference" "C8" (at 171.45 43.8213 0)
+    (property "Reference" "C6" (at 171.45 43.8213 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 171.45 46.3613 0)
@@ -2049,7 +2149,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "C8") (unit 1)
+          (reference "C6") (unit 1)
         )
       )
     )
@@ -2079,7 +2179,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR016") (unit 1)
+          (reference "#PWR020") (unit 1)
         )
       )
     )
@@ -2110,7 +2210,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "R3") (unit 1)
+          (reference "R4") (unit 1)
         )
       )
     )
@@ -2166,7 +2266,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR011") (unit 1)
+          (reference "#PWR05") (unit 1)
         )
       )
     )
@@ -2321,7 +2421,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "C2") (unit 1)
+          (reference "C1") (unit 1)
         )
       )
     )
@@ -2351,7 +2451,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR010") (unit 1)
+          (reference "#PWR04") (unit 1)
         )
       )
     )
@@ -2455,7 +2555,7 @@
   (symbol (lib_id "power:GND") (at 58.42 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 7d3b7bdc-c20a-4f2b-9dd4-115bf12a3f39)
-    (property "Reference" "#PWR05" (at 58.42 54.61 0)
+    (property "Reference" "#PWR03" (at 58.42 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 58.42 53.34 0)
@@ -2471,7 +2571,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR05") (unit 1)
+          (reference "#PWR03") (unit 1)
         )
       )
     )
@@ -2502,7 +2602,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "C1") (unit 1)
+          (reference "C3") (unit 1)
         )
       )
     )
@@ -2533,7 +2633,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "R4") (unit 1)
+          (reference "R5") (unit 1)
         )
       )
     )
@@ -2563,7 +2663,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR015") (unit 1)
+          (reference "#PWR018") (unit 1)
         )
       )
     )
@@ -2601,7 +2701,7 @@
   (symbol (lib_id "Regulator_Linear:BD33FC0FP") (at 156.21 40.64 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8c521f0b-d720-4807-b7f1-44e522c93abc)
-    (property "Reference" "U4" (at 156.21 34.29 0)
+    (property "Reference" "U3" (at 156.21 34.29 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "AP2120N-3.3TRG1" (at 156.21 36.83 0)
@@ -2619,7 +2719,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "U4") (unit 1)
+          (reference "U3") (unit 1)
         )
       )
     )
@@ -2650,7 +2750,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "C3") (unit 1)
+          (reference "C2") (unit 1)
         )
       )
     )
@@ -2680,7 +2780,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR01") (unit 1)
+          (reference "#PWR08") (unit 1)
         )
       )
     )
@@ -2710,6 +2810,37 @@
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
           (reference "J1") (unit 1)
+        )
+      )
+    )
+  )
+
+  (symbol (lib_id "Device:R_US") (at 124.46 132.08 0) (mirror y) (unit 1)
+    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
+    (uuid 9acd7bac-062d-45fd-b913-8d1aa7987e6f)
+    (property "Reference" "R1" (at 121.92 130.8099 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Value" "120R" (at 121.92 133.3499 0)
+      (effects (font (size 1.27 1.27)) (justify left))
+    )
+    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 123.444 132.334 90)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "~" (at 124.46 132.08 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid 9691ec6b-0aa8-48af-afcd-76377894c96a))
+    (pin "2" (uuid 057b1e48-0c20-4be9-ad8f-15dd832e2619))
+    (instances
+      (project "charging_on_the_pad"
+        (path "/9538e4ed-27e6-4c37-b989-9859dc0d49e8"
+          (reference "R1") (unit 1)
+        )
+      )
+      (project "thermocouple_board"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
+          (reference "R2") (unit 1)
         )
       )
     )
@@ -2772,7 +2903,7 @@
   (symbol (lib_name "+5V_4") (lib_id "power:+5V") (at 143.51 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid b4605f35-428d-40cc-8708-72779de3533b)
-    (property "Reference" "#PWR025" (at 143.51 41.91 0)
+    (property "Reference" "#PWR017" (at 143.51 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 143.51 34.29 0)
@@ -2788,7 +2919,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR025") (unit 1)
+          (reference "#PWR017") (unit 1)
         )
       )
     )
@@ -2818,7 +2949,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR012") (unit 1)
+          (reference "#PWR01") (unit 1)
         )
       )
     )
@@ -2848,7 +2979,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR014") (unit 1)
+          (reference "#PWR016") (unit 1)
         )
       )
     )
@@ -2878,7 +3009,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR017") (unit 1)
+          (reference "#PWR022") (unit 1)
         )
       )
     )
@@ -2916,7 +3047,7 @@
   (symbol (lib_id "Device:C_Small") (at 143.51 44.45 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid d852ef57-edfc-4164-be63-1eba47179ef0)
-    (property "Reference" "C7" (at 140.97 43.8213 0)
+    (property "Reference" "C5" (at 140.97 43.8213 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1uF" (at 140.97 46.3613 0)
@@ -2933,7 +3064,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "C7") (unit 1)
+          (reference "C5") (unit 1)
         )
       )
     )
@@ -2964,7 +3095,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "R2") (unit 1)
+          (reference "R3") (unit 1)
         )
       )
     )
@@ -2973,7 +3104,7 @@
   (symbol (lib_id "power:GND") (at 101.6 48.26 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid d8d39be0-9f59-4c7f-90c0-b5678fc30afa)
-    (property "Reference" "#PWR019" (at 101.6 54.61 0)
+    (property "Reference" "#PWR011" (at 101.6 54.61 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 101.6 53.34 0)
@@ -2989,7 +3120,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR019") (unit 1)
+          (reference "#PWR011") (unit 1)
         )
       )
     )
@@ -2998,7 +3129,7 @@
   (symbol (lib_name "+5V_3") (lib_id "power:+5V") (at 92.71 133.35 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e5967ddc-7555-49f7-b2f5-4795165ab814)
-    (property "Reference" "#PWR08" (at 92.71 137.16 0)
+    (property "Reference" "#PWR09" (at 92.71 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 92.71 129.54 0)
@@ -3014,7 +3145,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR08") (unit 1)
+          (reference "#PWR09") (unit 1)
         )
       )
     )
@@ -3023,7 +3154,7 @@
   (symbol (lib_id "power:GND") (at 121.92 146.05 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f16d6ef0-29c1-46c6-a59b-f87a08ad7e1b)
-    (property "Reference" "#PWR09" (at 121.92 152.4 0)
+    (property "Reference" "#PWR012" (at 121.92 152.4 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GND" (at 121.92 151.13 0)
@@ -3039,7 +3170,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR09") (unit 1)
+          (reference "#PWR012") (unit 1)
         )
       )
     )
@@ -3048,7 +3179,7 @@
   (symbol (lib_name "+5V_2") (lib_id "power:+5V") (at 101.6 35.56 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f3955f10-8133-4713-9d24-586a5ae7afeb)
-    (property "Reference" "#PWR018" (at 101.6 39.37 0)
+    (property "Reference" "#PWR010" (at 101.6 39.37 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+5V" (at 101.6 31.75 0)
@@ -3064,7 +3195,7 @@
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR018") (unit 1)
+          (reference "#PWR010") (unit 1)
         )
       )
     )
@@ -3094,7 +3225,7 @@
       )
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
-          (reference "#PWR02") (unit 1)
+          (reference "#PWR013") (unit 1)
         )
       )
     )
