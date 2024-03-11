@@ -476,7 +476,7 @@
     (stroke (width 0) (type default))
     (uuid 27b9c98c-a2b5-4837-ba41-98c1132cb41d)
   )
-  (wire (pts (xy 90.17 110.49) (xy 105.41 110.49))
+  (wire (pts (xy 90.17 110.49) (xy 100.33 110.49))
     (stroke (width 0) (type default))
     (uuid 2e252124-5f0f-4b32-8801-c5dabad43835)
   )
@@ -500,7 +500,7 @@
     (stroke (width 0) (type default))
     (uuid 57a99eb1-3278-450d-aca8-383ee8664e35)
   )
-  (wire (pts (xy 110.49 110.49) (xy 115.57 110.49))
+  (wire (pts (xy 105.41 110.49) (xy 115.57 110.49))
     (stroke (width 0) (type default))
     (uuid 5b4367f8-df69-43b6-9cd2-d01fb3ff6ba3)
   )
@@ -516,7 +516,7 @@
     (stroke (width 0) (type default))
     (uuid 9b24b1b3-15a5-4513-a121-b14c035cda68)
   )
-  (wire (pts (xy 110.49 105.41) (xy 115.57 105.41))
+  (wire (pts (xy 105.41 105.41) (xy 115.57 105.41))
     (stroke (width 0) (type default))
     (uuid 9bb9e7a0-6244-4852-987f-0cbd3677a135)
   )
@@ -528,37 +528,44 @@
     (stroke (width 0) (type default))
     (uuid e7e5426b-2d95-4bed-ba3c-85189cddf105)
   )
-  (wire (pts (xy 95.25 105.41) (xy 105.41 105.41))
+  (wire (pts (xy 95.25 105.41) (xy 100.33 105.41))
     (stroke (width 0) (type default))
     (uuid f4562a98-fcf2-4096-a8dd-5b190ef172cc)
+  )
+
+  (global_label "SCLK_3V3" (shape input) (at 123.19 100.33 180) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify right))
+    (uuid 4d1dc6b5-c0ae-40bd-83af-ae8387792aa8)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 111.0314 100.33 0)
+      (effects (font (size 1.27 1.27)) (justify right) hide)
+    )
+  )
+  (global_label "MISO_3V3" (shape input) (at 165.1 99.06 0) (fields_autoplaced)
+    (effects (font (size 1.27 1.27)) (justify left))
+    (uuid b1b689d8-facc-4966-b2b1-4e623a2f4631)
+    (property "Intersheetrefs" "${INTERSHEET_REFS}" (at 177.0772 99.06 0)
+      (effects (font (size 1.27 1.27)) (justify left) hide)
+    )
   )
 
   (hierarchical_label "~{CS}" (shape input) (at 123.19 95.25 180) (fields_autoplaced)
     (effects (font (size 1.27 1.27)) (justify right))
     (uuid 23ce4729-5b86-4d7d-8467-aa904bda7fcf)
   )
-  (hierarchical_label "SCK" (shape input) (at 123.19 100.33 180) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify right))
-    (uuid 2c44c759-4e01-4d5a-b290-e951577d2889)
-  )
-  (hierarchical_label "SDO" (shape input) (at 165.1 99.06 0) (fields_autoplaced)
-    (effects (font (size 1.27 1.27)) (justify left))
-    (uuid 4b142b4f-38aa-4bc9-9508-42ac0dcbef2e)
-  )
 
-  (symbol (lib_id "Device:L_Ferrite_Small") (at 107.95 110.49 90) (unit 1)
+  (symbol (lib_id "Device:L_Ferrite_Small") (at 102.87 110.49 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 1fe85399-3e33-4b06-93b8-8479ef97756e)
-    (property "Reference" "L4" (at 107.95 111.76 90)
+    (property "Reference" "L4" (at 102.87 111.76 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1K @ 100 MHz" (at 107.95 114.3 90)
+    (property "Value" "1K @ 100 MHz" (at 102.87 114.3 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 107.95 110.49 0)
+    (property "Footprint" "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 102.87 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/BLM21AG102SN1D/468922" (at 107.95 110.49 0)
+    (property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/BLM21AG102SN1D/468922" (at 102.87 110.49 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid ec3a612d-082e-49b4-bf54-1b5824babb77))
@@ -568,13 +575,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "L4") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "L2") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "L6") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "L8") (unit 1)
         )
       )
@@ -643,13 +650,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "#PWR030") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "#PWR026") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "#PWR034") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "#PWR038") (unit 1)
         )
       )
@@ -665,7 +672,7 @@
     (property "Value" "0.01uF" (at 118.11 109.22 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 115.57 107.95 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 115.57 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 115.57 107.95 0)
@@ -678,13 +685,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "C9") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "C7") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "C11") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "C13") (unit 1)
         )
       )
@@ -712,13 +719,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "#PWR029") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "#PWR025") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "#PWR033") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "#PWR037") (unit 1)
         )
       )
@@ -752,32 +759,32 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "U5") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "U4") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "U6") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "U7") (unit 1)
         )
       )
     )
   )
 
-  (symbol (lib_id "Device:L_Ferrite_Small") (at 107.95 105.41 90) (unit 1)
+  (symbol (lib_id "Device:L_Ferrite_Small") (at 102.87 105.41 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 65ed3f16-1284-4575-abb2-c91c8fe2e030)
-    (property "Reference" "L3" (at 107.95 99.06 90)
+    (property "Reference" "L3" (at 102.87 99.06 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Value" "1K @ 100 MHz" (at 107.95 101.6 90)
+    (property "Value" "1K @ 100 MHz" (at 102.87 101.6 90)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 107.95 105.41 0)
+    (property "Footprint" "Fuse:Fuse_0805_2012Metric_Pad1.15x1.40mm_HandSolder" (at 102.87 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/BLM21AG102SN1D/468922" (at 107.95 105.41 0)
+    (property "Datasheet" "https://www.digikey.ca/en/products/detail/murata-electronics/BLM21AG102SN1D/468922" (at 102.87 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 5428b12d-5afc-49d3-9e22-0d074c58c9ed))
@@ -787,13 +794,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "L3") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "L1") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "L5") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "L7") (unit 1)
         )
       )
@@ -862,13 +869,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "#PWR027") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "#PWR023") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "#PWR031") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "#PWR035") (unit 1)
         )
       )
@@ -896,13 +903,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "#PWR028") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "#PWR024") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "#PWR032") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "#PWR036") (unit 1)
         )
       )
@@ -915,10 +922,10 @@
     (property "Reference" "C10" (at 175.26 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "0.01uF" (at 175.26 88.9 0)
+    (property "Value" "0.1uF" (at 175.26 88.9 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "" (at 172.72 87.63 0)
+    (property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder" (at 172.72 87.63 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Datasheet" "~" (at 172.72 87.63 0)
@@ -931,13 +938,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "C10") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "C8") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "C12") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "C14") (unit 1)
         )
       )
@@ -966,13 +973,13 @@
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
           (reference "J5") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/63a9e4b5-6489-403b-b271-ab052f2c16d6"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/1df13725-12cd-4da6-94fe-898488ca835c"
           (reference "J4") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/83e96294-8b9a-4632-a548-e13053a6ac34"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/f7fcb229-7279-4384-80d7-740cdfd8a93c"
           (reference "J6") (unit 1)
         )
-        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/99e715ea-e65a-41f3-9920-f077f6a2b1c7"
+        (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/2d3de559-6b85-41c6-9dce-155bf1558ac7"
           (reference "J7") (unit 1)
         )
       )
