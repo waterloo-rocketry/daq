@@ -651,7 +651,7 @@
 
   (footprint "waterloo-rocketry electrical_tutorials master 2022_generic-Tutorial_Footprints:Logo_SilkScreen_10mm" (layer "F.Cu")
     (tstamp 585b6316-2c20-466a-a706-ea1ff581af50)
-    (at 148.75 66.75 90)
+    (at 140.5 102.25 -90)
     (attr through_hole)
     (fp_text reference "G***" (at 0 0 90) (layer "F.SilkS") hide
         (effects (font (size 1.524 1.524) (thickness 0.3)))
