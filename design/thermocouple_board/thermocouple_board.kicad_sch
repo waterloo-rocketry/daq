@@ -1328,7 +1328,6 @@
     )
   )
 
-
   (junction (at 55.88 97.79) (diameter 0) (color 0 0 0 0)
     (uuid 1c753a03-7f77-4591-9d36-6d188df701b1)
   )
@@ -2173,7 +2172,7 @@
     )
   )
 
-  (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 115.57 40.64 0) (mirror y) (unit 1)
+  (symbol (lib_id "Connector:Screw_Terminal_01x04") (at 115.57 43.18 180) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 0f8c6880-101c-40e1-af97-dce3bfe2466f)
     (property "Reference" "J3" (at 116.84 31.75 0)
@@ -2182,16 +2181,16 @@
     (property "Value" "CAN Ext Conn" (at 120.65 34.29 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" (at 115.57 40.64 0)
+    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-4-5.08_1x04_P5.08mm_Horizontal" (at 115.57 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 115.57 40.64 0)
+    (property "Datasheet" "~" (at 115.57 43.18 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 6ff224ab-fd0e-4e2e-bd98-97ab535dbfb5))
-    (pin "2" (uuid a834fae1-3762-4b40-8d4e-3637022a23a4))
-    (pin "3" (uuid 044e0c7d-ad54-4c54-b7a6-d97078f1b650))
-    (pin "4" (uuid 8f295ca2-82dc-4f3e-aaea-11e069f417bb))
+    (pin "1" (uuid ada5ec24-b097-4e6d-a6e4-6bf60b7ac457))
+    (pin "2" (uuid d4da6bcf-6fea-4470-84da-7210808e2d32))
+    (pin "3" (uuid 3e77b072-87c2-4e3c-83a2-ea64ba8bc95c))
+    (pin "4" (uuid 383b2285-742e-43e4-ab5f-82bd4d9349ef))
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
@@ -2216,10 +2215,10 @@
     (property "Datasheet" "~" (at 69.85 40.64 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 8996976c-6514-40fa-aa75-37d00c18caeb))
-    (pin "2" (uuid 7e9bf87e-fce7-4644-923d-890638b3df3a))
-    (pin "3" (uuid b2a72951-a337-41ae-af82-5eccfa71efa7))
-    (pin "4" (uuid ccd75535-fbe5-4ed2-9803-aa2fc6c8611e))
+    (pin "1" (uuid db81eba6-da25-4b66-94c2-82cced4507f1))
+    (pin "2" (uuid f50517e5-face-4aac-9879-8d5abf3608f1))
+    (pin "3" (uuid d31677d7-c17a-4949-a34b-71ab9d08abe9))
+    (pin "4" (uuid 6ac30ab0-1dd7-409a-aec4-61a4e9280eb5))
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff"
