@@ -28,3 +28,8 @@ rescue-backup
 
 # KiCAD backups
 *-backups/
+
+#ignore for rocketry
+*.lck
+
+design/DAQ Patch Panel/\#auto_saved_files\#
