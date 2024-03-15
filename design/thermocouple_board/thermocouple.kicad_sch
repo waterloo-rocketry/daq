@@ -951,7 +951,7 @@
     )
   )
 
-  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 85.09 110.49 180) (unit 1)
+  (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 85.09 107.95 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e66b0e38-2365-421b-a255-5f0947560f8f)
     (property "Reference" "J5" (at 85.09 101.6 0)
@@ -960,14 +960,14 @@
     (property "Value" "Thermocouple conn" (at 85.09 104.14 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" (at 85.09 110.49 0)
+    (property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MKDS-1,5-2-5.08_1x02_P5.08mm_Horizontal" (at 85.09 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "~" (at 85.09 110.49 0)
+    (property "Datasheet" "~" (at 85.09 107.95 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid 9b96e42c-91ae-400f-8722-23d669920bf0))
-    (pin "2" (uuid a213a0bc-6f75-4f28-8c5f-20c98c530ec9))
+    (pin "1" (uuid e93bf7b8-8de4-481c-91e2-e1ee5c0ca96d))
+    (pin "2" (uuid f013fe1a-3bb0-4a42-a864-1be4e5d0feea))
     (instances
       (project "thermocouple_board"
         (path "/bddc1c86-7e70-444c-8c58-d2a4afd414ff/196db3b3-bb6e-4aaa-bfdb-62271ec88ddc"
