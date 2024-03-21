@@ -656,7 +656,7 @@
     (property "Reference" "R2" (at 176.9872 97.8916 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "277.58k" (at 176.9872 100.203 0)
+    (property "Value" "_k" (at 176.9872 100.203 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 173.482 99.06 90)
