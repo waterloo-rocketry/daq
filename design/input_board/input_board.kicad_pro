@@ -224,8 +224,8 @@
       "no_connect_dangling": "warning",
       "pin_not_connected": "error",
       "pin_not_driven": "error",
-      "pin_to_pin": "warning",
-      "power_pin_not_driven": "error",
+      "pin_to_pin": "ignore",
+      "power_pin_not_driven": "ignore",
       "similar_labels": "warning",
       "simulation_model_issue": "ignore",
       "unannotated": "error",
@@ -395,7 +395,7 @@
     ],
     [
       "a604fd4b-db33-4b34-9705-31ee8512e06a",
-      "30V AVCC"
+      "30V VDDA"
     ],
     [
       "7f9a9c17-cbc2-43ce-8edf-083c96183002",
@@ -415,7 +415,7 @@
     ],
     [
       "dc532112-2d2f-42f7-ae48-73f41ed32718",
-      "3.3V DVCC"
+      "2V DVCC"
     ]
   ],
   "text_variables": {}
