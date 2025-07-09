@@ -2940,6 +2940,12 @@
 		(uuid "e88b5d54-3fbd-4a5e-9414-a804c19b7f41")
 	)
 	(junction
+		(at 54.61 186.69)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb912668-6668-4f7e-a728-41da25c91f59")
+	)
+	(junction
 		(at 252.73 55.88)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3283,6 +3289,16 @@
 	)
 	(wire
 		(pts
+			(xy 58.42 186.69) (xy 58.42 190.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34c822e3-03b7-4132-b4f9-ed32c737efe4")
+	)
+	(wire
+		(pts
 			(xy 140.97 102.87) (xy 140.97 87.63)
 		)
 		(stroke
@@ -3290,6 +3306,16 @@
 			(type default)
 		)
 		(uuid "354964ca-e0b9-48b4-b3ab-466de0ed80e1")
+	)
+	(wire
+		(pts
+			(xy 53.34 189.23) (xy 54.61 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "388bc3b9-075a-45b0-a4c0-893095c1edf8")
 	)
 	(wire
 		(pts
@@ -3883,6 +3909,16 @@
 	)
 	(wire
 		(pts
+			(xy 54.61 186.69) (xy 54.61 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ab202caa-e81b-4578-8785-17a031794e51")
+	)
+	(wire
+		(pts
 			(xy 130.81 138.43) (xy 144.78 138.43)
 		)
 		(stroke
@@ -3890,6 +3926,16 @@
 			(type default)
 		)
 		(uuid "ac48c0fe-397e-456f-af7d-ede0b32dc73c")
+	)
+	(wire
+		(pts
+			(xy 54.61 186.69) (xy 58.42 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "af2de075-3f31-4e04-af19-edc896491a3b")
 	)
 	(wire
 		(pts
@@ -4340,6 +4386,16 @@
 			(type default)
 		)
 		(uuid "fbbf935a-db8d-466f-aae3-dbb3d0964704")
+	)
+	(wire
+		(pts
+			(xy 53.34 186.69) (xy 54.61 186.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbf08cb1-38af-4ecc-be82-f10c7694d115")
 	)
 	(wire
 		(pts
@@ -7168,6 +7224,73 @@
 			(project "input_board"
 				(path "/edc2dfd5-6e83-475f-94b9-1e03bbedf967/7f9a9c17-cbc2-43ce-8edf-083c96183002"
 					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:Screw_Terminal_01x02")
+		(at 48.26 189.23 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "4bae3077-a176-4f46-a86c-79368e2ce062")
+		(property "Reference" "J11"
+			(at 33.02 185.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Screw_Terminal_01x02"
+			(at 33.02 187.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "TerminalBlock_Phoenix:TerminalBlock_Phoenix_MPT-0,5-2-2.54_1x02_P2.54mm_Horizontal"
+			(at 48.26 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic screw terminal, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 48.26 189.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "badb868c-c785-4e6d-a3f7-b8317bedd9e0")
+		)
+		(pin "1"
+			(uuid "589a1049-dcbb-4c58-97f1-b994ee683e3a")
+		)
+		(instances
+			(project "input_board"
+				(path "/edc2dfd5-6e83-475f-94b9-1e03bbedf967/7f9a9c17-cbc2-43ce-8edf-083c96183002"
+					(reference "J11")
 					(unit 1)
 				)
 			)
@@ -10898,6 +11021,72 @@
 			(project "input_board"
 				(path "/edc2dfd5-6e83-475f-94b9-1e03bbedf967/7f9a9c17-cbc2-43ce-8edf-083c96183002"
 					(reference "#PWR050")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 58.42 190.5 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f725ce89-8abc-4b04-a89a-8dad3d8f4bc1")
+		(property "Reference" "#PWR0143"
+			(at 58.42 196.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 58.42 195.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 58.42 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 58.42 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 58.42 190.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "273cddfb-df13-4851-96a7-c2659f358ad5")
+		)
+		(instances
+			(project "input_board"
+				(path "/edc2dfd5-6e83-475f-94b9-1e03bbedf967/7f9a9c17-cbc2-43ce-8edf-083c96183002"
+					(reference "#PWR0143")
 					(unit 1)
 				)
 			)
