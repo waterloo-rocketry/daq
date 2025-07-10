@@ -1419,7 +1419,7 @@
 	)
 	(wire
 		(pts
-			(xy 217.17 92.71) (xy 228.6 92.71)
+			(xy 217.17 92.71) (xy 254 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1639,7 +1639,7 @@
 	)
 	(wire
 		(pts
-			(xy 228.6 83.82) (xy 228.6 92.71)
+			(xy 254 83.82) (xy 254 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3342,7 +3342,7 @@
 	)
 	(symbol
 		(lib_id "input_board:+2V")
-		(at 228.6 83.82 0)
+		(at 254 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3351,7 +3351,7 @@
 		(fields_autoplaced yes)
 		(uuid "a63d7d21-4b7e-4ae7-beff-cc2d06ae3548")
 		(property "Reference" "#PWR0133"
-			(at 228.6 87.63 0)
+			(at 254 87.63 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3360,7 +3360,7 @@
 			)
 		)
 		(property "Value" "+2V"
-			(at 228.6 78.74 0)
+			(at 254 78.74 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3368,7 +3368,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 228.6 83.82 0)
+			(at 254 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3377,7 +3377,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 228.6 83.82 0)
+			(at 254 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3386,7 +3386,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+2V\""
-			(at 228.6 83.82 0)
+			(at 254 83.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
