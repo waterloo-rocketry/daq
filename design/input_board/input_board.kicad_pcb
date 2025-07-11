@@ -9971,7 +9971,7 @@
 		(descr "01530009Z-5")
 		(tags "Fuse")
 		(property "Reference" "F1"
-			(at -3.6068 -2.032 90)
+			(at -3.2258 -2.1336 180)
 			(layer "F.SilkS")
 			(uuid "e58c7139-dbba-486d-9b27-df6438eafec1")
 			(effects

@@ -2383,6 +2383,16 @@
 		)
 		(uuid "f92f253a-8714-4b50-a89e-594fd1e57b45")
 	)
+	(text "C1206C112KFGLCAUTO"
+		(exclude_from_sim no)
+		(at 195.834 114.554 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "53c2a108-3ee3-495a-a30e-2e7b9d2a55fd")
+	)
 	(text "100kR series\nMatched 1:5 ratio\n0.035% ratio accuracy"
 		(exclude_from_sim no)
 		(at 157.226 114.046 0)
@@ -3043,7 +3053,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "15R"
 			(at 198.12 110.49 90)
 			(effects
 				(font
@@ -4048,7 +4058,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "C"
+		(property "Value" "1.1nF"
 			(at 210.82 113.0299 0)
 			(effects
 				(font
@@ -4258,7 +4268,7 @@
 				)
 			)
 		)
-		(property "Value" "R_US"
+		(property "Value" "15R"
 			(at 198.12 124.46 90)
 			(effects
 				(font
