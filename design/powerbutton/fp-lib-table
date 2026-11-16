@@ -1,0 +1,4 @@
+(fp_lib_table
+  (version 7)
+  (lib (name "powerbutton")(type "KiCad")(uri "${KICAD8_3RD_PARTY}/8.0/projects/opstop/powerbutton/powerbutton.pretty")(options "")(descr ""))
+)
